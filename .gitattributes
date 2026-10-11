@@ -1,0 +1,9 @@
+*.cmd text eol=crlf
+windows/Resources/Licenses/*.txt -text -whitespace
+windows/Workbenches/FormulaParser.cs whitespace=-blank-at-eof
+*.png binary
+*.icns binary
+*.ico binary
+*.onnx binary
+*.mlmodel binary
+*.mp4 binary
