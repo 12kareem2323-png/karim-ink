@@ -10,5 +10,10 @@
   "websiteUrl": "https://karim-ink.stonyvale1.chatgpt.site",
   "previewAsset": "assets/preview.png",
   "previewKind": "screenshot",
-  "donations": []
+  "donations": [
+    {
+      "name": "Support Karim Ink with PayPal",
+      "url": "https://paypal.me/KEldamaty"
+    }
+  ]
 }

@@ -37,6 +37,6 @@ Never post API keys, Craft connection links/tokens, private coursework or sensit
 
 ## Support development
 
-Verified payment links will be added after setup. Donations will be voluntary and will not buy extra features or a guaranteed support response.
+[Support Karim Ink with PayPal](https://paypal.me/KEldamaty). PayPal handles payment processing; this website does not collect card details. Donations are voluntary and do not buy extra features or a guaranteed support response.
 
 Feedback, small reproducible examples and documentation improvements also help.

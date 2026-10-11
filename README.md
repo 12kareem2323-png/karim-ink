@@ -65,4 +65,6 @@ Website: [Karim Ink](https://karim-ink.stonyvale1.chatgpt.site) · [GitHub Pages
 
 The app uses Swift, SwiftUI, AppKit, Metal, Core ML, Vision and SceneKit. This repository hosts Mac downloads, documentation and feedback. [Build notes](BUILDING.md) describe the development project and release process; they do not imply that the full source is published here.
 
-Verified payment links will be added after setup. Donations will be optional.
+[Support Karim Ink with PayPal](https://paypal.me/KEldamaty). Donations are optional and do not buy extra features or a guaranteed support response.
+
+Also available as a free Mac download on [itch.io](https://12kareem2323-png.itch.io/karim-ink).
