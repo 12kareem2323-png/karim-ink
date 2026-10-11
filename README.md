@@ -61,7 +61,7 @@ Keep backups of important editable drawings. Check OCR/AI results, especially nu
 
 [Downloads, documentation and issues](https://github.com/12kareem2323-png/karim-ink) · [Release notes](RELEASE_NOTES.md) · [Support](SUPPORT.md) · [Security](SECURITY.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
 
-Website: [Karim Ink](https://karim-ink.stonyvale1.chatgpt.site).
+Website: [Karim Ink](https://karim-ink.stonyvale1.chatgpt.site) · [GitHub Pages mirror](https://12kareem2323-png.github.io/karim-ink/) · [Karim’s launch announcement](https://www.linkedin.com/feed/update/urn:li:activity:7515116683393572865/).
 
 The app uses Swift, SwiftUI, AppKit, Metal, Core ML, Vision and SceneKit. This repository hosts Mac downloads, documentation and feedback. [Build notes](BUILDING.md) describe the development project and release process; they do not imply that the full source is published here.
 
