@@ -1,39 +1,33 @@
-# Karim Ink privacy
+# SketchGlide privacy · 0.2 Test
 
-This describes the Mac 0.1 preview. Karim Ink is a local drawing app with optional cloud integrations.
+SketchGlide is a local drawing app with optional online services. It contains no advertising or analytics SDK. The ordinary app does not upload drawings automatically. Files are ordinary local editable documents, not encrypted vaults: a person you share them with can read their content.
 
 ## Local work
 
-Drawings, imported content, 3D drafts and application preferences are kept on your Mac. Editable drawings and export copies are ordinary local files; the app does not add its own file encryption. They can contain notes, images and metadata such as drawing names. Anyone you give a file to may be able to read that content.
+Drawing, saving, ink smoothing and single-symbol recognition run locally. Mac text recognition uses Apple Vision and spelling services. Windows uses local Tesseract English OCR and Windows spelling suggestions. Review suggestions before inserting/replacing; changes can be undone. The local 3D sketchbook stores editable scene files.
 
-Ink smoothing, Apple Vision text recognition, local spelling suggestions and DeTeXt single-symbol recognition run on the Mac. Automatic handwriting review reads a bounded amount of recent ink after a drawing pause and offers suggestions. You can turn it off in Assistant settings. It does not automatically send handwriting to OpenAI or replace the original ink.
+Historic storage/internal identifiers are preserved to keep earlier drawings compatible. Recovery/archive/export copies may remain after deleting a library item; delete unwanted copies separately.
 
-The app does not include an analytics SDK or advertising SDK. Boards are not uploaded unless you use the optional services described below. Feedback is submitted deliberately. macOS and any separately used service have their own privacy settings and policies.
+## Optional AI
 
-## AI choices
+On Mac, a ready Apple Intelligence model can answer locally on compatible hardware with macOS 26 or later. On Windows, optional Ollama connects to a separately installed model at `127.0.0.1:11434` for text-only local requests. No local model is silently replaced by a paid cloud request after failure.
 
-**On this Mac** uses Apple's on-device model when it is available. It needs compatible hardware, macOS 26 or later and a ready Apple Intelligence model. The app checks availability before using it.
+The OpenAI option sends the prompt when you click Send. Mac also includes recent in-memory conversation text. A board image is sent only when you choose Attach. Explicit cloud wording correction sends the reviewed text. The route is displayed before sending; Auto on Mac can select the cloud for complex questions or image attachments. Your API key and separate API billing are required; a ChatGPT subscription does not supply API access.
 
-**OpenAI** sends your current prompt and recent conversation text to the OpenAI API when you click Send. A rendered board image is included only if you choose **Attach current board**. Cloud wording correction sends the preview text when you explicitly choose that action.
+API requests use `store: false`. This requests that OpenAI not store the response; it does not promise zero provider retention. OpenAI's own terms and controls apply.
 
-**Auto** chooses a route based on the request and shows it before Send. Complex engineering questions, calculations and board images can select the cloud route; Auto does not mean every question stays local.
+Mac keys and Craft credentials are stored in macOS Keychain. Windows credentials are encrypted for the current Windows user with DPAPI under `%LOCALAPPDATA%\KarimEldamaty\Credentials`. They are separate from drawings/exports. Mac session chat history stays in memory, not `.engboard`; Windows panel prompt/answer text is not automatically persisted. Explicitly inserting an answer stores it as ordinary drawing text.
 
-Your OpenAI API key is stored in macOS Keychain, not in drawing files or exports. You can remove it in Assistant settings. API chat requests ask OpenAI not to store the response (`store: false`); this is not a promise of zero provider retention. OpenAI's own terms and data controls apply. Chat history remains in memory for the current drawing session and is not saved inside `.engboard` files.
+## Other services and shared files
 
-## Craft, Notion and external links
+Craft exchange is optional and sends supported objects to a configured scoped connection after your action, or while Mac Live updates are explicitly enabled. It is not multiplayer/two-way native editing. Notion HTML and Excalidraw/image/PDF exports create copies you can share. The HTML companion uses a rendered board background plus separate new browser ink; it does not embed or synchronise the native app automatically.
 
-Craft updating is optional. A configured connection sends supported drawing objects to the selected Craft whiteboard when you send/update, or while you explicitly enable Live updates. Craft credentials stay in Keychain. This is one-way updating, not shared editing.
+Optional embedded service panels on Mac use persistent WebKit website storage. Signed-in cookies/cache can remain across launches and after a board is deleted. Use the service's sign-out controls, or your external browser. The service has its own privacy terms.
 
-Notion HTML, Excalidraw and image/PDF exports create files for you to share. An exported companion can contain a rendered copy of the board and editable new ink. Uploading it to a service shares that content with the destination under that service's rules. Native board links reopen a saved drawing in the Mac app; they do not upload it.
+Help, feedback and donation buttons open external services after your action. A visit shares normal browser request information with that service. Payments are handled by PayPal; SketchGlide does not collect card details. Public GitHub feedback must not include keys, tokens or private drawings.
 
-Optional embedded Notion/Microsoft Whiteboard panels use a persistent WebKit website-data store. If you sign in there, the service can keep cookies, local storage and a signed-in session on this Mac across app launches. That data is separate from drawing files and can remain after a drawing is deleted. Use the service's own sign-out controls; signing out may leave cached website data behind. You can use your normal browser instead of the embedded panel.
+Ordinary drawing needs no Full Disk Access, microphone or camera permission. File import/export uses a file chooser. Tablet drivers can require their own permissions. Mac's optional direct Quick Keys bridge can require Input Monitoring and is disconnected by default.
 
-Help, feedback and donation links open an external site. That site can receive the normal information associated with a visit, and information you choose to submit. Donation processing is handled by the chosen payment service; Karim Ink does not collect card details.
+The public website is remotely hosted, not served by the developer's Mac. Sites, GitHub Pages, itch.io and any services you choose have their own policies. The website adds no donation tracking or advertising SDK.
 
-## Permissions and control
-
-Ordinary drawing does not require Full Disk Access, camera, microphone or screen-recording access. File import/export uses the system file chooser. Tablet operation may need permissions for the tablet's own driver. Optional direct Quick Keys control may need Input Monitoring and is disconnected by default.
-
-You can export your editable drawings, delete drawings from the library, remove saved integration credentials and disable optional cloud features. Recovery/archive copies and exported files may remain after a library item is deleted; remove copies you no longer need separately.
-
-For questions, use [project support](https://github.com/12kareem2323-png/karim-ink/issues). Do not include private drawings, API keys, connection tokens or personal information in a public issue.
+[Project feedback](https://github.com/12kareem2323-png/karim-ink/issues)

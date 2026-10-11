@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+<ItemGroup><Compile Include="../../Core/*.cs" Link="Production/Core/%(Filename)%(Extension)" /><Compile Include="../../Drawing/DrawingMath.cs" Link="Production/DrawingMath.cs" /><Compile Include="../../Drawing/BrushMetrics.cs" Link="Production/BrushMetrics.cs" /><Compile Include="../../Drawing/StrokeEraser.cs" Link="Production/StrokeEraser.cs" /><None Update="swift-fixture.engboard" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+</Project>

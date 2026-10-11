@@ -3,3 +3,13 @@
 *.zip
 *.dmg
 *.log
+**/.build/
+**/bin/
+**/obj/
+**/dist/
+**/publish/
+**/node_modules/
+.env
+.env.*
+*.p12
+*.p8

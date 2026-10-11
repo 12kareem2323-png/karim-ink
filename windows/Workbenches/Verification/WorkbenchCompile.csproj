@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0-windows10.0.19041.0</TargetFramework><UseWPF>true</UseWPF><EnableWindowsTargeting>true</EnableWindowsTargeting><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><EnableDefaultCompileItems>false</EnableDefaultCompileItems></PropertyGroup>
+  <ItemGroup><Using Include="System.IO"/><Compile Include="../*.cs" /><Compile Include="CompileStubs.source"/><Compile Include="../../Core/Models.cs"/><Compile Include="../../Core/BoardCodec.cs"/><Compile Include="../../Core/DrawingSession.cs"/><Compile Include="../../Services/MathRecognitionService.cs"/><PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.23.2"/></ItemGroup>
+</Project>

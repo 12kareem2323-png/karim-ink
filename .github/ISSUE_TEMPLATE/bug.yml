@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible problem in the Mac preview.
+description: Report a reproducible problem in the Mac or Windows Test.
 title: "[Bug] "
 body:
   - type: markdown
@@ -8,8 +8,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: App and macOS version
-      placeholder: "Karim Ink 0.1.0; macOS version; Apple Silicon Mac model"
+      label: App, OS and processor
+      placeholder: "SketchGlide 0.2.0 Test; Windows/macOS version; processor"
     validations:
       required: true
   - type: textarea

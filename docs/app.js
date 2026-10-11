@@ -2,13 +2,13 @@
 
 (() => {
   const fallback = {
-    name: "Karim Ink", version: "0.1.0", label: "0.1 Preview",
-    status: "Release preparation", signing: "Unnotarized · ad hoc signed",
-    downloadUrl: null, repositoryUrl: null, checksumsUrl: null,
-    websiteUrl: null, previewAsset: null, previewKind: "screenshot", donations: []
+    name: "SketchGlide", version: "0.2.0", label: "0.2 Test",
+    status: "Release checks underway", signing: "Unnotarized · ad hoc signed",
+    downloadUrl: null, windowsDownloadUrl: null, windowsLabel: "0.2 Test", windowsStatus: "Windows package preparation", repositoryUrl: null, checksumsUrl: null,
+    websiteUrl: null, previewAsset: null, previewKind: "screenshot", donations: [{ name: "Support SketchGlide with PayPal", url: "https://paypal.me/KEldamaty" }]
   };
   let release = { ...fallback };
-  const themeKey = "karim-ink-site-appearance";
+  const themeKey = "sketchglide-site-appearance";
   const preference = window.matchMedia("(prefers-color-scheme: dark)");
   let chosenTheme = null;
   try {
@@ -44,7 +44,7 @@
     if (typeof value !== "string" || value.length > 2048) return null;
     try {
       const url = new URL(value);
-      return url.protocol === "https:" && !url.username && !url.password ? url.href : null;
+      return url.protocol === "https:" && !url.username && !url.password && !url.port ? url.href : null;
     } catch (_) { return null; }
   }
 
@@ -71,7 +71,7 @@
     else node.prepend(document.createTextNode(`${value} `));
   }
 
-  document.querySelectorAll("[data-download]").forEach(link => {
+  document.querySelectorAll("[data-download], [data-windows-download]").forEach(link => {
     link.addEventListener("click", event => {
       if (link.getAttribute("aria-disabled") === "true") event.preventDefault();
     });
@@ -100,9 +100,9 @@
         const illustration = document.querySelector("[data-illustration]");
         if (illustration) illustration.hidden = true;
         image.closest(".preview-window").classList.add("has-screenshot");
-        labelNodes("[data-preview-caption]", config.previewKind === "illustration" ? "Illustrated workspace · not a screenshot or engineering calculation" : "Karim Ink Mac preview · synthetic example drawing");
+        labelNodes("[data-preview-caption]", config.previewKind === "illustration" ? "Illustrated workspace · not a screenshot or engineering calculation" : "Mac workspace · example drawing");
       }, { once: true });
-      image.addEventListener("error", () => { image.hidden = true; }, { once: true });
+      image.addEventListener("error", () => { image.hidden = true; const fallbackImage = document.querySelector("[data-illustration]"); if (fallbackImage) fallbackImage.hidden = false; labelNodes("[data-preview-caption]", "Illustrated workspace · not an app screenshot"); }, { once: true });
       image.src = url.href;
     } catch (_) { /* Keep the clearly labelled illustration on invalid configuration. */ }
   }
@@ -114,6 +114,9 @@
       status: plain(config.status, fallback.status),
       signing: plain(config.signing, fallback.signing),
       downloadUrl: safeHTTPS(config.downloadUrl),
+      windowsDownloadUrl: safeHTTPS(config.windowsDownloadUrl),
+      windowsLabel: plain(config.windowsLabel, fallback.windowsLabel, 40),
+      windowsStatus: plain(config.windowsStatus, fallback.windowsStatus),
       repositoryUrl: repositoryURL(config.repositoryUrl),
       checksumsUrl: safeHTTPS(config.checksumsUrl),
       websiteUrl: safeHTTPS(config.websiteUrl),
@@ -122,6 +125,8 @@
     labelNodes("[data-release-label]", release.label);
     labelNodes("[data-release-status]", release.status);
     labelNodes("[data-signing]", release.signing);
+    labelNodes("[data-windows-label]", release.windowsLabel);
+    labelNodes("[data-windows-status]", release.windowsStatus);
     document.querySelectorAll("[data-download]").forEach(link => {
       if (release.downloadUrl) {
         link.href = release.downloadUrl;
@@ -135,6 +140,21 @@
         link.setAttribute("role", "link");
         link.classList.add("is-disabled");
         replaceLeadingText(link, "Download available after release checks");
+      }
+    });
+    document.querySelectorAll("[data-windows-download]").forEach(link => {
+      if (release.windowsDownloadUrl) {
+        link.href = release.windowsDownloadUrl;
+        link.classList.remove("is-disabled");
+        link.removeAttribute("aria-disabled");
+        link.rel = "noopener noreferrer";
+        replaceLeadingText(link, "Download Windows Test");
+      } else {
+        link.removeAttribute("href");
+        link.setAttribute("aria-disabled", "true");
+        link.setAttribute("role", "link");
+        link.classList.add("is-disabled");
+        replaceLeadingText(link, "Windows Test preparing");
       }
     });
     document.querySelectorAll("[data-checksums]").forEach(link => {
@@ -194,7 +214,7 @@
   });
 
   const topics = {
-    electrical: { title: "Electrical, electronics & digital logic", description: "Resistors, capacitors, sources, motors, semiconductors and logic gates — organized for study and schematic sketches.", symbols: ["Ω", "▱", "⊕", "▷"] },
+    electrical: { title: "Electrical, electronics & digital logic", description: "Resistors, capacitors, sources, motors, semiconductors and logic gates — organized for notes and schematic sketches.", symbols: ["Ω", "▱", "⊕", "▷"] },
     maths: { title: "Algebra, calculus, geometry & statistics", description: "Operators, fractions, powers, integral signs, summations and Greek notation for working through engineering maths.", symbols: ["∫", "Σ", "π", "√"] },
     mechanics: { title: "Mechanical principles & forces", description: "Beams, loads, supports, springs, pulleys and gear arrangements for explaining forces and mechanisms.", symbols: ["F", "↧", "⚙", "↻"] },
     fluids: { title: "Fluid systems & measurements", description: "Pipes, pumps, valves, manometers and hydraulic components for sketching flow and pressure ideas.", symbols: ["p", "⇢", "∪", "Δ"] },
@@ -222,8 +242,8 @@
       return input && typeof input.value === "string" ? input.value.trim() : "";
     };
     function report() {
-      return ["Karim Ink feedback", "", `Summary: ${field("summary") || "Not entered"}`,
-        `App version: ${field("version") || release.version}`, `macOS / Mac model: ${field("system") || "Not entered"}`,
+      return ["SketchGlide feedback", "", `Summary: ${field("summary") || "Not entered"}`,
+        `App version: ${field("version") || release.version}`, `Operating system / computer: ${field("system") || "Not entered"}`,
         `Tablet / driver (if relevant): ${field("tablet") || "Not entered"}`, "", "Steps to reproduce:", field("steps") || "Not entered",
         "", "Expected result:", field("expected") || "Not entered", "", "Actual result:", field("actual") || "Not entered", "",
         "Check before sharing: remove credentials, private drawings and personal information.", ""].join("\n");
@@ -238,7 +258,7 @@
     document.querySelector("[data-save-feedback]")?.addEventListener("click", () => {
       const blob = new Blob([report()], { type: "text/plain;charset=utf-8" });
       const objectURL = URL.createObjectURL(blob);
-      const link = document.createElement("a"); link.href = objectURL; link.download = "Karim-Ink-feedback.txt";
+      const link = document.createElement("a"); link.href = objectURL; link.download = "SketchGlide-feedback.txt";
       document.body.append(link); link.click(); link.remove();
       setTimeout(() => URL.revokeObjectURL(objectURL), 1000);
       labelNodes("[data-feedback-status]", "Text file prepared. It has not been sent anywhere; review it before sharing.");

@@ -1,19 +1,18 @@
 "use strict";
 
-// Scroll-driven presentation only. Nothing runs continuously while the page is idle.
 (() => {
   const root = document.documentElement;
   const track = document.querySelector("[data-camera-track]");
   const camera = track?.querySelector("[data-camera]");
   const reveals = Array.from(document.querySelectorAll("[data-reveal]"));
-  if (!camera && !reveals.length) return;
-
+  const loopElements = Array.from(document.querySelectorAll("[data-loop]"));
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const compactLayout = window.matchMedia("(max-width: 760px)");
   const hasObservers = "IntersectionObserver" in window;
+  const motionKey = "sketchglide-site-motion";
   const clamp = value => Math.min(1, Math.max(0, value));
+  let chosenMotion = true;
   let revealObserver;
-  let cameraObserver;
   let frame = 0;
   let visible = !hasObservers;
   let geometryDirty = true;
@@ -24,59 +23,45 @@
   let previousTime = 0;
   let lastChange = 0;
   let previousWritten = -1;
+  try { chosenMotion = localStorage.getItem(motionKey) !== "off"; } catch (_) { /* Optional preference. */ }
+  const motionAllowed = () => chosenMotion && !reducedMotion.matches;
 
   function reveal(element) {
     element.classList.add("is-visible");
     revealObserver?.unobserve(element);
   }
-
   function configureReveals() {
     revealObserver?.disconnect();
     root.classList.remove("motion-ready");
-    if (reducedMotion.matches || !hasObservers) {
-      reveals.forEach(reveal);
-      return;
-    }
+    if (!motionAllowed() || !hasObservers) { reveals.forEach(reveal); return; }
     revealObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => { if (entry.isIntersecting) reveal(entry.target); });
-    }, { threshold: 0, rootMargin: "0px 0px -6% 0px" });
-    reveals.forEach(element => {
-      if (!element.classList.contains("is-visible")) revealObserver.observe(element);
-    });
-    // Styles remain visible if JavaScript or IntersectionObserver is unavailable.
+    }, { threshold: 0, rootMargin: "0px 0px -5% 0px" });
+    reveals.forEach(element => { if (!element.classList.contains("is-visible")) revealObserver.observe(element); });
     root.classList.add("motion-ready");
   }
-
   function cancelFrame() {
     if (frame) window.cancelAnimationFrame(frame);
-    frame = 0;
-    previousTime = 0;
+    frame = 0; previousTime = 0;
   }
-
   function canAnimateCamera() {
-    return camera && visible && !document.hidden && !reducedMotion.matches && !compactLayout.matches;
+    return camera && visible && !document.hidden && motionAllowed() && !compactLayout.matches;
   }
-
   function writeCamera(value, neutral = false) {
-    if (!camera) return;
-    if (value === previousWritten && !neutral) return;
+    if (!camera || (value === previousWritten && !neutral)) return;
     previousWritten = neutral ? -1 : value;
-    // CSS owns the transform; these properties cannot affect track geometry.
     const eased = value * value * (3 - 2 * value);
     track.style.setProperty("--camera-progress", value.toFixed(4));
-    camera.style.setProperty("--camera-progress", value.toFixed(4));
-    camera.style.setProperty("--camera-scale", neutral ? "1" : (1 + 0.62 * eased).toFixed(4));
+    camera.style.setProperty("--camera-scale", neutral ? "1" : (1 + .62 * eased).toFixed(4));
     camera.style.setProperty("--camera-rotate-x", neutral ? "0deg" : `${(11 * (1 - eased)).toFixed(3)}deg`);
     camera.style.setProperty("--camera-rotate-y", neutral ? "0deg" : `${(-4 * (1 - eased)).toFixed(3)}deg`);
     camera.style.setProperty("--camera-y", neutral ? "0px" : `${(12 - 60 * eased).toFixed(3)}px`);
   }
-
   function draw(time) {
     frame = 0;
     if (!canAnimateCamera()) { previousTime = 0; return; }
     const scrollPosition = window.scrollY;
     if (geometryDirty) {
-      // One geometry read on resize/content changes, never on every scroll event.
       const bounds = track.getBoundingClientRect();
       trackTop = bounds.top + scrollPosition;
       travel = Math.max(1, bounds.height - window.innerHeight);
@@ -85,79 +70,79 @@
     const target = clamp((scrollPosition - trackTop) / travel);
     const elapsed = previousTime ? Math.min(64, time - previousTime) : 16;
     previousTime = time;
-    if (snapNextFrame || time - lastChange >= 260 || Math.abs(target - progress) < 0.0008) {
-      progress = target;
-      snapNextFrame = false;
-    } else {
-      progress += (target - progress) * (1 - Math.exp(-elapsed / 60));
-    }
+    if (snapNextFrame || time - lastChange >= 260 || Math.abs(target - progress) < .0008) {
+      progress = target; snapNextFrame = false;
+    } else progress += (target - progress) * (1 - Math.exp(-elapsed / 60));
     writeCamera(progress);
-    // The short settling tail stops after 260 ms; idle pages have no RAF loop.
-    if (Math.abs(target - progress) >= 0.0008) frame = window.requestAnimationFrame(draw);
+    if (Math.abs(target - progress) >= .0008) frame = window.requestAnimationFrame(draw);
     else previousTime = 0;
   }
-
   function requestFrame(snap = false) {
     if (snap) snapNextFrame = true;
     if (!canAnimateCamera() || frame) return;
     frame = window.requestAnimationFrame(draw);
   }
-
-  function invalidateGeometry() {
-    geometryDirty = true;
-    requestFrame(true);
-  }
-
+  function invalidateGeometry() { geometryDirty = true; requestFrame(true); }
   function configureCamera() {
-    cancelFrame();
-    geometryDirty = true;
-    snapNextFrame = true;
+    cancelFrame(); geometryDirty = true; snapNextFrame = true;
     if (camera) {
-      // No retained layer while offscreen, compact, hidden, or reducing motion.
       camera.style.willChange = canAnimateCamera() ? "transform" : "auto";
-      if (reducedMotion.matches || compactLayout.matches) writeCamera(0, true);
+      if (!motionAllowed() || compactLayout.matches) writeCamera(0, true);
     }
     requestFrame(true);
   }
-
-  configureReveals();
+  function applyMotion() {
+    root.dataset.motion = motionAllowed() && !document.hidden ? "on" : "off";
+    root.classList.toggle("motion-background", document.hidden);
+    document.querySelectorAll("[data-motion-toggle]").forEach(button => {
+      button.disabled = reducedMotion.matches;
+      button.setAttribute("aria-pressed", String(motionAllowed()));
+      button.setAttribute("aria-label", reducedMotion.matches ? "Animations paused by system Reduced Motion" : `${motionAllowed() ? "Pause" : "Enable"} page animations`);
+    });
+    document.querySelectorAll("[data-motion-label]").forEach(label => {
+      label.textContent = reducedMotion.matches ? "Motion off" : motionAllowed() ? "Motion on" : "Motion off";
+    });
+    configureReveals(); configureCamera();
+    document.dispatchEvent(new CustomEvent("sketchglide:motion-change", { detail: { enabled: motionAllowed() && !document.hidden } }));
+  }
+  document.querySelectorAll("[data-motion-toggle]").forEach(button => {
+    button.addEventListener("click", () => {
+      chosenMotion = !chosenMotion;
+      try { localStorage.setItem(motionKey, chosenMotion ? "on" : "off"); } catch (_) { /* Optional preference. */ }
+      applyMotion();
+    });
+  });
+  if (hasObservers) {
+    const loopObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.target.classList.toggle("is-loop-visible", entry.isIntersecting));
+    }, { threshold: 0, rootMargin: "0px" });
+    loopElements.forEach(element => loopObserver.observe(element));
+  } else loopElements.forEach(element => element.classList.add("is-loop-visible"));
   if (camera) {
     if (hasObservers) {
-      cameraObserver = new IntersectionObserver(entries => {
+      const observer = new IntersectionObserver(entries => {
         const entry = entries[entries.length - 1];
-        if (!entry) return;
-        visible = entry.isIntersecting;
-        configureCamera();
+        if (entry) { visible = entry.isIntersecting; configureCamera(); }
       }, { threshold: 0, rootMargin: "0px" });
-      cameraObserver.observe(track);
+      observer.observe(track);
     }
-    if ("ResizeObserver" in window) {
-      new ResizeObserver(invalidateGeometry).observe(track);
-    }
+    if ("ResizeObserver" in window) new ResizeObserver(invalidateGeometry).observe(track);
     window.addEventListener("scroll", () => {
       if (!canAnimateCamera()) return;
-      lastChange = performance.now();
-      requestFrame();
+      lastChange = performance.now(); requestFrame();
     }, { passive: true });
     window.addEventListener("resize", invalidateGeometry, { passive: true });
     window.addEventListener("load", invalidateGeometry, { once: true });
-    window.addEventListener("pageshow", () => configureCamera());
+    window.addEventListener("pageshow", configureCamera);
     window.addEventListener("pagehide", cancelFrame);
     document.fonts?.ready.then(invalidateGeometry);
-    document.addEventListener("visibilitychange", configureCamera);
     compactLayout.addEventListener("change", configureCamera);
-    configureCamera();
   }
-  reducedMotion.addEventListener("change", () => {
-    configureReveals();
-    configureCamera();
-  });
+  reducedMotion.addEventListener("change", applyMotion);
+  document.addEventListener("visibilitychange", applyMotion);
   document.addEventListener("focusin", event => {
-    // A keyboard jump never lands in visually hidden content.
     let element = event.target instanceof Element ? event.target.closest("[data-reveal]") : null;
-    while (element) {
-      reveal(element);
-      element = element.parentElement?.closest("[data-reveal]");
-    }
+    while (element) { reveal(element); element = element.parentElement?.closest("[data-reveal]"); }
   });
+  applyMotion();
 })();

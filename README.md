@@ -1,70 +1,38 @@
-# Karim Ink 0.1 Preview
+# SketchGlide · 0.2 Test
 
-A native Mac whiteboard for maths, engineering notes and student sketches, made by **Karim Eldamaty**.
+A personal whiteboard project **made by Kareem**. Draw, write, make diagrams and explore ideas in native Mac and Windows apps.
 
-[Download the Mac preview](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.1.0) · [Report a bug or suggest a feature](https://github.com/12kareem2323-png/karim-ink/issues) · [Privacy](PRIVACY.md)
+[Download the Test release](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test) · [Website](https://karim-ink.stonyvale1.chatgpt.site/) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues) · [Support with PayPal](https://paypal.me/KEldamaty)
 
-**Mac release only. Windows is coming soon.** This free, unnotarized preview targets Apple Silicon Macs running macOS 14 or later. It has been tested on an Apple Silicon Mac running macOS 27.2; older target versions and Intel Macs have not been runtime-tested. Local language-model chat needs macOS 26 or later, compatible hardware and a ready Apple Intelligence model.
+![The native Mac Test with a made-up drawing](assets/workspace-preview.png)
 
-![Native Karim Ink workspace with a synthetic engineering example](assets/workspace-preview.png)
+## Download
 
-## Start drawing
+- **Mac:** Apple Silicon, macOS 14 or later. Download the DMG or app ZIP. Ad hoc signed and **unnotarized**; macOS may block first launch.
+- **Windows Test:** Windows 11 **Intel/AMD x64**. Extract the entire ZIP, then open `SketchGlide.exe`. The .NET runtime is included. **Unsigned**; Windows may show an unknown-publisher warning.
 
-1. Download the Mac release from the link above.
-2. Open the download and move **Karim Ink.app** to **Applications**.
-3. Open Karim Ink, create a drawing and choose a pen and paper.
+These are early Test builds. Keep your editable drawings backed up and read [first-launch help](SUPPORT.md). The Windows app was checked in a Windows ARM virtual machine under x64 emulation; a physical Intel/AMD PC and your own drawing tablet still need testing. The Mac app was checked on Apple Silicon with macOS 27.2. No universal tablet support or locked 120 FPS is promised.
 
-This preview has an **ad hoc code signature**, not an Apple Developer ID signature, and **has not been notarized by Apple**. It is distributed outside the Mac App Store. macOS may block the first launch. Check the release's SHA-256 checksum and read [Support](SUPPORT.md) for Apple's per-app Open Anyway instructions. Keep macOS security protections enabled.
+## What you can do
 
-Drawing, local saving, engineering tools and single-symbol recognition work offline. Cloud AI and Craft updates need internet. No account is needed for ordinary drawing.
+- Draw with **10 adjustable brushes** and **10 backgrounds**. Pan, zoom, use pressure when the driver supplies it, change colour and width, and undo edits.
+- Keep new strokes unselected. Use deliberate selection/lasso, shapes, straightening, rulers, a protractor and millimetre dimensions.
+- Place **380 searchable maths and engineering symbols**. Short diagram animations illustrate motion; they do not simulate real engineering behaviour.
+- Review local text recognition, spelling suggestions and single-symbol maths recognition with **1,098 command classes**. Edit text/formulas, plot functions and use a calculator and unit conversions.
+- Use an optional OpenAI API assistant with your own key and separate API billing. Mac also supports Apple's available on-device model; Windows can connect to a separately installed local Ollama model. Ordinary drawing and saving need no account.
+- Make simple 3D concept sketches with planes and primitives, and retain editable `.karim3d` scenes.
+- Save editable `.engboard` drawings; import images and export PNG/JPEG/PDF. Windows PDF embeds a raster drawing; Mac PDF supports vector output.
+- Copy/paste, export an Excalidraw copy or a Notion-friendly HTML companion, and configure optional Craft exchange. Native apps are not embedded live inside Notion; these routes have different limits.
+- Choose light, dark or system appearance, floating translucent tools and reduced-motion/transparency options.
 
-## What is included
+The native apps use driver-provided tablet input and are not tied to one brand. Physical pressure, tilt, eraser and remote behaviour need checking with each device/driver. Whole handwritten-equation recognition, multiplayer, circuit simulation and full CAD constraints are not included. Review OCR/AI output, particularly numbers and units.
 
-### Drawing and the Mac workspace
+## Build it with me
 
-- A native SwiftUI/AppKit interface with floating frosted-glass controls, light/dark/system appearance and a focus-canvas mode.
-- Pan and zoom around your drawing. Newly drawn strokes stay unselected; Select and Lasso are separate tools.
-- Ten brushes: Technical Fineliner, Fountain, Graphite Pencil, Chalk, Marker, Calligraphy, Airbrush, Liquid Ink, Highlighter and Dry Erase.
-- Adjustable colour, width, opacity, texture, smoothing and pressure response, plus pencil grades from 2H to 6B.
-- Ten paper styles: Plain, Lined, Square Grid, Dot Grid, Graph Paper, Engineering Sheet, Blueprint, Isometric, Polar Grid and Dark Board.
-- Lines, arrows, rectangles, circles, triangles, arcs, dimensions and editable text. Hold a rough stroke still for about half a second to try shape correction; give corrected lines an exact length in millimetres.
-- Ruler, protractor, physical drawing scale, scientific calculator, unit conversion, function plotting and optional isometric snapping.
-- Standard AppKit pen input for pressure, tilt, hover and eraser events when the tablet's macOS driver provides them. Mouse and trackpad drawing also work. Physical operation varies by tablet and driver and has not been verified across brands.
+**The editable app source is now included:** [macos/](macos/) contains Swift/SwiftUI/AppKit/Metal code; [windows/](windows/) contains C#/WPF code. [BUILDING.md](BUILDING.md) gives commands. Own code and original assets are **MIT licensed**; third-party models and dependencies retain their own [notices](THIRD_PARTY_NOTICES.md). You can fork the repository, make a focused change and open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### Symbols, maths and handwriting
+[Privacy](PRIVACY.md) · [Verification](VERIFICATION.md) · [Release notes](RELEASE_NOTES.md) · [Security](SECURITY.md)
 
-- **380 searchable teaching symbols and diagrams** across algebra, calculus, Greek letters, geometry, statistics, electrical, electronics, digital logic, mechanics, fluids, technical drawing and manufacturing.
-- Drag-and-drop placement, repeated stamping and optional short animations for selected diagrams. Animations explain movement; they do not simulate engineering behaviour.
-- An offline DeTeXt/Core ML recognizer with **1,098 command definitions**. Draw one symbol or use selected ink, review candidates, copy LaTeX or send a result to the formula editor.
-- An editable formula editor with a supported LaTeX subset, including common fractions, roots, powers and operators. Whole handwritten equations must be assembled and checked manually.
-- Local ink smoothing, Apple Vision text recognition and spelling suggestions. Review text before inserting or replacing content; replacement edits can be undone.
-- Optional AI chat through Apple's available on-device model or the OpenAI API. The cloud option needs your own API key and separate API billing. A ChatGPT subscription does not supply API access. The app shows the route before Send; board images are attached only when you choose to attach them.
+Also available on [itch.io](https://12kareem2323-png.itch.io/karim-ink). [GitHub Pages mirror](https://12kareem2323-png.github.io/karim-ink/). The existing `karim-ink` URLs and internal file/storage names are retained for compatibility; the project is now called **SketchGlide**.
 
-### Files, sketches and other apps
-
-- A home library with recent drawings, folders, search and cached previews; local autosaving, save-conflict protection and recovery copies.
-- Editable `.engboard` drawings; PDF, PNG and JPEG exports; image/PDF import, image/text paste and native links that reopen a saved board in the Mac app.
-- A student **3D Sketchbook** with Front/Top/Side sketch planes, boxes, cylinders, spheres, scene Undo/Redo, editable `.karim3d` files and draft recovery. Board previews retain their editable scene. This is a concept-sketch tool, not a CAD or manufacturing-validation system.
-- Excalidraw export and optional **one-way Craft updates** for basic paths, shapes, text and dimensions. Rich brush textures and images require an export copy.
-- An offline **Notion HTML companion** with a rendered board background and new web ink. Upload/embedding depends on the workspace. It does not embed the native Mac app or provide two-way sync.
-- Reduced Transparency and Reduced Motion support, independent paper colours and keyboard shortcuts for common drawing actions.
-
-## Preview limits
-
-This is an independent student project. The symbol library is a teaching aid, not an IEC/ISO-certified library or a Pearson-endorsed product. Check the convention your assignment requires.
-
-Large drawings and zoom rebuilds can still pause. Metal accelerates active ink, but 120 FPS and a particular latency are not guaranteed. Physical tablet/remote behaviour, cloud account connections and older supported macOS versions need broader testing. Multiplayer, full handwritten-equation recognition, circuit/beam simulation and CAD constraints are not included.
-
-Keep backups of important editable drawings. Check OCR/AI results, especially numbers, units and engineering notation.
-
-## Source, feedback and support
-
-[Downloads, documentation and issues](https://github.com/12kareem2323-png/karim-ink) · [Release notes](RELEASE_NOTES.md) · [Support](SUPPORT.md) · [Security](SECURITY.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
-
-Website: [Karim Ink](https://karim-ink.stonyvale1.chatgpt.site) · [GitHub Pages mirror](https://12kareem2323-png.github.io/karim-ink/) · [Karim’s launch announcement](https://www.linkedin.com/feed/update/urn:li:activity:7515116683393572865/).
-
-The app uses Swift, SwiftUI, AppKit, Metal, Core ML, Vision and SceneKit. This repository hosts Mac downloads, documentation and feedback. [Build notes](BUILDING.md) describe the development project and release process; they do not imply that the full source is published here.
-
-[Support Karim Ink with PayPal](https://paypal.me/KEldamaty). Donations are optional and do not buy extra features or a guaranteed support response.
-
-Also available as a free Mac download on [itch.io](https://12kareem2323-png.itch.io/karim-ink).
+Donations are optional and do not unlock features or buy a guaranteed support response. Payments go directly through [PayPal](https://paypal.me/KEldamaty); the app does not collect payment details.

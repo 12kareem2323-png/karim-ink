@@ -1,42 +1,23 @@
-# Karim Ink support and feedback
+# SketchGlide help
 
-[Download the Mac preview](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.1.0) · [Open an issue](https://github.com/12kareem2323-png/karim-ink/issues)
+[Download 0.2 Test](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test) · [Report a problem](https://github.com/12kareem2323-png/karim-ink/issues/new/choose)
 
-Windows is coming soon. This release targets Apple Silicon Macs running macOS 14 or later and has been tested on Apple Silicon with macOS 27.2. It is an ad hoc signed, unnotarized preview distributed outside the Mac App Store. Local language-model chat additionally needs macOS 26 or later and a ready Apple Intelligence model.
+## Mac first launch
 
-## First launch on a Mac
+Use the official DMG/ZIP, compare SHA-256 with the release checksum file, and copy SketchGlide.app into Applications. This early Test is ad hoc signed and unnotarized. macOS can block first launch. If you trust that verified download, follow Apple's per-app **System Settings → Privacy & Security → Open Anyway** instructions. Keep system security protections enabled. The download is Apple Silicon only; older target macOS versions have not been runtime-tested.
 
-Download the ZIP or DMG from the official release page and move **Karim Ink.app** into **Applications**. The published SHA-256 checksums identify the release files; they do not replace Apple signing or notarization.
+Apple help: https://support.apple.com/en-gb/102445
 
-If macOS blocks the first launch because the developer cannot be verified, first check that you trust the source and that the file matches the release. After attempting to open Karim Ink, open **System Settings → Privacy & Security**. Where available, choose **Open Anyway** for Karim Ink and confirm **Open**. This creates an exception for that app. Apple's [Safely open apps on your Mac](https://support.apple.com/en-us/102445) describes the conditions and warnings.
+## Windows first launch
 
-Do not disable Gatekeeper, remove quarantine flags or follow a workaround for an alert that says the app contains malware or is damaged. Stop and report the exact message instead. A managed school/work Mac may not allow an exception.
+Download the x64 Test ZIP and choose **Extract All** before opening SketchGlide.exe. Keep the DLLs and Resources beside it. The .NET runtime is included. Windows can show an unknown-publisher/SmartScreen warning because this Test is unsigned. Verify the official download and keep Windows security enabled. If native OCR reports a missing runtime, use Microsoft's official x64 Visual C++ runtime: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
 
-## Report a problem
+The release targets Windows 11 Intel/AMD x64. QA used x64 emulation in a Windows ARM virtual machine; real Intel/AMD and physical-tablet checks are still needed. Optional Install.cmd installs for your Windows user; no automatic driver/runtime installation occurs.
 
-Include:
+## Drawings, AI and feedback
 
-- Karim Ink version, macOS version and Mac model.
-- What you expected, what happened and the shortest steps that reproduce it.
-- For pen problems: tablet brand/model, pen model, driver version and whether mouse drawing works.
-- A screenshot or small synthetic example when it helps. Remove private information first.
+Back up editable `.engboard` and `.karim3d` files. Review OCR/AI, especially decimal points, units and symbols. Ordinary drawing/saving is offline. Optional cloud AI needs your own API key and separate API billing. Full handwriting-to-LaTeX, full CAD simulation, live native Notion embedding and universal tablet support are not promised.
 
-Never post API keys, Craft connection links/tokens, private coursework or sensitive files. Security reports should follow [SECURITY.md](SECURITY.md).
+For bugs, provide version, OS/processor, tablet/driver if relevant, steps and a made-up sample. Do not post private notes, credentials or account screenshots. [Privacy](PRIVACY.md) describes local files and optional routes.
 
-## Common questions
-
-**The download will not open.** This preview is unnotarized. Follow the first-launch section above for an unidentified-developer warning; for other warnings, report the exact macOS message. Keep Gatekeeper and other macOS security protections enabled.
-
-**Pressure or tilt is missing.** Check the tablet's current macOS driver, its application profile and macOS permissions. Open the app's tablet/pressure test. Karim Ink uses standard AppKit pen events; a driver must provide pressure, tilt or eraser data for the app to use it. Vendor-specific buttons and remotes are not interchangeable across brands.
-
-**AI does not answer.** Local chat needs a ready Apple model. Cloud chat needs internet, your own working OpenAI API key and API credit; a ChatGPT subscription alone is not enough. Check the displayed route and error in Assistant settings.
-
-**Craft or Notion does not behave like the Mac app.** Craft updating handles supported basic objects in one direction. Notion uses an exported HTML companion. Neither embeds the native drawing engine or supplies multiplayer/two-way editing.
-
-**Recognition is wrong.** DeTeXt recognizes one symbol at a time. OCR and spelling can misread technical notes. Review suggestions, numbers and units before changing the drawing.
-
-## Support development
-
-[Support Karim Ink with PayPal](https://paypal.me/KEldamaty). PayPal handles payment processing; this website does not collect card details. Donations are voluntary and do not buy extra features or a guaranteed support response.
-
-Feedback, small reproducible examples and documentation improvements also help.
+[Optional PayPal support](https://paypal.me/KEldamaty) goes directly to Kareem's public PayPal page. Donations do not unlock features or buy guaranteed support. You can also download the Test through [itch.io](https://12kareem2323-png.itch.io/karim-ink).

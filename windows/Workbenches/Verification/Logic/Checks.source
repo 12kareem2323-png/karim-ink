@@ -1,0 +1,45 @@
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using KarimEldamatyWindows;
+
+var checks = new List<object>();
+void Check(string name, Action action)
+{
+    try { action(); checks.Add(new { name, passed = true }); }
+    catch (Exception error) { checks.Add(new { name, passed = false, error = error.Message }); }
+}
+void Equal(double actual, double expected) { if (Math.Abs(actual - expected) > 1e-9 * Math.Max(1, Math.Abs(expected))) throw new Exception($"Expected {expected:g}, got {actual:g}."); }
+void Reject(Action action) { try { action(); } catch (Exception e) when (e is FormatException or InvalidDataException or JsonException or ArgumentException or IOException) { return; } throw new Exception("Invalid input was accepted."); }
+foreach (var (source, expected) in new[] { ("2+3*4",14d), ("(2+3)*4",20d), ("-2^2",-4d), ("2^3^2",512d), ("2^-2",.25d), ("sqrt(16)+sin(pi/2)",5d), ("cos(0)",1d), ("log(100)+ln(e)",3d), ("1e3/2",500d), ("1e-3",.001d), ("4×5−3÷2",18.5d), ("abs(-5)",5d), ("exp(0)",1d), ("asin(1)",Math.PI/2), ("round(1.8)",2d) }) Check("arithmetic: "+source,()=>Equal(ExpressionParser.Evaluate(source),expected));
+Check("plot variable",()=>Equal(ExpressionParser.Evaluate("x^2+1",3),10));
+foreach(var source in new[] { "", "1/0", "sqrt(-1)", "log(0)", "2+", "3.4.5", "1e+", "unknown(3)", "2x", "(2+3", "System.IO.File.Delete(x)", "NaN", "Infinity", "1e999", new string('-',100)+"1", new string('(',100)+"1"+new string(')',100), new string('1',2049) }) Check("reject arithmetic "+source[..Math.Min(40,source.Length)],()=>Reject(()=>ExpressionParser.Evaluate(source)));
+Check("length mm to metres",()=>Equal(EngineeringUnitFamily.All.First(f=>f.Name=="Length").Convert(1500,"mm","m"),1.5));
+Check("force pounds to N",()=>Equal(EngineeringUnitFamily.All.First(f=>f.Name=="Force").Convert(1,"lbf","N"),4.4482216152605));
+Check("angle radians to degrees",()=>Equal(EngineeringUnitFamily.All.First(f=>f.Name=="Angle").Convert(Math.PI,"rad","deg"),180));
+Check("reject incompatible units",()=>Reject(()=>EngineeringUnitFamily.All.First(f=>f.Name=="Length").Convert(1,"mm","N")));
+foreach(var latex in new[] { @"\sigma = \frac{F}{A}", @"x = \frac{-b \pm \sqrt{b^2 - 4 a c}}{2 a}", @"E_k = \frac{1}{2} m v^2", @"\text{force {in} N}", @"x^{2}_{1}", @"\left(x+1\right)", @"\Gamma \theta \infty", @"\mathrm{kg}", @"\{a\}", @"\surd" }) Check("formula: "+latex,()=>new FormulaParser(latex).Parse());
+foreach(var latex in new[] { "", "x^{", "x}", "^2", "x^^2", "x^2^3", @"\frac{a}", @"\sqrt[3]{x}", @"\input{malicious.tex}", @"\unsupported", @"\text missingbraces", @"\text{open", string.Concat(Enumerable.Repeat(@"\sqrt",40))+"x", new string('{',30)+"x"+new string('}',30),new string('a',4097) }) Check("reject formula "+latex[..Math.Min(40,latex.Length)],()=>Reject(()=>new FormulaParser(latex).Parse()));
+var scene = new Sketch3DDocument
+{
+    Title="Mac format scene", Plane="XY", PlaneOffset=12, GridSpacing=25,
+    Strokes=[new() { Id=Guid.Parse("41e20227-8141-4482-8d72-2478d3319a20"), Points=[new(1,2,12,.25),new(3,4,12,.9)],Width=2.5,Color=new(.2,.4,.8,.9) }],
+    Primitives=[new() { Id=Guid.Parse("9b4ed66b-7ad1-42e7-922d-deaa6f054c7c"),Kind="Cylinder",Center=new(10,20,30),Size=new(40,60,40),Color=new(.1,.5,.8,1) }],
+    Camera=new() {Yaw=.2,Pitch=.5,Distance=480,Target=new(5,6,7)}
+};
+Check("Mac-compatible full scene roundtrip",()=> { var data=Sketch3DFile.Encode(scene);var decoded=Sketch3DFile.Decode(data);if (!JsonNode.DeepEquals(JsonNode.Parse(data),JsonNode.Parse(Sketch3DFile.Encode(decoded))))throw new Exception("Scene JSON changed.");Equal(decoded.Strokes[0].Points[1].Pressure,.9);Equal(decoded.Camera.Target.Z,7); });
+Check("exact scene root structure",()=> {var actual=JsonDocument.Parse(Sketch3DFile.Encode(scene)).RootElement.EnumerateObject().Select(p=>p.Name).Order().ToArray();var expected=new[]{"version","title","units","plane","planeOffset","gridSpacing","strokes","primitives","camera"}.Order().ToArray();if(!actual.SequenceEqual(expected))throw new Exception("Root fields differ.");});
+foreach(var (name, mutation) in new (string,Action<Sketch3DDocument>)[]
+{
+    ("unsupported version",d=>d.Version=2),("wrong units",d=>d.Units="cm"),("unknown plane",d=>d.Plane="ZX"),("nonfinite camera",d=>d.Camera.Yaw=double.NaN),("camera distance",d=>d.Camera.Distance=10),("coordinate bounds",d=>d.Strokes[0].Points[0].X=10001),("negative pressure",d=>d.Strokes[0].Points[0].Pressure=-.1),("wide stroke",d=>d.Strokes[0].Width=11),("duplicate id",d=>d.Primitives[0].Id=d.Strokes[0].Id),("wrong primitive",d=>d.Primitives[0].Kind="Torus"),("shape size",d=>d.Primitives[0].Size.Y=2001),("empty stroke",d=>d.Strokes[0].Points.Clear()),("invalid colour",d=>d.Strokes[0].Color.A=2),("long title",d=>d.Title=new string('λ',600)),("too many objects",d=>d.Primitives=Enumerable.Range(0,101).Select(_=>new Sketch3DPrimitive()).ToList()),("oversized stroke",d=>d.Strokes[0].Points=Enumerable.Range(0,4097).Select(_=>new Sketch3DPoint()).ToList())
+}) Check("reject scene "+name,()=> {var copy=Sketch3DFile.Copy(scene);mutation(copy);Reject(()=>Sketch3DFile.Encode(copy));});
+Check("reject incomplete scene",()=>Reject(()=>Sketch3DFile.Decode(Encoding.UTF8.GetBytes("{}"))));
+Check("reject incomplete primitive",()=> {var node=JsonNode.Parse(Sketch3DFile.Encode(scene))!;node["primitives"]![0]!.AsObject().Remove("center");Reject(()=>Sketch3DFile.Decode(Encoding.UTF8.GetBytes(node.ToJsonString())));});
+Check("reject oversized scene bytes",()=>Reject(()=>Sketch3DFile.Decode(new byte[Sketch3DFile.MaximumBytes+1])));
+Check("atomic file roundtrip",()=> {var path=Path.Combine(Path.GetTempPath(),Guid.NewGuid()+".karim3d");try {Sketch3DFile.WriteAtomic(path,Sketch3DFile.Encode(scene));var loaded=Sketch3DFile.Read(path);Equal(loaded.Primitives[0].Size.Y,60);if(Directory.GetFiles(Path.GetDirectoryName(path)!,Path.GetFileName(path)+".*.tmp").Length!=0)throw new Exception("Temporary file was left.");}finally {File.Delete(path);}});
+Check("draft recovery retains edited scene",()=> {var directory=Path.Combine(Directory.GetCurrentDirectory(),"TestData",Guid.NewGuid().ToString());try {var id=Guid.NewGuid();var draft=new Sketch3DDraft(id,null,directory);draft.Recover();draft.Save(scene);var recovered=new Sketch3DDraft(id,null,directory).Recover();Equal(recovered!.Strokes[0].Points[0].Pressure,.25);if(recovered.Title!=scene.Title)throw new Exception("Draft title changed.");}finally {if(Directory.Exists(directory))Directory.Delete(directory,true);}});
+Check("concurrent draft conflict preserves newer scene",()=> {var directory=Path.Combine(Directory.GetCurrentDirectory(),"TestData",Guid.NewGuid().ToString());try {var id=Guid.NewGuid();var first=new Sketch3DDraft(id,null,directory);first.Recover();first.Save(scene);var second=new Sketch3DDraft(id,null,directory);second.Recover();var newer=Sketch3DFile.Copy(scene);newer.Title="newer scene";first.Save(newer);Reject(()=>second.Save(scene));if(Sketch3DFile.Read(Path.Combine(directory,id+"-new.karim3d")).Title!="newer scene")throw new Exception("Concurrent draft was overwritten.");}finally {if(Directory.Exists(directory))Directory.Delete(directory,true);}});
+Check("corrupt draft is never overwritten",()=> {var directory=Path.Combine(Directory.GetCurrentDirectory(),"TestData",Guid.NewGuid().ToString());try {Directory.CreateDirectory(directory);var id=Guid.NewGuid();var path=Path.Combine(directory,id+"-new.karim3d");File.WriteAllText(path,"corrupt preserved data");var draft=new Sketch3DDraft(id,null,directory);Reject(()=>draft.Recover());Reject(()=>draft.Save(scene));if(File.ReadAllText(path)!="corrupt preserved data")throw new Exception("Corrupt draft was overwritten.");}finally {if(Directory.Exists(directory))Directory.Delete(directory,true);}});
+var failures=checks.Count(c=>!(bool)c.GetType().GetProperty("passed")!.GetValue(c)!);
+var report=new { total=checks.Count, passed=checks.Count-failures, failed=failures, scope="Actual arithmetic/formula parser and scene codec sources run under .NET 10 on macOS. InkColor, Point3D and symbol Unicode lookup use minimal contract stubs. This does not verify WPF rendering, Windows GUI or physical pen behaviour.", checks };
+var json=JsonSerializer.Serialize(report,new JsonSerializerOptions{WriteIndented=true});File.WriteAllText("logic-results.json",json);Console.WriteLine(json);Environment.ExitCode=failures==0?0:1;

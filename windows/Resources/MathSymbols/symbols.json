@@ -1,0 +1,5492 @@
+[
+  {
+    "id": "latex2e-OT1-_textasciicircum",
+    "command": "\\textasciicircum",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textless",
+    "command": "\\textless",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textasciitilde",
+    "command": "\\textasciitilde",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textordfeminine",
+    "command": "\\textordfeminine",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textasteriskcentered",
+    "command": "\\textasteriskcentered",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textordmasculine",
+    "command": "\\textordmasculine",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textbackslash",
+    "command": "\\textbackslash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textparagraph",
+    "command": "\\textparagraph",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textbar",
+    "command": "\\textbar",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textperiodcentered",
+    "command": "\\textperiodcentered",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textbraceleft",
+    "command": "\\textbraceleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textquestiondown",
+    "command": "\\textquestiondown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textbraceright",
+    "command": "\\textbraceright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textquotedblleft",
+    "command": "\\textquotedblleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textbullet",
+    "command": "\\textbullet",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textquotedblright",
+    "command": "\\textquotedblright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textcopyright",
+    "command": "\\textcopyright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textquoteleft",
+    "command": "\\textquoteleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textdagger",
+    "command": "\\textdagger",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textquoteright",
+    "command": "\\textquoteright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textdaggerdbl",
+    "command": "\\textdaggerdbl",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textregistered",
+    "command": "\\textregistered",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textdollar",
+    "command": "\\textdollar",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textsection",
+    "command": "\\textsection",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textellipsis",
+    "command": "\\textellipsis",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textsterling",
+    "command": "\\textsterling",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textemdash",
+    "command": "\\textemdash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_texttrademark",
+    "command": "\\texttrademark",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textendash",
+    "command": "\\textendash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textunderscore",
+    "command": "\\textunderscore",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textexclamdown",
+    "command": "\\textexclamdown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textvisiblespace",
+    "command": "\\textvisiblespace",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_textgreater",
+    "command": "\\textgreater",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-!`",
+    "command": "!`",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_$",
+    "command": "\\$",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-__",
+    "command": "\\_",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ddag",
+    "command": "\\ddag",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_{",
+    "command": "\\{",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_P",
+    "command": "\\P",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_copyright",
+    "command": "\\copyright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_dots",
+    "command": "\\dots",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_}",
+    "command": "\\}",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_S",
+    "command": "\\S",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_dag",
+    "command": "\\dag",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_pounds",
+    "command": "\\pounds",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_&",
+    "command": "\\&",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_#",
+    "command": "\\#",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_%",
+    "command": "\\%",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_--",
+    "command": "\\--",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_---",
+    "command": "\\---",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_----",
+    "command": "\\----",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_checkmark",
+    "command": "\\checkmark",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circledR",
+    "command": "\\circledR",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_maltese",
+    "command": "\\maltese",
+    "package": "amssymb"
+  },
+  {
+    "id": "latex2e-OT1-_aa",
+    "command": "\\aa",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_L",
+    "command": "\\L",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_o",
+    "command": "\\o",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ss",
+    "command": "\\ss",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_AA",
+    "command": "\\AA",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_l",
+    "command": "\\l",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_O",
+    "command": "\\O",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_SS",
+    "command": "\\SS",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_AE",
+    "command": "\\AE",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_OE",
+    "command": "\\OE",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ae",
+    "command": "\\ae",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_oe",
+    "command": "\\oe",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_DH",
+    "command": "\\DH",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_dh",
+    "command": "\\dh",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_DJ",
+    "command": "\\DJ",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_dj",
+    "command": "\\dj",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_NG",
+    "command": "\\NG",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_ng",
+    "command": "\\ng",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_TH",
+    "command": "\\TH",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_th",
+    "command": "\\th",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_guillemotleft",
+    "command": "\\guillemotleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_guilsinglleft",
+    "command": "\\guilsinglleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_quotedblbase",
+    "command": "\\quotedblbase",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_textquotedbl",
+    "command": "\\textquotedbl",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_guillemotright",
+    "command": "\\guillemotright",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_guilsinglright",
+    "command": "\\guilsinglright",
+    "package": null
+  },
+  {
+    "id": "latex2e-T1-_quotesinglbase",
+    "command": "\\quotesinglbase",
+    "package": null
+  },
+  {
+    "id": "tipa-OT1-_textbabygamma",
+    "command": "\\textbabygamma",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textglotstop",
+    "command": "\\textglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtailn",
+    "command": "\\textrtailn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarb",
+    "command": "\\textbarb",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthalflength",
+    "command": "\\texthalflength",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtailr",
+    "command": "\\textrtailr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarc",
+    "command": "\\textbarc",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthardsign",
+    "command": "\\texthardsign",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtails",
+    "command": "\\textrtails",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbard",
+    "command": "\\textbard",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthooktop",
+    "command": "\\texthooktop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtailt",
+    "command": "\\textrtailt",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbardotlessj",
+    "command": "\\textbardotlessj",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtb",
+    "command": "\\texthtb",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtailz",
+    "command": "\\textrtailz",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarg",
+    "command": "\\textbarg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtbardotlessj",
+    "command": "\\texthtbardotlessj",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrthook",
+    "command": "\\textrthook",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarglotstop",
+    "command": "\\textbarglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtc",
+    "command": "\\texthtc",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsca",
+    "command": "\\textsca",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbari",
+    "command": "\\textbari",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtd",
+    "command": "\\texthtd",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscb",
+    "command": "\\textscb",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarl",
+    "command": "\\textbarl",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtg",
+    "command": "\\texthtg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsce",
+    "command": "\\textsce",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbaro",
+    "command": "\\textbaro",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthth",
+    "command": "\\texthth",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscg",
+    "command": "\\textscg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbarrevglotstop",
+    "command": "\\textbarrevglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texththeng",
+    "command": "\\texththeng",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsch",
+    "command": "\\textsch",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbaru",
+    "command": "\\textbaru",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtk",
+    "command": "\\texthtk",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textschwa",
+    "command": "\\textschwa",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbeltl",
+    "command": "\\textbeltl",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtp",
+    "command": "\\texthtp",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsci",
+    "command": "\\textsci",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbeta",
+    "command": "\\textbeta",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtq",
+    "command": "\\texthtq",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscj",
+    "command": "\\textscj",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textbullseye",
+    "command": "\\textbullseye",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtrtaild",
+    "command": "\\texthtrtaild",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscl",
+    "command": "\\textscl",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textceltpal",
+    "command": "\\textceltpal",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtscg",
+    "command": "\\texthtscg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscn",
+    "command": "\\textscn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textchi",
+    "command": "\\textchi",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthtt",
+    "command": "\\texthtt",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscoelig",
+    "command": "\\textscoelig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcloseepsilon",
+    "command": "\\textcloseepsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texthvlig",
+    "command": "\\texthvlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscomega",
+    "command": "\\textscomega",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcloseomega",
+    "command": "\\textcloseomega",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textinvglotstop",
+    "command": "\\textinvglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscr",
+    "command": "\\textscr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcloserevepsilon",
+    "command": "\\textcloserevepsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textinvscr",
+    "command": "\\textinvscr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscripta",
+    "command": "\\textscripta",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcommatailz",
+    "command": "\\textcommatailz",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textiota",
+    "command": "\\textiota",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscriptg",
+    "command": "\\textscriptg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcorner",
+    "command": "\\textcorner",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlambda",
+    "command": "\\textlambda",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscriptv",
+    "command": "\\textscriptv",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrb",
+    "command": "\\textcrb",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlengthmark",
+    "command": "\\textlengthmark",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscu",
+    "command": "\\textscu",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrd",
+    "command": "\\textcrd",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlhookt",
+    "command": "\\textlhookt",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textscy",
+    "command": "\\textscy",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrg",
+    "command": "\\textcrg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlhtlongi",
+    "command": "\\textlhtlongi",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsecstress",
+    "command": "\\textsecstress",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrh",
+    "command": "\\textcrh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlhtlongy",
+    "command": "\\textlhtlongy",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textsoftsign",
+    "command": "\\textsoftsign",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrinvglotstop",
+    "command": "\\textcrinvglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlonglegr",
+    "command": "\\textlonglegr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textstretchc",
+    "command": "\\textstretchc",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrlambda",
+    "command": "\\textcrlambda",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlptr",
+    "command": "\\textlptr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texttctclig",
+    "command": "\\texttctclig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcrtwo",
+    "command": "\\textcrtwo",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textltailm",
+    "command": "\\textltailm",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textteshlig",
+    "command": "\\textteshlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctc",
+    "command": "\\textctc",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textltailn",
+    "command": "\\textltailn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texttheta",
+    "command": "\\texttheta",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctd",
+    "command": "\\textctd",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textltilde",
+    "command": "\\textltilde",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textthorn",
+    "command": "\\textthorn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctdctzlig",
+    "command": "\\textctdctzlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textlyoghlig",
+    "command": "\\textlyoghlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texttoneletterstem",
+    "command": "\\texttoneletterstem",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctesh",
+    "command": "\\textctesh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textObardotlessj",
+    "command": "\\textObardotlessj",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_texttslig",
+    "command": "\\texttslig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctj",
+    "command": "\\textctj",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textOlyoghlig",
+    "command": "\\textOlyoghlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturna",
+    "command": "\\textturna",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctn",
+    "command": "\\textctn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textomega",
+    "command": "\\textomega",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturncelig",
+    "command": "\\textturncelig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctt",
+    "command": "\\textctt",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textopencorner",
+    "command": "\\textopencorner",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnh",
+    "command": "\\textturnh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textcttctclig",
+    "command": "\\textcttctclig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textopeno",
+    "command": "\\textopeno",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnk",
+    "command": "\\textturnk",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctyogh",
+    "command": "\\textctyogh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textpalhook",
+    "command": "\\textpalhook",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnlonglegr",
+    "command": "\\textturnlonglegr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textctz",
+    "command": "\\textctz",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textphi",
+    "command": "\\textphi",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnm",
+    "command": "\\textturnm",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdctzlig",
+    "command": "\\textdctzlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textpipe",
+    "command": "\\textpipe",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnmrleg",
+    "command": "\\textturnmrleg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdoublebaresh",
+    "command": "\\textdoublebaresh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textprimstress",
+    "command": "\\textprimstress",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnr",
+    "command": "\\textturnr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdoublebarpipe",
+    "command": "\\textdoublebarpipe",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textraiseglotstop",
+    "command": "\\textraiseglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnrrtail",
+    "command": "\\textturnrrtail",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdoublebarslash",
+    "command": "\\textdoublebarslash",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textraisevibyi",
+    "command": "\\textraisevibyi",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnscripta",
+    "command": "\\textturnscripta",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdoublepipe",
+    "command": "\\textdoublepipe",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textramshorns",
+    "command": "\\textramshorns",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnt",
+    "command": "\\textturnt",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdoublevertline",
+    "command": "\\textdoublevertline",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrevapostrophe",
+    "command": "\\textrevapostrophe",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnv",
+    "command": "\\textturnv",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdownstep",
+    "command": "\\textdownstep",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textreve",
+    "command": "\\textreve",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturnw",
+    "command": "\\textturnw",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdyoghlig",
+    "command": "\\textdyoghlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrevepsilon",
+    "command": "\\textrevepsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textturny",
+    "command": "\\textturny",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textdzlig",
+    "command": "\\textdzlig",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrevglotstop",
+    "command": "\\textrevglotstop",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textupsilon",
+    "command": "\\textupsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textepsilon",
+    "command": "\\textepsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrevyogh",
+    "command": "\\textrevyogh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textupstep",
+    "command": "\\textupstep",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textesh",
+    "command": "\\textesh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrhookrevepsilon",
+    "command": "\\textrhookrevepsilon",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textvertline",
+    "command": "\\textvertline",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textfishhookr",
+    "command": "\\textfishhookr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrhookschwa",
+    "command": "\\textrhookschwa",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textvibyi",
+    "command": "\\textvibyi",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textg",
+    "command": "\\textg",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrhoticity",
+    "command": "\\textrhoticity",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textvibyy",
+    "command": "\\textvibyy",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textgamma",
+    "command": "\\textgamma",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrptr",
+    "command": "\\textrptr",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textwynn",
+    "command": "\\textwynn",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textglobfall",
+    "command": "\\textglobfall",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtaild",
+    "command": "\\textrtaild",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textyogh",
+    "command": "\\textyogh",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textglobrise",
+    "command": "\\textglobrise",
+    "package": "tipa"
+  },
+  {
+    "id": "tipa-OT1-_textrtaill",
+    "command": "\\textrtaill",
+    "package": "tipa"
+  },
+  {
+    "id": "textcomp-OT1-_textbaht",
+    "command": "\\textbaht",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdollar",
+    "command": "\\textdollar",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textguarani",
+    "command": "\\textguarani",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textwon",
+    "command": "\\textwon",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcent",
+    "command": "\\textcent",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdollaroldstyle",
+    "command": "\\textdollaroldstyle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textlira",
+    "command": "\\textlira",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textyen",
+    "command": "\\textyen",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcentoldstyle",
+    "command": "\\textcentoldstyle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdong",
+    "command": "\\textdong",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textnaira",
+    "command": "\\textnaira",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcolonmonetary",
+    "command": "\\textcolonmonetary",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texteuro",
+    "command": "\\texteuro",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textpeso",
+    "command": "\\textpeso",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcurrency",
+    "command": "\\textcurrency",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textflorin",
+    "command": "\\textflorin",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textsterling",
+    "command": "\\textsterling",
+    "package": "textcomp"
+  },
+  {
+    "id": "marvosym-OT1-_Denarius",
+    "command": "\\Denarius",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EUR",
+    "command": "\\EUR",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EURdig",
+    "command": "\\EURdig",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EURtm",
+    "command": "\\EURtm",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Pfund",
+    "command": "\\Pfund",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Ecommerce",
+    "command": "\\Ecommerce",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EURcr",
+    "command": "\\EURcr",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EURhv",
+    "command": "\\EURhv",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_EyesDollar",
+    "command": "\\EyesDollar",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Shilling",
+    "command": "\\Shilling",
+    "package": "marvosym"
+  },
+  {
+    "id": "wasysym-OT1-_cent",
+    "command": "\\cent",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_currency",
+    "command": "\\currency",
+    "package": "wasysym"
+  },
+  {
+    "id": "textcomp-OT1-_textcircledP",
+    "command": "\\textcircledP",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcopyright",
+    "command": "\\textcopyright",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textservicemark",
+    "command": "\\textservicemark",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textcopyleft",
+    "command": "\\textcopyleft",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textregistered",
+    "command": "\\textregistered",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texttrademark",
+    "command": "\\texttrademark",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textasteriskcentered",
+    "command": "\\textasteriskcentered",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textordfeminine",
+    "command": "\\textordfeminine",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textbardbl",
+    "command": "\\textbardbl",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textordmasculine",
+    "command": "\\textordmasculine",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textbigcircle",
+    "command": "\\textbigcircle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textparagraph",
+    "command": "\\textparagraph",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textblank",
+    "command": "\\textblank",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textperiodcentered",
+    "command": "\\textperiodcentered",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textbrokenbar",
+    "command": "\\textbrokenbar",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textpertenthousand",
+    "command": "\\textpertenthousand",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textbullet",
+    "command": "\\textbullet",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textperthousand",
+    "command": "\\textperthousand",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdagger",
+    "command": "\\textdagger",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textpilcrow",
+    "command": "\\textpilcrow",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdaggerdbl",
+    "command": "\\textdaggerdbl",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textquotesingle",
+    "command": "\\textquotesingle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdblhyphen",
+    "command": "\\textdblhyphen",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textquotestraightbase",
+    "command": "\\textquotestraightbase",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdblhyphenchar",
+    "command": "\\textdblhyphenchar",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textquotestraightdblbase",
+    "command": "\\textquotestraightdblbase",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdiscount",
+    "command": "\\textdiscount",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textrecipe",
+    "command": "\\textrecipe",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textestimated",
+    "command": "\\textestimated",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textreferencemark",
+    "command": "\\textreferencemark",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textinterrobang",
+    "command": "\\textinterrobang",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textsection",
+    "command": "\\textsection",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textinterrobangdown",
+    "command": "\\textinterrobangdown",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textthreequartersemdash",
+    "command": "\\textthreequartersemdash",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textmusicalnote",
+    "command": "\\textmusicalnote",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texttildelow",
+    "command": "\\texttildelow",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textnumero",
+    "command": "\\textnumero",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texttwelveudash",
+    "command": "\\texttwelveudash",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textopenbullet",
+    "command": "\\textopenbullet",
+    "package": "textcomp"
+  },
+  {
+    "id": "wasysym-OT1-_permil",
+    "command": "\\permil",
+    "package": "wasysym"
+  },
+  {
+    "id": "latex2e-OT1-_mathdollar",
+    "command": "\\mathdollar",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mathparagraph",
+    "command": "\\mathparagraph",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mathsterling",
+    "command": "\\mathsterling",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mathellipsis",
+    "command": "\\mathellipsis",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mathsection",
+    "command": "\\mathsection",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mathunderscore",
+    "command": "\\mathunderscore",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_amalg",
+    "command": "\\amalg",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_cup",
+    "command": "\\cup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_oplus",
+    "command": "\\oplus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_times",
+    "command": "\\times",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ast",
+    "command": "\\ast",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_dagger",
+    "command": "\\dagger",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_oslash",
+    "command": "\\oslash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_triangleleft",
+    "command": "\\triangleleft",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigcirc",
+    "command": "\\bigcirc",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ddagger",
+    "command": "\\ddagger",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_otimes",
+    "command": "\\otimes",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_triangleright",
+    "command": "\\triangleright",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigtriangledown",
+    "command": "\\bigtriangledown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_diamond",
+    "command": "\\diamond",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_pm",
+    "command": "\\pm",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigtriangleup",
+    "command": "\\bigtriangleup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_div",
+    "command": "\\div",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bullet",
+    "command": "\\bullet",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_setminus",
+    "command": "\\setminus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_uplus",
+    "command": "\\uplus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_cap",
+    "command": "\\cap",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mp",
+    "command": "\\mp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sqcap",
+    "command": "\\sqcap",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_vee",
+    "command": "\\vee",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_cdot",
+    "command": "\\cdot",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_odot",
+    "command": "\\odot",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sqcup",
+    "command": "\\sqcup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_wedge",
+    "command": "\\wedge",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_circ",
+    "command": "\\circ",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ominus",
+    "command": "\\ominus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_star",
+    "command": "\\star",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_wr",
+    "command": "\\wr",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_barwedge",
+    "command": "\\barwedge",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circledcirc",
+    "command": "\\circledcirc",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_intercal",
+    "command": "\\intercal",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_boxdot",
+    "command": "\\boxdot",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circleddash",
+    "command": "\\circleddash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftthreetimes",
+    "command": "\\leftthreetimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_boxminus",
+    "command": "\\boxminus",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Cup",
+    "command": "\\Cup",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ltimes",
+    "command": "\\ltimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_boxplus",
+    "command": "\\boxplus",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curlyvee",
+    "command": "\\curlyvee",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightthreetimes",
+    "command": "\\rightthreetimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_boxtimes",
+    "command": "\\boxtimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curlywedge",
+    "command": "\\curlywedge",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rtimes",
+    "command": "\\rtimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Cap",
+    "command": "\\Cap",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_divideontimes",
+    "command": "\\divideontimes",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_smallsetminus",
+    "command": "\\smallsetminus",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_centerdot",
+    "command": "\\centerdot",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_dotplus",
+    "command": "\\dotplus",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_veebar",
+    "command": "\\veebar",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circledast",
+    "command": "\\circledast",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_doublebarwedge",
+    "command": "\\doublebarwedge",
+    "package": "amssymb"
+  },
+  {
+    "id": "wasysym-OT1-_lhd",
+    "command": "\\lhd",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_ocircle",
+    "command": "\\ocircle",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_RHD",
+    "command": "\\RHD",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_unrhd",
+    "command": "\\unrhd",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_LHD",
+    "command": "\\LHD",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_rhd",
+    "command": "\\rhd",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_unlhd",
+    "command": "\\unlhd",
+    "package": "wasysym"
+  },
+  {
+    "id": "latex2e-OT1-_bigcap",
+    "command": "\\bigcap",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigotimes",
+    "command": "\\bigotimes",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigwedge",
+    "command": "\\bigwedge",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_prod",
+    "command": "\\prod",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigcup",
+    "command": "\\bigcup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigsqcup",
+    "command": "\\bigsqcup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_coprod",
+    "command": "\\coprod",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sum",
+    "command": "\\sum",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigodot",
+    "command": "\\bigodot",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_biguplus",
+    "command": "\\biguplus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_int",
+    "command": "\\int",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigoplus",
+    "command": "\\bigoplus",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bigvee",
+    "command": "\\bigvee",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_oint",
+    "command": "\\oint",
+    "package": null
+  },
+  {
+    "id": "cmll-OT1-_parr",
+    "command": "\\parr",
+    "package": "cmll"
+  },
+  {
+    "id": "cmll-OT1-_with",
+    "command": "\\with",
+    "package": "cmll"
+  },
+  {
+    "id": "amsmath-OT1-_iint",
+    "command": "\\iint",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_iiint",
+    "command": "\\iiint",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_iiiint",
+    "command": "\\iiiint",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_idotsint",
+    "command": "\\idotsint",
+    "package": "amsmath"
+  },
+  {
+    "id": "esint-OT1-_dotsint",
+    "command": "\\dotsint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_ointclockwise",
+    "command": "\\ointclockwise",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_fint",
+    "command": "\\fint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_ointctrclockwise",
+    "command": "\\ointctrclockwise",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_iiiint",
+    "command": "\\iiiint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_sqiint",
+    "command": "\\sqiint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_iiint",
+    "command": "\\iiint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_sqint",
+    "command": "\\sqint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_iint",
+    "command": "\\iint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_varoiint",
+    "command": "\\varoiint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_landdownint",
+    "command": "\\landdownint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_varointclockwise",
+    "command": "\\varointclockwise",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_landupint",
+    "command": "\\landupint",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_varointctrclockwise",
+    "command": "\\varointctrclockwise",
+    "package": "esint"
+  },
+  {
+    "id": "esint-OT1-_oiint",
+    "command": "\\oiint",
+    "package": "esint"
+  },
+  {
+    "id": "latex2e-OT1-_approx",
+    "command": "\\approx",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_not_approx",
+    "command": "\\not\\approx",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_equiv",
+    "command": "\\equiv",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_not_equiv",
+    "command": "\\not\\equiv",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_perp",
+    "command": "\\perp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_smile",
+    "command": "\\smile",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_asymp",
+    "command": "\\asymp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_frown",
+    "command": "\\frown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_prec",
+    "command": "\\prec",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_succ",
+    "command": "\\succ",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_bowtie",
+    "command": "\\bowtie",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_preceq",
+    "command": "\\preceq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_succeq",
+    "command": "\\succeq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_cong",
+    "command": "\\cong",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mid",
+    "command": "\\mid",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_propto",
+    "command": "\\propto",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_vdash",
+    "command": "\\vdash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_dashv",
+    "command": "\\dashv",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_models",
+    "command": "\\models",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sim",
+    "command": "\\sim",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_not_sim",
+    "command": "\\not\\sim",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_doteq",
+    "command": "\\doteq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_parallel",
+    "command": "\\parallel",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_simeq",
+    "command": "\\simeq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_not_simeq",
+    "command": "\\not\\simeq",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_approxeq",
+    "command": "\\approxeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_eqcirc",
+    "command": "\\eqcirc",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_succapprox",
+    "command": "\\succapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_backepsilon",
+    "command": "\\backepsilon",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_fallingdotseq",
+    "command": "\\fallingdotseq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_succcurlyeq",
+    "command": "\\succcurlyeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_backsim",
+    "command": "\\backsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_multimap",
+    "command": "\\multimap",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_succsim",
+    "command": "\\succsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_backsimeq",
+    "command": "\\backsimeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_pitchfork",
+    "command": "\\pitchfork",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_therefore",
+    "command": "\\therefore",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_because",
+    "command": "\\because",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_precapprox",
+    "command": "\\precapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_thickapprox",
+    "command": "\\thickapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_between",
+    "command": "\\between",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_preccurlyeq",
+    "command": "\\preccurlyeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_thicksim",
+    "command": "\\thicksim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Bumpeq",
+    "command": "\\Bumpeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_precsim",
+    "command": "\\precsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varpropto",
+    "command": "\\varpropto",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_bumpeq",
+    "command": "\\bumpeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_risingdotseq",
+    "command": "\\risingdotseq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Vdash",
+    "command": "\\Vdash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circeq",
+    "command": "\\circeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_shortmid",
+    "command": "\\shortmid",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_vDash",
+    "command": "\\vDash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curlyeqprec",
+    "command": "\\curlyeqprec",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_shortparallel",
+    "command": "\\shortparallel",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Vvdash",
+    "command": "\\Vvdash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curlyeqsucc",
+    "command": "\\curlyeqsucc",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_smallfrown",
+    "command": "\\smallfrown",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_doteqdot",
+    "command": "\\doteqdot",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_smallsmile",
+    "command": "\\smallsmile",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ncong",
+    "command": "\\ncong",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nshortparallel",
+    "command": "\\nshortparallel",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nVDash",
+    "command": "\\nVDash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nmid",
+    "command": "\\nmid",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nsim",
+    "command": "\\nsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_precnapprox",
+    "command": "\\precnapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nparallel",
+    "command": "\\nparallel",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nsucc",
+    "command": "\\nsucc",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_precnsim",
+    "command": "\\precnsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nprec",
+    "command": "\\nprec",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nsucceq",
+    "command": "\\nsucceq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_succnapprox",
+    "command": "\\succnapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_npreceq",
+    "command": "\\npreceq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nvDash",
+    "command": "\\nvDash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_succnsim",
+    "command": "\\succnsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nshortmid",
+    "command": "\\nshortmid",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nvdash",
+    "command": "\\nvdash",
+    "package": "amssymb"
+  },
+  {
+    "id": "stmaryrd-OT1-_inplus",
+    "command": "\\inplus",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_niplus",
+    "command": "\\niplus",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "latex2e-OT1-_sqsupseteq",
+    "command": "\\sqsupseteq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_supset",
+    "command": "\\supset",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sqsubseteq",
+    "command": "\\sqsubseteq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_subset",
+    "command": "\\subset",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_supseteq",
+    "command": "\\supseteq",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_subseteq",
+    "command": "\\subseteq",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_nsubseteq",
+    "command": "\\nsubseteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_subseteqq",
+    "command": "\\subseteqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_supsetneqq",
+    "command": "\\supsetneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nsupseteq",
+    "command": "\\nsupseteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_subsetneq",
+    "command": "\\subsetneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varsubsetneq",
+    "command": "\\varsubsetneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nsupseteqq",
+    "command": "\\nsupseteqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_subsetneqq",
+    "command": "\\subsetneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varsubsetneqq",
+    "command": "\\varsubsetneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_sqsubset",
+    "command": "\\sqsubset",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Supset",
+    "command": "\\Supset",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varsupsetneq",
+    "command": "\\varsupsetneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_sqsupset",
+    "command": "\\sqsupset",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_supseteqq",
+    "command": "\\supseteqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varsupsetneqq",
+    "command": "\\varsupsetneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Subset",
+    "command": "\\Subset",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_supsetneq",
+    "command": "\\supsetneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_geq",
+    "command": "\\geq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gg",
+    "command": "\\gg",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leq",
+    "command": "\\leq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ll",
+    "command": "\\ll",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_neq",
+    "command": "\\neq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_eqslantgtr",
+    "command": "\\eqslantgtr",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtrdot",
+    "command": "\\gtrdot",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lesseqgtr",
+    "command": "\\lesseqgtr",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ngeq",
+    "command": "\\ngeq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_eqslantless",
+    "command": "\\eqslantless",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtreqless",
+    "command": "\\gtreqless",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lesseqqgtr",
+    "command": "\\lesseqqgtr",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ngeqq",
+    "command": "\\ngeqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_geqq",
+    "command": "\\geqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtreqqless",
+    "command": "\\gtreqqless",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lessgtr",
+    "command": "\\lessgtr",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ngeqslant",
+    "command": "\\ngeqslant",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_geqslant",
+    "command": "\\geqslant",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtrless",
+    "command": "\\gtrless",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lesssim",
+    "command": "\\lesssim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ngtr",
+    "command": "\\ngtr",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ggg",
+    "command": "\\ggg",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtrsim",
+    "command": "\\gtrsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lll",
+    "command": "\\lll",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nleq",
+    "command": "\\nleq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gnapprox",
+    "command": "\\gnapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gvertneqq",
+    "command": "\\gvertneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lnapprox",
+    "command": "\\lnapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nleqq",
+    "command": "\\nleqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gneq",
+    "command": "\\gneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leqq",
+    "command": "\\leqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lneq",
+    "command": "\\lneq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nleqslant",
+    "command": "\\nleqslant",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gneqq",
+    "command": "\\gneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leqslant",
+    "command": "\\leqslant",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lneqq",
+    "command": "\\lneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nless",
+    "command": "\\nless",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gnsim",
+    "command": "\\gnsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lessapprox",
+    "command": "\\lessapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lnsim",
+    "command": "\\lnsim",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_gtrapprox",
+    "command": "\\gtrapprox",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lessdot",
+    "command": "\\lessdot",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lvertneqq",
+    "command": "\\lvertneqq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacktriangleleft",
+    "command": "\\blacktriangleleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ntrianglelefteq",
+    "command": "\\ntrianglelefteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_trianglelefteq",
+    "command": "\\trianglelefteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_vartriangleleft",
+    "command": "\\vartriangleleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacktriangleright",
+    "command": "\\blacktriangleright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ntriangleright",
+    "command": "\\ntriangleright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_triangleq",
+    "command": "\\triangleq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_vartriangleright",
+    "command": "\\vartriangleright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ntriangleleft",
+    "command": "\\ntriangleleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_ntrianglerighteq",
+    "command": "\\ntrianglerighteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_trianglerighteq",
+    "command": "\\trianglerighteq",
+    "package": "amssymb"
+  },
+  {
+    "id": "latex2e-OT1-_Downarrow",
+    "command": "\\Downarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_longleftarrow",
+    "command": "\\longleftarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_nwarrow",
+    "command": "\\nwarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_downarrow",
+    "command": "\\downarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Longleftarrow",
+    "command": "\\Longleftarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Rightarrow",
+    "command": "\\Rightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_hookleftarrow",
+    "command": "\\hookleftarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_longleftrightarrow",
+    "command": "\\longleftrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rightarrow",
+    "command": "\\rightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_hookrightarrow",
+    "command": "\\hookrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Longleftrightarrow",
+    "command": "\\Longleftrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_searrow",
+    "command": "\\searrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_longmapsto",
+    "command": "\\longmapsto",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_swarrow",
+    "command": "\\swarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_leftarrow",
+    "command": "\\leftarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Longrightarrow",
+    "command": "\\Longrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_uparrow",
+    "command": "\\uparrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Leftarrow",
+    "command": "\\Leftarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_longrightarrow",
+    "command": "\\longrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Uparrow",
+    "command": "\\Uparrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Leftrightarrow",
+    "command": "\\Leftrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mapsto",
+    "command": "\\mapsto",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_updownarrow",
+    "command": "\\updownarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_leftrightarrow",
+    "command": "\\leftrightarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_nearrow",
+    "command": "\\nearrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Updownarrow",
+    "command": "\\Updownarrow",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_leftharpoondown",
+    "command": "\\leftharpoondown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rightharpoondown",
+    "command": "\\rightharpoondown",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rightleftharpoons",
+    "command": "\\rightleftharpoons",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_leftharpoonup",
+    "command": "\\leftharpoonup",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rightharpoonup",
+    "command": "\\rightharpoonup",
+    "package": null
+  },
+  {
+    "id": "latexsym-OT1-_leadsto",
+    "command": "\\leadsto",
+    "package": "latexsym"
+  },
+  {
+    "id": "textcomp-OT1-_textdownarrow",
+    "command": "\\textdownarrow",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textrightarrow",
+    "command": "\\textrightarrow",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textleftarrow",
+    "command": "\\textleftarrow",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textuparrow",
+    "command": "\\textuparrow",
+    "package": "textcomp"
+  },
+  {
+    "id": "amssymb-OT1-_circlearrowleft",
+    "command": "\\circlearrowleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftleftarrows",
+    "command": "\\leftleftarrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightleftarrows",
+    "command": "\\rightleftarrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circlearrowright",
+    "command": "\\circlearrowright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftrightarrows",
+    "command": "\\leftrightarrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightrightarrows",
+    "command": "\\rightrightarrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curvearrowleft",
+    "command": "\\curvearrowleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftrightsquigarrow",
+    "command": "\\leftrightsquigarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightsquigarrow",
+    "command": "\\rightsquigarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_curvearrowright",
+    "command": "\\curvearrowright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Lleftarrow",
+    "command": "\\Lleftarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Rrightarrow",
+    "command": "\\Rrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Rsh",
+    "command": "\\Rsh",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_dashleftarrow",
+    "command": "\\dashleftarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_looparrowleft",
+    "command": "\\looparrowleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_twoheadleftarrow",
+    "command": "\\twoheadleftarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_dashrightarrow",
+    "command": "\\dashrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_looparrowright",
+    "command": "\\looparrowright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_twoheadrightarrow",
+    "command": "\\twoheadrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_downdownarrows",
+    "command": "\\downdownarrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Lsh",
+    "command": "\\Lsh",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_upuparrows",
+    "command": "\\upuparrows",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftarrowtail",
+    "command": "\\leftarrowtail",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightarrowtail",
+    "command": "\\rightarrowtail",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nLeftarrow",
+    "command": "\\nLeftarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nLeftrightarrow",
+    "command": "\\nLeftrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nRightarrow",
+    "command": "\\nRightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nleftarrow",
+    "command": "\\nleftarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nleftrightarrow",
+    "command": "\\nleftrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nrightarrow",
+    "command": "\\nrightarrow",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_downharpoonleft",
+    "command": "\\downharpoonleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_leftrightharpoons",
+    "command": "\\leftrightharpoons",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_upharpoonleft",
+    "command": "\\upharpoonleft",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_downharpoonright",
+    "command": "\\downharpoonright",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_rightleftharpoons",
+    "command": "\\rightleftharpoons",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_upharpoonright",
+    "command": "\\upharpoonright",
+    "package": "amssymb"
+  },
+  {
+    "id": "stmaryrd-OT1-_leftarrowtriangle",
+    "command": "\\leftarrowtriangle",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_Mapsfrom",
+    "command": "\\Mapsfrom",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_shortleftarrow",
+    "command": "\\shortleftarrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_leftrightarroweq",
+    "command": "\\leftrightarroweq",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_mapsfrom",
+    "command": "\\mapsfrom",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_shortrightarrow",
+    "command": "\\shortrightarrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_leftrightarrowtriangle",
+    "command": "\\leftrightarrowtriangle",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_Mapsto",
+    "command": "\\Mapsto",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_shortuparrow",
+    "command": "\\shortuparrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_lightning",
+    "command": "\\lightning",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_nnearrow",
+    "command": "\\nnearrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_ssearrow",
+    "command": "\\ssearrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_Longmapsfrom",
+    "command": "\\Longmapsfrom",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_nnwarrow",
+    "command": "\\nnwarrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_sswarrow",
+    "command": "\\sswarrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_longmapsfrom",
+    "command": "\\longmapsfrom",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rightarrowtriangle",
+    "command": "\\rightarrowtriangle",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_Longmapsto",
+    "command": "\\Longmapsto",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_shortdownarrow",
+    "command": "\\shortdownarrow",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "latex2e-OT1-_alpha",
+    "command": "\\alpha",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_theta",
+    "command": "\\theta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_tau",
+    "command": "\\tau",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_beta",
+    "command": "\\beta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_vartheta",
+    "command": "\\vartheta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_pi",
+    "command": "\\pi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_upsilon",
+    "command": "\\upsilon",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_gamma",
+    "command": "\\gamma",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_iota",
+    "command": "\\iota",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_varpi",
+    "command": "\\varpi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_phi",
+    "command": "\\phi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_delta",
+    "command": "\\delta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_kappa",
+    "command": "\\kappa",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rho",
+    "command": "\\rho",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_varphi",
+    "command": "\\varphi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_epsilon",
+    "command": "\\epsilon",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_lambda",
+    "command": "\\lambda",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_varrho",
+    "command": "\\varrho",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_chi",
+    "command": "\\chi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_varepsilon",
+    "command": "\\varepsilon",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_mu",
+    "command": "\\mu",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sigma",
+    "command": "\\sigma",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_psi",
+    "command": "\\psi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_zeta",
+    "command": "\\zeta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_nu",
+    "command": "\\nu",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_varsigma",
+    "command": "\\varsigma",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_omega",
+    "command": "\\omega",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_eta",
+    "command": "\\eta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_xi",
+    "command": "\\xi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Gamma",
+    "command": "\\Gamma",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Lambda",
+    "command": "\\Lambda",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Sigma",
+    "command": "\\Sigma",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Psi",
+    "command": "\\Psi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Delta",
+    "command": "\\Delta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Xi",
+    "command": "\\Xi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Upsilon",
+    "command": "\\Upsilon",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Omega",
+    "command": "\\Omega",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Theta",
+    "command": "\\Theta",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Pi",
+    "command": "\\Pi",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Phi",
+    "command": "\\Phi",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_digamma",
+    "command": "\\digamma",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varkappa",
+    "command": "\\varkappa",
+    "package": "amssymb"
+  },
+  {
+    "id": "upgreek-OT1-_upphi",
+    "command": "\\upphi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvarphi",
+    "command": "\\upvarphi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upchi",
+    "command": "\\upchi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uppsi",
+    "command": "\\uppsi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upomega",
+    "command": "\\upomega",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Uppsi",
+    "command": "\\Uppsi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upomega",
+    "command": "\\Upomega",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upalpha",
+    "command": "\\upalpha",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upbeta",
+    "command": "\\upbeta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upgamma",
+    "command": "\\upgamma",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_updelta",
+    "command": "\\updelta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upepsilon",
+    "command": "\\upepsilon",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvarepsilon",
+    "command": "\\upvarepsilon",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upzeta",
+    "command": "\\upzeta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upeta",
+    "command": "\\upeta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upgamma",
+    "command": "\\Upgamma",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Updelta",
+    "command": "\\Updelta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Uptheta",
+    "command": "\\Uptheta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uptheta",
+    "command": "\\uptheta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvartheta",
+    "command": "\\upvartheta",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upiota",
+    "command": "\\upiota",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upkappa",
+    "command": "\\upkappa",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uplambda",
+    "command": "\\uplambda",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upmu",
+    "command": "\\upmu",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upnu",
+    "command": "\\upnu",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upxi",
+    "command": "\\upxi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Uplambda",
+    "command": "\\Uplambda",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upxi",
+    "command": "\\Upxi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Uppi",
+    "command": "\\Uppi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uppi",
+    "command": "\\uppi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvarpi",
+    "command": "\\upvarpi",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uprho",
+    "command": "\\uprho",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvarrho",
+    "command": "\\upvarrho",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upsigma",
+    "command": "\\upsigma",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upvarsigma",
+    "command": "\\upvarsigma",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_uptau",
+    "command": "\\uptau",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_upupsilon",
+    "command": "\\upupsilon",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upsigma",
+    "command": "\\Upsigma",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upupsilon",
+    "command": "\\Upupsilon",
+    "package": "upgreek"
+  },
+  {
+    "id": "upgreek-OT1-_Upphi",
+    "command": "\\Upphi",
+    "package": "upgreek"
+  },
+  {
+    "id": "latex2e-OT1-_bot",
+    "command": "\\bot",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_forall",
+    "command": "\\forall",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_imath",
+    "command": "\\imath",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ni",
+    "command": "\\ni",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_top",
+    "command": "\\top",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ell",
+    "command": "\\ell",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_hbar",
+    "command": "\\hbar",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_in",
+    "command": "\\in",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_notin",
+    "command": "\\notin",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_partial",
+    "command": "\\partial",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_wp",
+    "command": "\\wp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_exists",
+    "command": "\\exists",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Im",
+    "command": "\\Im",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_jmath",
+    "command": "\\jmath",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_Re",
+    "command": "\\Re",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_Bbbk",
+    "command": "\\Bbbk",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_complement",
+    "command": "\\complement",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_hbar",
+    "command": "\\hbar",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Finv",
+    "command": "\\Finv",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_hslash",
+    "command": "\\hslash",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_circledS",
+    "command": "\\circledS",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_Game",
+    "command": "\\Game",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_nexists",
+    "command": "\\nexists",
+    "package": "amssymb"
+  },
+  {
+    "id": "stmaryrd-OT1-_Lbag",
+    "command": "\\Lbag",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_Rbag",
+    "command": "\\Rbag",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_lbag",
+    "command": "\\lbag",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rbag",
+    "command": "\\rbag",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_llceil",
+    "command": "\\llceil",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rrceil",
+    "command": "\\rrceil",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_llfloor",
+    "command": "\\llfloor",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rrfloor",
+    "command": "\\rrfloor",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_llparenthesis",
+    "command": "\\llparenthesis",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rrparenthesis",
+    "command": "\\rrparenthesis",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "latex2e-OT1-_langle",
+    "command": "\\langle",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rangle",
+    "command": "\\rangle",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_lceil",
+    "command": "\\lceil",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rceil",
+    "command": "\\rceil",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_lfloor",
+    "command": "\\lfloor",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_rfloor",
+    "command": "\\rfloor",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-[",
+    "command": "[",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-]",
+    "command": "]",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-|",
+    "command": "|",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_|",
+    "command": "\\|",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-",
+    "command": "/",
+    "package": null
+  },
+  {
+    "id": "stmaryrd-OT1-_llbracket",
+    "command": "\\llbracket",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "stmaryrd-OT1-_rrbracket",
+    "command": "\\rrbracket",
+    "package": "stmaryrd"
+  },
+  {
+    "id": "textcomp-OT1-_textlangle",
+    "command": "\\textlangle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textrangle",
+    "command": "\\textrangle",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textlbrackdbl",
+    "command": "\\textlbrackdbl",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textrbrackdbl",
+    "command": "\\textrbrackdbl",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textlquill",
+    "command": "\\textlquill",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textrquill",
+    "command": "\\textrquill",
+    "package": "textcomp"
+  },
+  {
+    "id": "latex2e-OT1-_cdotp",
+    "command": "\\cdotp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_colon",
+    "command": "\\colon",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ldotp",
+    "command": "\\ldotp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_vdots",
+    "command": "\\vdots",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_cdots",
+    "command": "\\cdots",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ddots",
+    "command": "\\ddots",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_ldots",
+    "command": "\\ldots",
+    "package": null
+  },
+  {
+    "id": "amsmath-OT1-_dotsi",
+    "command": "\\dotsi",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_dotsb",
+    "command": "\\dotsb",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_dotsm",
+    "command": "\\dotsm",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_dotsc",
+    "command": "\\dotsc",
+    "package": "amsmath"
+  },
+  {
+    "id": "amsmath-OT1-_dotso",
+    "command": "\\dotso",
+    "package": "amsmath"
+  },
+  {
+    "id": "latex2e-OT1-_aleph",
+    "command": "\\aleph",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_infty",
+    "command": "\\infty",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_prime",
+    "command": "\\prime",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_angle",
+    "command": "\\angle",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_diamondsuit",
+    "command": "\\diamondsuit",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sharp",
+    "command": "\\sharp",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_backslash",
+    "command": "\\backslash",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_emptyset",
+    "command": "\\emptyset",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_nabla",
+    "command": "\\nabla",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_spadesuit",
+    "command": "\\spadesuit",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_flat",
+    "command": "\\flat",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_natural",
+    "command": "\\natural",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_surd",
+    "command": "\\surd",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_clubsuit",
+    "command": "\\clubsuit",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_heartsuit",
+    "command": "\\heartsuit",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_neg",
+    "command": "\\neg",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_triangle",
+    "command": "\\triangle",
+    "package": null
+  },
+  {
+    "id": "latex2e-OT1-_sqrt{}",
+    "command": "\\sqrt{}",
+    "package": null
+  },
+  {
+    "id": "amssymb-OT1-_angle",
+    "command": "\\angle",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacktriangledown",
+    "command": "\\blacktriangledown",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mho",
+    "command": "\\mho",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_backprime",
+    "command": "\\backprime",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_diagdown",
+    "command": "\\diagdown",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_sphericalangle",
+    "command": "\\sphericalangle",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_bigstar",
+    "command": "\\bigstar",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_diagup",
+    "command": "\\diagup",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_square",
+    "command": "\\square",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacklozenge",
+    "command": "\\blacklozenge",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_eth",
+    "command": "\\eth",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_triangledown",
+    "command": "\\triangledown",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacksquare",
+    "command": "\\blacksquare",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_lozenge",
+    "command": "\\lozenge",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_varnothing",
+    "command": "\\varnothing",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_blacktriangle",
+    "command": "\\blacktriangle",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_measuredangle",
+    "command": "\\measuredangle",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_vartriangle",
+    "command": "\\vartriangle",
+    "package": "amssymb"
+  },
+  {
+    "id": "textcomp-OT1-_textdegree",
+    "command": "\\textdegree",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textonehalf",
+    "command": "\\textonehalf",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textthreequarters",
+    "command": "\\textthreequarters",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textdiv",
+    "command": "\\textdiv",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textonequarter",
+    "command": "\\textonequarter",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textthreesuperior",
+    "command": "\\textthreesuperior",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textfractionsolidus",
+    "command": "\\textfractionsolidus",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textonesuperior",
+    "command": "\\textonesuperior",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texttimes",
+    "command": "\\texttimes",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textlnot",
+    "command": "\\textlnot",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textpm",
+    "command": "\\textpm",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_texttwosuperior",
+    "command": "\\texttwosuperior",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textminus",
+    "command": "\\textminus",
+    "package": "textcomp"
+  },
+  {
+    "id": "textcomp-OT1-_textsurd",
+    "command": "\\textsurd",
+    "package": "textcomp"
+  },
+  {
+    "id": "mathdots-OT1-_iddots",
+    "command": "\\iddots",
+    "package": "mathdots"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{A}",
+    "command": "\\mathcal{A}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{B}",
+    "command": "\\mathcal{B}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{C}",
+    "command": "\\mathcal{C}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{D}",
+    "command": "\\mathcal{D}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{E}",
+    "command": "\\mathcal{E}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{F}",
+    "command": "\\mathcal{F}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{G}",
+    "command": "\\mathcal{G}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{H}",
+    "command": "\\mathcal{H}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{I}",
+    "command": "\\mathcal{I}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{J}",
+    "command": "\\mathcal{J}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{K}",
+    "command": "\\mathcal{K}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{L}",
+    "command": "\\mathcal{L}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{M}",
+    "command": "\\mathcal{M}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{N}",
+    "command": "\\mathcal{N}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{O}",
+    "command": "\\mathcal{O}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{P}",
+    "command": "\\mathcal{P}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{Q}",
+    "command": "\\mathcal{Q}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{R}",
+    "command": "\\mathcal{R}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{S}",
+    "command": "\\mathcal{S}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{T}",
+    "command": "\\mathcal{T}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{U}",
+    "command": "\\mathcal{U}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{V}",
+    "command": "\\mathcal{V}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{W}",
+    "command": "\\mathcal{W}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{X}",
+    "command": "\\mathcal{X}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{Y}",
+    "command": "\\mathcal{Y}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathcal{Z}",
+    "command": "\\mathcal{Z}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{A}",
+    "command": "\\mathfrak{A}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{B}",
+    "command": "\\mathfrak{B}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{C}",
+    "command": "\\mathfrak{C}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{D}",
+    "command": "\\mathfrak{D}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{E}",
+    "command": "\\mathfrak{E}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{F}",
+    "command": "\\mathfrak{F}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{G}",
+    "command": "\\mathfrak{G}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{H}",
+    "command": "\\mathfrak{H}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{I}",
+    "command": "\\mathfrak{I}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{J}",
+    "command": "\\mathfrak{J}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{K}",
+    "command": "\\mathfrak{K}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{L}",
+    "command": "\\mathfrak{L}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{M}",
+    "command": "\\mathfrak{M}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{N}",
+    "command": "\\mathfrak{N}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{O}",
+    "command": "\\mathfrak{O}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{P}",
+    "command": "\\mathfrak{P}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{Q}",
+    "command": "\\mathfrak{Q}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{R}",
+    "command": "\\mathfrak{R}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{S}",
+    "command": "\\mathfrak{S}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{T}",
+    "command": "\\mathfrak{T}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{U}",
+    "command": "\\mathfrak{U}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{V}",
+    "command": "\\mathfrak{V}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{W}",
+    "command": "\\mathfrak{W}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{X}",
+    "command": "\\mathfrak{X}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{Y}",
+    "command": "\\mathfrak{Y}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{Z}",
+    "command": "\\mathfrak{Z}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{a}",
+    "command": "\\mathfrak{a}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{b}",
+    "command": "\\mathfrak{b}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{c}",
+    "command": "\\mathfrak{c}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{d}",
+    "command": "\\mathfrak{d}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{e}",
+    "command": "\\mathfrak{e}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{f}",
+    "command": "\\mathfrak{f}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{g}",
+    "command": "\\mathfrak{g}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{h}",
+    "command": "\\mathfrak{h}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{i}",
+    "command": "\\mathfrak{i}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{j}",
+    "command": "\\mathfrak{j}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{k}",
+    "command": "\\mathfrak{k}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{l}",
+    "command": "\\mathfrak{l}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{m}",
+    "command": "\\mathfrak{m}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{n}",
+    "command": "\\mathfrak{n}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{o}",
+    "command": "\\mathfrak{o}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{p}",
+    "command": "\\mathfrak{p}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{q}",
+    "command": "\\mathfrak{q}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{r}",
+    "command": "\\mathfrak{r}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{s}",
+    "command": "\\mathfrak{s}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{t}",
+    "command": "\\mathfrak{t}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{u}",
+    "command": "\\mathfrak{u}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{v}",
+    "command": "\\mathfrak{v}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{w}",
+    "command": "\\mathfrak{w}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{x}",
+    "command": "\\mathfrak{x}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{y}",
+    "command": "\\mathfrak{y}",
+    "package": "amssymb"
+  },
+  {
+    "id": "amssymb-OT1-_mathfrak{z}",
+    "command": "\\mathfrak{z}",
+    "package": "amssymb"
+  },
+  {
+    "id": "bbold-OT1-_mathbb{1}",
+    "command": "\\mathbb{1}",
+    "package": "bbold"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{1}",
+    "command": "\\mathds{1}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{h}",
+    "command": "\\mathds{h}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{k}",
+    "command": "\\mathds{k}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{A}",
+    "command": "\\mathds{A}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{B}",
+    "command": "\\mathds{B}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{C}",
+    "command": "\\mathds{C}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{D}",
+    "command": "\\mathds{D}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{E}",
+    "command": "\\mathds{E}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{F}",
+    "command": "\\mathds{F}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{G}",
+    "command": "\\mathds{G}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{H}",
+    "command": "\\mathds{H}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{I}",
+    "command": "\\mathds{I}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{J}",
+    "command": "\\mathds{J}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{K}",
+    "command": "\\mathds{K}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{L}",
+    "command": "\\mathds{L}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{M}",
+    "command": "\\mathds{M}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{N}",
+    "command": "\\mathds{N}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{O}",
+    "command": "\\mathds{O}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{P}",
+    "command": "\\mathds{P}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{Q}",
+    "command": "\\mathds{Q}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{R}",
+    "command": "\\mathds{R}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{S}",
+    "command": "\\mathds{S}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{T}",
+    "command": "\\mathds{T}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{U}",
+    "command": "\\mathds{U}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{V}",
+    "command": "\\mathds{V}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{W}",
+    "command": "\\mathds{W}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{X}",
+    "command": "\\mathds{X}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{Y}",
+    "command": "\\mathds{Y}",
+    "package": "dsfont"
+  },
+  {
+    "id": "dsfont-OT1-_mathds{Z}",
+    "command": "\\mathds{Z}",
+    "package": "dsfont"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{A}",
+    "command": "\\mathscr{A}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{B}",
+    "command": "\\mathscr{B}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{C}",
+    "command": "\\mathscr{C}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{D}",
+    "command": "\\mathscr{D}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{E}",
+    "command": "\\mathscr{E}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{F}",
+    "command": "\\mathscr{F}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{G}",
+    "command": "\\mathscr{G}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{H}",
+    "command": "\\mathscr{H}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{I}",
+    "command": "\\mathscr{I}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{J}",
+    "command": "\\mathscr{J}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{K}",
+    "command": "\\mathscr{K}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{L}",
+    "command": "\\mathscr{L}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{M}",
+    "command": "\\mathscr{M}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{N}",
+    "command": "\\mathscr{N}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{O}",
+    "command": "\\mathscr{O}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{P}",
+    "command": "\\mathscr{P}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{Q}",
+    "command": "\\mathscr{Q}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{R}",
+    "command": "\\mathscr{R}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{S}",
+    "command": "\\mathscr{S}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{T}",
+    "command": "\\mathscr{T}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{U}",
+    "command": "\\mathscr{U}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{V}",
+    "command": "\\mathscr{V}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{W}",
+    "command": "\\mathscr{W}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{X}",
+    "command": "\\mathscr{X}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{Y}",
+    "command": "\\mathscr{Y}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "mathrsfs-OT1-_mathscr{Z}",
+    "command": "\\mathscr{Z}",
+    "package": "mathrsfs"
+  },
+  {
+    "id": "gensymb-OT1-_celsius",
+    "command": "\\celsius",
+    "package": "gensymb"
+  },
+  {
+    "id": "gensymb-OT1-_degree",
+    "command": "\\degree",
+    "package": "gensymb"
+  },
+  {
+    "id": "gensymb-OT1-_ohm",
+    "command": "\\ohm",
+    "package": "gensymb"
+  },
+  {
+    "id": "wasysym-OT1-_conjunction",
+    "command": "\\conjunction",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_opposition",
+    "command": "\\opposition",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_mercury",
+    "command": "\\mercury",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_earth",
+    "command": "\\earth",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_jupiter",
+    "command": "\\jupiter",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_uranus",
+    "command": "\\uranus",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_pluto",
+    "command": "\\pluto",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_venus",
+    "command": "\\venus",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_mars",
+    "command": "\\mars",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_saturn",
+    "command": "\\saturn",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_neptune",
+    "command": "\\neptune",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_astrosun",
+    "command": "\\astrosun",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_fullmoon",
+    "command": "\\fullmoon",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_leftmoon",
+    "command": "\\leftmoon",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_newmoon",
+    "command": "\\newmoon",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_rightmoon",
+    "command": "\\rightmoon",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_aries",
+    "command": "\\aries",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_cancer",
+    "command": "\\cancer",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_libra",
+    "command": "\\libra",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_aquarius",
+    "command": "\\aquarius",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_taurus",
+    "command": "\\taurus",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_leo",
+    "command": "\\leo",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_scorpio",
+    "command": "\\scorpio",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_capricornus",
+    "command": "\\capricornus",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_gemini",
+    "command": "\\gemini",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_virgo",
+    "command": "\\virgo",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_sagittarius",
+    "command": "\\sagittarius",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_pisces",
+    "command": "\\pisces",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_ascnode",
+    "command": "\\ascnode",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_descnode",
+    "command": "\\descnode",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_vernal",
+    "command": "\\vernal",
+    "package": "wasysym"
+  },
+  {
+    "id": "marvosym-OT1-_Mercury",
+    "command": "\\Mercury",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Earth",
+    "command": "\\Earth",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Jupiter",
+    "command": "\\Jupiter",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Uranus",
+    "command": "\\Uranus",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Pluto",
+    "command": "\\Pluto",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Venus",
+    "command": "\\Venus",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Mars",
+    "command": "\\Mars",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Saturn",
+    "command": "\\Saturn",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Neptune",
+    "command": "\\Neptune",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Moon",
+    "command": "\\Moon",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Sun",
+    "command": "\\Sun",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Aries",
+    "command": "\\Aries",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Cancer",
+    "command": "\\Cancer",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Libra",
+    "command": "\\Libra",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Aquarius",
+    "command": "\\Aquarius",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Taurus",
+    "command": "\\Taurus",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Leo",
+    "command": "\\Leo",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Scorpio",
+    "command": "\\Scorpio",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Capricorn",
+    "command": "\\Capricorn",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Gemini",
+    "command": "\\Gemini",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Virgo",
+    "command": "\\Virgo",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Sagittarius",
+    "command": "\\Sagittarius",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Pisces",
+    "command": "\\Pisces",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Email",
+    "command": "\\Email",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_fax",
+    "command": "\\fax",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Faxmachine",
+    "command": "\\Faxmachine",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Lightning",
+    "command": "\\Lightning",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Pickup",
+    "command": "\\Pickup",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Emailct",
+    "command": "\\Emailct",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_FAX",
+    "command": "\\FAX",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Letter",
+    "command": "\\Letter",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Mobilefone",
+    "command": "\\Mobilefone",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Telefon",
+    "command": "\\Telefon",
+    "package": "marvosym"
+  },
+  {
+    "id": "wasysym-OT1-_female",
+    "command": "\\female",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_male",
+    "command": "\\male",
+    "package": "wasysym"
+  },
+  {
+    "id": "skull-OT1-_skull",
+    "command": "\\skull",
+    "package": "skull"
+  },
+  {
+    "id": "wasysym-OT1-_LEFTarrow",
+    "command": "\\LEFTarrow",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_RIGHTarrow",
+    "command": "\\RIGHTarrow",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_lightning",
+    "command": "\\lightning",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_DOWNarrow",
+    "command": "\\DOWNarrow",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_phone",
+    "command": "\\phone",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_UParrow",
+    "command": "\\UParrow",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_pointer",
+    "command": "\\pointer",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_recorder",
+    "command": "\\recorder",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_checked",
+    "command": "\\checked",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_kreuz",
+    "command": "\\kreuz",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_ataribox",
+    "command": "\\ataribox",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_clock",
+    "command": "\\clock",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_smiley",
+    "command": "\\smiley",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_bell",
+    "command": "\\bell",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_diameter",
+    "command": "\\diameter",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_sun",
+    "command": "\\sun",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_blacksmiley",
+    "command": "\\blacksmiley",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_Bowtie",
+    "command": "\\Bowtie",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_frownie",
+    "command": "\\frownie",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_wasylozenge",
+    "command": "\\wasylozenge",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_brokenvert",
+    "command": "\\brokenvert",
+    "package": "wasysym"
+  },
+  {
+    "id": "wasysym-OT1-_invdiameter",
+    "command": "\\invdiameter",
+    "package": "wasysym"
+  },
+  {
+    "id": "marvosym-OT1-_Ankh",
+    "command": "\\Ankh",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Cross",
+    "command": "\\Cross",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Heart",
+    "command": "\\Heart",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Smiley",
+    "command": "\\Smiley",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Bat",
+    "command": "\\Bat",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Mundus",
+    "command": "\\Mundus",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Yinyang",
+    "command": "\\Yinyang",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Celtcross",
+    "command": "\\Celtcross",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_Frowny",
+    "command": "\\Frowny",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_MVAt",
+    "command": "\\MVAt",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_CircledA",
+    "command": "\\CircledA",
+    "package": "marvosym"
+  },
+  {
+    "id": "marvosym-OT1-_MVRightarrow",
+    "command": "\\MVRightarrow",
+    "package": "marvosym"
+  }
+]

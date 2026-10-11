@@ -1,23 +1,15 @@
-# Karim Ink 0.1.0 — Mac Preview
+# SketchGlide 0.2 Test
 
-Karim Ink 0.1.0 is the first public preview of the engineering whiteboard. **Windows is coming soon; this release contains only the Mac app.**
+12 October 2026. Formerly Karim Ink; existing public URLs and native file/storage identifiers remain compatible.
 
-The download is free, built for Apple Silicon (ARM64) and targets macOS 14 or later. Native component, storage, drawing, recognition and 3D checks were run on Apple Silicon with macOS 27.2. Older target macOS versions, Intel and physical tablet hardware need further testing.
+- SketchGlide branding, original S icon and “Made by Kareem” personal-project copy.
+- Native Mac Test refreshed; Windows 11 Intel/AMD x64 Test added.
+- Editable Mac/Windows source published under MIT for own code, with retained dependency notices and contribution/build guidance.
+- Windows drawing build/cache references, pressure sample rounding and scoped URL validation fixed; inherited window styling corrected to avoid oversized controls.
+- Windows symbol thumbnails corrected, fresh local OCR/model/export/file and 3D checks recorded.
+- Phone website layouts, light/dark appearance, controlled looping motion and scroll effects, animated hello, improved share metadata and remote hosting.
+- Optional PayPal support, feedback links and promotional scripts/clip.
 
-**Signing: ad hoc. Apple notarization: none. Mac App Store: not distributed.** An Apple Developer ID certificate is not included; macOS can warn or block first launch. [Support](SUPPORT.md) explains Apple's per-app Open Anyway route for a trusted download.
+This is an early Test. Mac is ad hoc signed/unnotarized; Windows is unsigned. Windows QA was under x64 emulation on Windows ARM, not a physical Intel/AMD PC. Physical tablets, live paid cloud services, sustained 120 FPS and older macOS runtime support remain unverified. See VERIFICATION.md for evidence.
 
-Included:
-
-- Native Mac workspace with frosted-glass controls and light/dark/system appearance.
-- Ten brushes, ten backgrounds, pressure controls, deliberate selection, shape correction and millimetre dimensions.
-- 380 searchable teaching symbols and diagrams, plus local engineering tools.
-- Offline single-symbol recognition, a supported LaTeX formula editor, local OCR and handwriting/spelling review.
-- Optional local AI chat where Apple's model is available, and optional OpenAI API chat using the user's own key.
-- Local editable drawings, autosaving, file exports, a home library and student 3D concept sketches.
-- Excalidraw export, optional one-way Craft updates and a Notion HTML companion.
-
-See [README](README.md) for the full feature list and [Privacy](PRIVACY.md) for what stays local and what optional integrations send.
-
-This preview does not guarantee a particular frame rate, support every tablet's vendor-specific controls, recognize whole handwritten equations or simulate engineering systems. Physical tablet testing and cloud/workspace setup remain separate from local component checks.
-
-Download this release only from the [official release page](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.1.0), which lists its checksum and signing/notarization status. Report reproducible problems through [Issues](https://github.com/12kareem2323-png/karim-ink/issues).
+Previous Mac 0.1 remains in its original GitHub release. Do not mix old assets with 0.2 checksums.

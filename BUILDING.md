@@ -1,27 +1,43 @@
-# Development and release notes
+# Build SketchGlide
 
-This GitHub repository distributes the Karim Ink Mac preview, documentation and feedback channels. It does **not** contain the full native application's source. A ZIP of this repository is not an app or a buildable whiteboard project. Download the `.app` ZIP or DMG from [Releases](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.1.0).
+The complete native application source is published under `macos/` and `windows/`. A repository ZIP contains source; ready-to-run app packages are on [Releases](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test).
 
-## Native development project
+## Mac
 
-Karim's local editable project uses Swift 5.10-compatible source, SwiftUI/AppKit for the workspace, Metal for accelerated ink, Core ML/Vision for local recognition and SceneKit for concept sketches. Its internal Swift package and executable retain the name `EngineeringBoard`; the display name is Karim Ink. The minimum deployment target is macOS 14.
+Install Apple's Command Line Tools or a compatible full Xcode and Python 3. On an Apple Silicon Mac:
 
-For a developer who has that separate complete project, the top-level `build.sh` packages the binary, icon, Info.plist, recognition resources and third-party notices into `Karim Ink.app`. It accepts `KARIM_SDK`, `KARIM_BUILD_DIR`, `KARIM_APP_PATH` and `KARIM_ARCH`; ARM64 is the default. Build it on a Mac with a matching Swift compiler/macOS SDK and Python 3 installed. The public preview was built with the macOS 26.5 SDK because that installed SDK matches the available compiler.
+```sh
+cd macos
+./build.sh
+```
 
-The script creates an ad hoc signature for local integrity verification. That signature does not establish developer identity or supply Apple notarization.
+Output: `dist/SketchGlide.app`. Optional `KARIM_SDK`, `KARIM_BUILD_DIR`, `KARIM_APP_PATH` and `KARIM_ARCH` select the SDK, scratch directory, output and architecture. The internal Swift package/executable remains `EngineeringBoard`. The checked-in Xcode project can be regenerated with `python3 BuildSupport/create_xcode_project.py` after adding files.
 
-## Public preview checks
+This release was built using the installed macOS 26.5 SDK, which matches this development Mac's compiler. The script includes a local overlay for an observed missing Carbon header; it does not modify installed SDKs. A source build creates an ad hoc signature, not Developer ID signing or notarization.
 
-The release process checks the built app's version, ARM64 architecture, signature integrity, bundled licences, package contents and SHA-256 checksums. Native harnesses exercise real production drawing, file handling, recognition and 3D logic on Apple Silicon with macOS 27.2. Synthetic pen inputs do not establish physical tablet compatibility. Mocked AI transport tests do not establish a live account integration. Full XCTest execution was unavailable in the installed command-line toolchain.
+A full compatible Xcode installation may run `swift test`. The development Command Line Tools do not include the XCTest runtime, so this release used separate production-source native executable harnesses. See [verification](VERIFICATION.md) and `macos/VERIFICATION.md`.
 
-Public packages exclude personal drawings, API keys, connection tokens, signing keys, private browser profiles and local QA logs. GitHub publishes Mac assets only; Windows is coming soon.
+## Windows
 
-## A future notarized release
+Install the .NET 10 SDK. The first restore needs internet. Run in PowerShell:
 
-Developer ID signing and Apple notarization require the appropriate Apple Developer Program access. The separate native project's `BuildSupport/distribute.sh` accepts an existing Developer ID Application identity and a Keychain-backed notarytool profile, signs with the hardened runtime, submits to Apple, requires Accepted status, staples tickets, checks the result and packages downloads. No passwords or signing keys belong in this repository.
+```powershell
+cd windows
+dotnet publish KarimEldamatyWindows.csproj -c Release -r win-x64 --self-contained true -o publish
+```
 
-The free 0.1.0 preview does not use that notarized distribution path. [Support](SUPPORT.md) explains its first-launch status.
+Output: `publish/SketchGlide.exe` with its DLLs and Resources. Keep the whole output folder together. The prepared Test ZIP includes its .NET runtime, so ordinary users do not need the SDK. Optional native OCR dependencies may need Microsoft's official x64 Visual C++ runtime; the installer is not bundled or installed automatically.
 
-## Licensing
+Portable checks:
 
-Public availability of this distribution repository is not a grant of an open-source licence for Karim Ink's original application source. The original application's source-release/licensing decision remains separate. Bundled third-party MIT resources retain their complete copyright and licence notices; see [Third-party notices](THIRD_PARTY_NOTICES.md).
+```powershell
+dotnet run --project Verification/Core/CoreVerification.csproj -c Release
+dotnet run --project Verification/Services/Services.Tests.csproj -c Release
+dotnet run --project Workbenches/Verification/Logic/WorkbenchLogic.csproj -c Release
+```
+
+These checks use documented platform substitutes/mocked transport. They do not exercise WPF rendering or physical pen input. `RUN-CHECKS.cmd` exercises the real Windows app in a fresh isolated drawing library, saves receipts/screenshots and exits. Review the screenshots and test your real tablet separately.
+
+## Release hygiene
+
+Never commit drawings, API keys, tokens, signing credentials or private account screenshots. Own source is MIT; retain dependency notices. Confirm build, actual launch, exports, package content and SHA-256 hashes before sharing changed binaries. Neither compiling source nor synthetic input proves compatibility with every tablet or computer.

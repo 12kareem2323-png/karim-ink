@@ -1,5 +1,5 @@
 name: Drawing tablet feedback
-description: Help improve standard macOS pen-driver compatibility.
+description: Help improve standard native pen-driver compatibility.
 title: "[Tablet] "
 body:
   - type: markdown
@@ -14,7 +14,7 @@ body:
   - type: input
     id: system
     attributes:
-      label: App and macOS version
+      label: App, OS and processor
     validations:
       required: true
   - type: textarea

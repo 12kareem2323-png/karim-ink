@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+publish/
+*.user
+*.suo
+.vs/
+.env
+.env.*
+.DS_Store
+**/core-verification-results.json
+**/test-results.json
+**/logic-results.json

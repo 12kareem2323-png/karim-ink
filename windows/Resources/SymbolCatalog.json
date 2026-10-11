@@ -1,0 +1,5743 @@
+[
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "+",
+    "id" : "Algebra-plus",
+    "keywords" : [
+      "sum",
+      "add"
+    ],
+    "name" : "Addition",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "−",
+    "id" : "Algebra-minus",
+    "keywords" : [
+      "subtract",
+      "difference"
+    ],
+    "name" : "Subtraction",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "×",
+    "id" : "Algebra-multiply",
+    "keywords" : [
+      "product",
+      "times"
+    ],
+    "name" : "Multiplication",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "÷",
+    "id" : "Algebra-divide",
+    "keywords" : [
+      "ratio",
+      "divide"
+    ],
+    "name" : "Division",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "=",
+    "id" : "Algebra-equals",
+    "keywords" : [
+      "equal"
+    ],
+    "name" : "Equality",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "≠",
+    "id" : "Algebra-unequal",
+    "keywords" : [
+      "inequality"
+    ],
+    "name" : "Not equal",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "≈",
+    "id" : "Algebra-approximately",
+    "keywords" : [
+      "estimate",
+      "rounding"
+    ],
+    "name" : "Approximately equal",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "≡",
+    "id" : "Algebra-equivalent",
+    "keywords" : [
+      "identity"
+    ],
+    "name" : "Equivalent",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∝",
+    "id" : "Algebra-proportional",
+    "keywords" : [
+      "proportionality"
+    ],
+    "name" : "Proportional to",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "<",
+    "id" : "Algebra-less",
+    "keywords" : [
+      "inequality"
+    ],
+    "name" : "Less than",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : ">",
+    "id" : "Algebra-greater",
+    "keywords" : [
+      "inequality"
+    ],
+    "name" : "Greater than",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "≤",
+    "id" : "Algebra-less-equal",
+    "keywords" : [
+      "inequality"
+    ],
+    "name" : "Less than or equal",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "≥",
+    "id" : "Algebra-greater-equal",
+    "keywords" : [
+      "inequality"
+    ],
+    "name" : "Greater than or equal",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "±",
+    "id" : "Algebra-plus-minus",
+    "keywords" : [
+      "tolerance",
+      "uncertainty"
+    ],
+    "name" : "Plus or minus",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∓",
+    "id" : "Algebra-minus-plus",
+    "keywords" : [
+      "paired sign"
+    ],
+    "name" : "Minus or plus",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "√x",
+    "id" : "Algebra-square-root",
+    "keywords" : [
+      "root"
+    ],
+    "name" : "Square root",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∛x",
+    "id" : "Algebra-cube-root",
+    "keywords" : [
+      "root"
+    ],
+    "name" : "Cube root",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "ⁿ√x",
+    "id" : "Algebra-nth-root",
+    "keywords" : [
+      "root"
+    ],
+    "name" : "Nth root",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "x²",
+    "id" : "Algebra-square",
+    "keywords" : [
+      "power",
+      "index"
+    ],
+    "name" : "Square power",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "x³",
+    "id" : "Algebra-cube",
+    "keywords" : [
+      "power",
+      "index"
+    ],
+    "name" : "Cube power",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "xⁿ",
+    "id" : "Algebra-power",
+    "keywords" : [
+      "index",
+      "exponent"
+    ],
+    "name" : "General power",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "a\/b",
+    "id" : "Algebra-fraction",
+    "keywords" : [
+      "ratio",
+      "numerator",
+      "denominator"
+    ],
+    "name" : "Fraction",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "%",
+    "id" : "Algebra-percent",
+    "keywords" : [
+      "ratio"
+    ],
+    "name" : "Percentage",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∞",
+    "id" : "Algebra-infinity",
+    "keywords" : [
+      "limit"
+    ],
+    "name" : "Infinity",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∣x∣",
+    "id" : "Algebra-absolute",
+    "keywords" : [
+      "magnitude"
+    ],
+    "name" : "Absolute value",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "n!",
+    "id" : "Algebra-factorial",
+    "keywords" : [
+      "combinations"
+    ],
+    "name" : "Factorial",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "ln x",
+    "id" : "Algebra-natural-log",
+    "keywords" : [
+      "logarithm"
+    ],
+    "name" : "Natural logarithm",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "log₁₀ x",
+    "id" : "Algebra-decimal-log",
+    "keywords" : [
+      "logarithm"
+    ],
+    "name" : "Base-ten logarithm",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "eˣ",
+    "id" : "Algebra-exponential",
+    "keywords" : [
+      "growth"
+    ],
+    "name" : "Exponential function",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "v⃗",
+    "id" : "Algebra-vector",
+    "keywords" : [
+      "direction",
+      "magnitude"
+    ],
+    "name" : "Vector notation",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "a · b",
+    "id" : "Algebra-dot-product",
+    "keywords" : [
+      "dot product"
+    ],
+    "name" : "Scalar product",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "a × b",
+    "id" : "Algebra-cross-product",
+    "keywords" : [
+      "cross product"
+    ],
+    "name" : "Vector product",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "A = [a b; c d]",
+    "id" : "Algebra-matrix",
+    "keywords" : [
+      "array"
+    ],
+    "name" : "Matrix",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "det A",
+    "id" : "Algebra-determinant",
+    "keywords" : [
+      "matrix"
+    ],
+    "name" : "Determinant",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "Aᵀ",
+    "id" : "Algebra-transpose",
+    "keywords" : [
+      "matrix"
+    ],
+    "name" : "Transpose",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "A⁻¹",
+    "id" : "Algebra-inverse",
+    "keywords" : [
+      "matrix"
+    ],
+    "name" : "Inverse matrix",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "I₂ = [1 0; 0 1]",
+    "id" : "Algebra-identity-matrix",
+    "keywords" : [
+      "matrix"
+    ],
+    "name" : "Identity matrix",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "⇒",
+    "id" : "Algebra-implication",
+    "keywords" : [
+      "logic"
+    ],
+    "name" : "Implies",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "⇔",
+    "id" : "Algebra-equivalence",
+    "keywords" : [
+      "logic"
+    ],
+    "name" : "If and only if",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∈",
+    "id" : "Algebra-belongs",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Element of",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∪",
+    "id" : "Algebra-union",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Set union",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∩",
+    "id" : "Algebra-intersection",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Set intersection",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "∅",
+    "id" : "Algebra-empty-set",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Empty set",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "ℝ",
+    "id" : "Algebra-real-numbers",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Real numbers",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "ℂ",
+    "id" : "Algebra-complex-numbers",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Complex numbers",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "ℤ",
+    "id" : "Algebra-integers",
+    "keywords" : [
+      "set"
+    ],
+    "name" : "Integers",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "j = √−1",
+    "id" : "Algebra-imaginary",
+    "keywords" : [
+      "electrical",
+      "complex"
+    ],
+    "name" : "Imaginary unit",
+    "variant" : ""
+  },
+  {
+    "category" : "Algebra",
+    "diagram" : "glyph",
+    "glyph" : "z̄",
+    "id" : "Algebra-conjugate",
+    "keywords" : [
+      "complex"
+    ],
+    "name" : "Complex conjugate",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "dy\/dx",
+    "id" : "Calculus-derivative",
+    "keywords" : [
+      "rate",
+      "gradient"
+    ],
+    "name" : "First derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "d²y\/dx²",
+    "id" : "Calculus-second-derivative",
+    "keywords" : [
+      "acceleration"
+    ],
+    "name" : "Second derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "dⁿy\/dxⁿ",
+    "id" : "Calculus-nth-derivative",
+    "keywords" : [
+      "derivative"
+    ],
+    "name" : "Nth derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∂f\/∂x",
+    "id" : "Calculus-partial",
+    "keywords" : [
+      "multivariable"
+    ],
+    "name" : "Partial derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "ẋ",
+    "id" : "Calculus-time-derivative",
+    "keywords" : [
+      "velocity"
+    ],
+    "name" : "Time derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "ẍ",
+    "id" : "Calculus-second-time",
+    "keywords" : [
+      "acceleration"
+    ],
+    "name" : "Second time derivative",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∫ f(x) dx",
+    "id" : "Calculus-indefinite-integral",
+    "keywords" : [
+      "integration"
+    ],
+    "name" : "Indefinite integral",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∫ₐᵇ f(x) dx",
+    "id" : "Calculus-definite-integral",
+    "keywords" : [
+      "area"
+    ],
+    "name" : "Definite integral",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∬ f dA",
+    "id" : "Calculus-double-integral",
+    "keywords" : [
+      "area"
+    ],
+    "name" : "Double integral",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∭ f dV",
+    "id" : "Calculus-triple-integral",
+    "keywords" : [
+      "volume"
+    ],
+    "name" : "Triple integral",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∮ f ds",
+    "id" : "Calculus-contour-integral",
+    "keywords" : [
+      "contour"
+    ],
+    "name" : "Closed-path integral",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "lim x→a",
+    "id" : "Calculus-limit",
+    "keywords" : [
+      "continuity"
+    ],
+    "name" : "Limit",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∇f",
+    "id" : "Calculus-gradient",
+    "keywords" : [
+      "vector calculus"
+    ],
+    "name" : "Gradient operator",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∇ · F",
+    "id" : "Calculus-divergence",
+    "keywords" : [
+      "vector calculus"
+    ],
+    "name" : "Divergence",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∇ × F",
+    "id" : "Calculus-curl",
+    "keywords" : [
+      "vector calculus"
+    ],
+    "name" : "Curl",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∇²f",
+    "id" : "Calculus-laplacian",
+    "keywords" : [
+      "differential"
+    ],
+    "name" : "Laplacian",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∑ₖ aₖ",
+    "id" : "Calculus-summation",
+    "keywords" : [
+      "series"
+    ],
+    "name" : "Summation",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "∏ₖ aₖ",
+    "id" : "Calculus-product",
+    "keywords" : [
+      "series"
+    ],
+    "name" : "Product notation",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "dx",
+    "id" : "Calculus-differential",
+    "keywords" : [
+      "small change"
+    ],
+    "name" : "Differential",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "Δx",
+    "id" : "Calculus-delta",
+    "keywords" : [
+      "change"
+    ],
+    "name" : "Finite change",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "dy\/dx + ay = b",
+    "id" : "Calculus-differential-equation",
+    "keywords" : [
+      "differential equation"
+    ],
+    "name" : "First-order ODE",
+    "variant" : ""
+  },
+  {
+    "category" : "Calculus",
+    "diagram" : "glyph",
+    "glyph" : "f(a) + f′(a)(x−a) + …",
+    "id" : "Calculus-taylor",
+    "keywords" : [
+      "series"
+    ],
+    "name" : "Taylor expansion",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "α",
+    "id" : "greek-alpha-lower",
+    "keywords" : [
+      "alpha",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Alpha · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Α",
+    "id" : "greek-alpha-upper",
+    "keywords" : [
+      "alpha",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Alpha · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "β",
+    "id" : "greek-beta-lower",
+    "keywords" : [
+      "beta",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Beta · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Β",
+    "id" : "greek-beta-upper",
+    "keywords" : [
+      "beta",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Beta · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "γ",
+    "id" : "greek-gamma-lower",
+    "keywords" : [
+      "gamma",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Gamma · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Γ",
+    "id" : "greek-gamma-upper",
+    "keywords" : [
+      "gamma",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Gamma · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "δ",
+    "id" : "greek-delta-lower",
+    "keywords" : [
+      "delta",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Delta · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Δ",
+    "id" : "greek-delta-upper",
+    "keywords" : [
+      "delta",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Delta · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ε",
+    "id" : "greek-epsilon-lower",
+    "keywords" : [
+      "epsilon",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Epsilon · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ε",
+    "id" : "greek-epsilon-upper",
+    "keywords" : [
+      "epsilon",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Epsilon · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ζ",
+    "id" : "greek-zeta-lower",
+    "keywords" : [
+      "zeta",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Zeta · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ζ",
+    "id" : "greek-zeta-upper",
+    "keywords" : [
+      "zeta",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Zeta · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "η",
+    "id" : "greek-eta-lower",
+    "keywords" : [
+      "eta",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Eta · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Η",
+    "id" : "greek-eta-upper",
+    "keywords" : [
+      "eta",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Eta · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "θ",
+    "id" : "greek-theta-lower",
+    "keywords" : [
+      "theta",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Theta · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Θ",
+    "id" : "greek-theta-upper",
+    "keywords" : [
+      "theta",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Theta · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ι",
+    "id" : "greek-iota-lower",
+    "keywords" : [
+      "iota",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Iota · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ι",
+    "id" : "greek-iota-upper",
+    "keywords" : [
+      "iota",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Iota · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "κ",
+    "id" : "greek-kappa-lower",
+    "keywords" : [
+      "kappa",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Kappa · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Κ",
+    "id" : "greek-kappa-upper",
+    "keywords" : [
+      "kappa",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Kappa · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "λ",
+    "id" : "greek-lambda-lower",
+    "keywords" : [
+      "lambda",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Lambda · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Λ",
+    "id" : "greek-lambda-upper",
+    "keywords" : [
+      "lambda",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Lambda · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "μ",
+    "id" : "greek-mu-lower",
+    "keywords" : [
+      "mu",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Mu · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Μ",
+    "id" : "greek-mu-upper",
+    "keywords" : [
+      "mu",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Mu · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ν",
+    "id" : "greek-nu-lower",
+    "keywords" : [
+      "nu",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Nu · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ν",
+    "id" : "greek-nu-upper",
+    "keywords" : [
+      "nu",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Nu · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ξ",
+    "id" : "greek-xi-lower",
+    "keywords" : [
+      "xi",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Xi · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ξ",
+    "id" : "greek-xi-upper",
+    "keywords" : [
+      "xi",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Xi · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ο",
+    "id" : "greek-omicron-lower",
+    "keywords" : [
+      "omicron",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Omicron · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ο",
+    "id" : "greek-omicron-upper",
+    "keywords" : [
+      "omicron",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Omicron · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "π",
+    "id" : "greek-pi-lower",
+    "keywords" : [
+      "pi",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Pi · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Π",
+    "id" : "greek-pi-upper",
+    "keywords" : [
+      "pi",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Pi · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ρ",
+    "id" : "greek-rho-lower",
+    "keywords" : [
+      "rho",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Rho · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ρ",
+    "id" : "greek-rho-upper",
+    "keywords" : [
+      "rho",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Rho · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "σ",
+    "id" : "greek-sigma-lower",
+    "keywords" : [
+      "sigma",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Sigma · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Σ",
+    "id" : "greek-sigma-upper",
+    "keywords" : [
+      "sigma",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Sigma · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "τ",
+    "id" : "greek-tau-lower",
+    "keywords" : [
+      "tau",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Tau · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Τ",
+    "id" : "greek-tau-upper",
+    "keywords" : [
+      "tau",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Tau · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "υ",
+    "id" : "greek-upsilon-lower",
+    "keywords" : [
+      "upsilon",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Upsilon · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Υ",
+    "id" : "greek-upsilon-upper",
+    "keywords" : [
+      "upsilon",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Upsilon · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "φ",
+    "id" : "greek-phi-lower",
+    "keywords" : [
+      "phi",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Phi · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Φ",
+    "id" : "greek-phi-upper",
+    "keywords" : [
+      "phi",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Phi · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "χ",
+    "id" : "greek-chi-lower",
+    "keywords" : [
+      "chi",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Chi · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Χ",
+    "id" : "greek-chi-upper",
+    "keywords" : [
+      "chi",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Chi · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ψ",
+    "id" : "greek-psi-lower",
+    "keywords" : [
+      "psi",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Psi · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ψ",
+    "id" : "greek-psi-upper",
+    "keywords" : [
+      "psi",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Psi · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "ω",
+    "id" : "greek-omega-lower",
+    "keywords" : [
+      "omega",
+      "greek",
+      "lowercase"
+    ],
+    "name" : "Omega · lowercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Greek letters",
+    "diagram" : "glyph",
+    "glyph" : "Ω",
+    "id" : "greek-omega-upper",
+    "keywords" : [
+      "omega",
+      "greek",
+      "uppercase"
+    ],
+    "name" : "Omega · uppercase",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "∠ABC",
+    "id" : "Geometry-angle",
+    "keywords" : [
+      "degrees"
+    ],
+    "name" : "Angle",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "90°",
+    "id" : "Geometry-right-angle",
+    "keywords" : [
+      "perpendicular"
+    ],
+    "name" : "Right angle",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "°",
+    "id" : "Geometry-degree",
+    "keywords" : [
+      "angle"
+    ],
+    "name" : "Degree",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "rad",
+    "id" : "Geometry-radians",
+    "keywords" : [
+      "angle"
+    ],
+    "name" : "Radians",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "∥",
+    "id" : "Geometry-parallel",
+    "keywords" : [
+      "lines"
+    ],
+    "name" : "Parallel",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "⊥",
+    "id" : "Geometry-perpendicular",
+    "keywords" : [
+      "lines"
+    ],
+    "name" : "Perpendicular",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "≅",
+    "id" : "Geometry-congruent",
+    "keywords" : [
+      "same shape"
+    ],
+    "name" : "Congruent",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "∼",
+    "id" : "Geometry-similar",
+    "keywords" : [
+      "shape"
+    ],
+    "name" : "Similar",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "π",
+    "id" : "Geometry-pi",
+    "keywords" : [
+      "circle"
+    ],
+    "name" : "Pi constant",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "sin θ = O\/H",
+    "id" : "Geometry-sine",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Sine ratio",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "cos θ = A\/H",
+    "id" : "Geometry-cosine",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Cosine ratio",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "tan θ = O\/A",
+    "id" : "Geometry-tangent",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Tangent ratio",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "a² + b² = c²",
+    "id" : "Geometry-pythagoras",
+    "keywords" : [
+      "right triangle"
+    ],
+    "name" : "Pythagoras",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "A = πr²",
+    "id" : "Geometry-circle-area",
+    "keywords" : [
+      "circle"
+    ],
+    "name" : "Circle area",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "C = 2πr",
+    "id" : "Geometry-circumference",
+    "keywords" : [
+      "circle"
+    ],
+    "name" : "Circumference",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "A = ½bh",
+    "id" : "Geometry-triangle-area",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Triangle area",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "V = ⁴⁄₃πr³",
+    "id" : "Geometry-sphere-volume",
+    "keywords" : [
+      "volume"
+    ],
+    "name" : "Sphere volume",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "V = πr²h",
+    "id" : "Geometry-cylinder-volume",
+    "keywords" : [
+      "volume"
+    ],
+    "name" : "Cylinder volume",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "a\/sin A = b\/sin B",
+    "id" : "Geometry-sine-rule",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Sine rule",
+    "variant" : ""
+  },
+  {
+    "category" : "Geometry",
+    "diagram" : "glyph",
+    "glyph" : "c² = a²+b²−2ab cos C",
+    "id" : "Geometry-cosine-rule",
+    "keywords" : [
+      "triangle"
+    ],
+    "name" : "Cosine rule",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "x̄ = ∑x\/n",
+    "id" : "Statistics-mean",
+    "keywords" : [
+      "average"
+    ],
+    "name" : "Mean",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "median(x)",
+    "id" : "Statistics-median",
+    "keywords" : [
+      "middle",
+      "average"
+    ],
+    "name" : "Median",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "σ²",
+    "id" : "Statistics-variance",
+    "keywords" : [
+      "spread"
+    ],
+    "name" : "Population variance",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "σ",
+    "id" : "Statistics-standard-deviation",
+    "keywords" : [
+      "spread"
+    ],
+    "name" : "Standard deviation",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "s",
+    "id" : "Statistics-sample-deviation",
+    "keywords" : [
+      "sample"
+    ],
+    "name" : "Sample standard deviation",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "P(A)",
+    "id" : "Statistics-probability",
+    "keywords" : [
+      "chance"
+    ],
+    "name" : "Probability",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "P(A given B)",
+    "id" : "Statistics-conditional",
+    "keywords" : [
+      "chance"
+    ],
+    "name" : "Conditional probability",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "E[X]",
+    "id" : "Statistics-expected",
+    "keywords" : [
+      "probability"
+    ],
+    "name" : "Expected value",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "Cov(X,Y)",
+    "id" : "Statistics-covariance",
+    "keywords" : [
+      "correlation"
+    ],
+    "name" : "Covariance",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "r",
+    "id" : "Statistics-correlation",
+    "keywords" : [
+      "relationship"
+    ],
+    "name" : "Correlation coefficient",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "y = mx + c",
+    "id" : "Statistics-regression",
+    "keywords" : [
+      "best fit"
+    ],
+    "name" : "Linear regression",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "N(μ,σ²)",
+    "id" : "Statistics-normal",
+    "keywords" : [
+      "gaussian"
+    ],
+    "name" : "Normal distribution",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "n",
+    "id" : "Statistics-sample-size",
+    "keywords" : [
+      "sample"
+    ],
+    "name" : "Sample size",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "xₘₐₓ − xₘᵢₙ",
+    "id" : "Statistics-range",
+    "keywords" : [
+      "spread"
+    ],
+    "name" : "Range",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "x ± u",
+    "id" : "Statistics-uncertainty",
+    "keywords" : [
+      "measurement"
+    ],
+    "name" : "Measurement uncertainty",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "CI",
+    "id" : "Statistics-confidence",
+    "keywords" : [
+      "estimate"
+    ],
+    "name" : "Confidence interval",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "UCL",
+    "id" : "Statistics-upper-limit",
+    "keywords" : [
+      "quality"
+    ],
+    "name" : "Upper control limit",
+    "variant" : ""
+  },
+  {
+    "category" : "Statistics",
+    "diagram" : "glyph",
+    "glyph" : "LCL",
+    "id" : "Statistics-lower-limit",
+    "keywords" : [
+      "quality"
+    ],
+    "name" : "Lower control limit",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "resistor",
+    "glyph" : "",
+    "id" : "Electrical-resistor",
+    "keywords" : [
+      "resistor",
+      "resistor",
+      "·",
+      "rectangular",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Resistor · rectangular",
+    "variant" : "rectangle"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "resistor",
+    "glyph" : "",
+    "id" : "Electrical-resistor-zigzag",
+    "keywords" : [
+      "resistor-zigzag",
+      "resistor",
+      "·",
+      "zigzag",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Resistor · zigzag",
+    "variant" : "zigzag"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "variableResistor",
+    "glyph" : "",
+    "id" : "Electrical-variable-resistor",
+    "keywords" : [
+      "variable-resistor",
+      "variable",
+      "resistor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Variable resistor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "variableResistor",
+    "glyph" : "",
+    "id" : "Electrical-potentiometer",
+    "keywords" : [
+      "potentiometer",
+      "potentiometer",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Potentiometer",
+    "variant" : "potentiometer"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "thermistor",
+    "glyph" : "",
+    "id" : "Electrical-thermistor",
+    "keywords" : [
+      "thermistor",
+      "thermistor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Thermistor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "ldr",
+    "glyph" : "",
+    "id" : "Electrical-ldr",
+    "keywords" : [
+      "ldr",
+      "light-dependent",
+      "resistor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Light-dependent resistor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "capacitor",
+    "glyph" : "",
+    "id" : "Electrical-capacitor",
+    "keywords" : [
+      "capacitor",
+      "capacitor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Capacitor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "polarizedCapacitor",
+    "glyph" : "",
+    "id" : "Electrical-polarized-capacitor",
+    "keywords" : [
+      "polarized-capacitor",
+      "polarised",
+      "capacitor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Polarised capacitor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "variableCapacitor",
+    "glyph" : "",
+    "id" : "Electrical-variable-capacitor",
+    "keywords" : [
+      "variable-capacitor",
+      "variable",
+      "capacitor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Variable capacitor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "inductor",
+    "glyph" : "",
+    "id" : "Electrical-inductor",
+    "keywords" : [
+      "inductor",
+      "inductor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Inductor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "transformer",
+    "glyph" : "",
+    "id" : "Electrical-transformer",
+    "keywords" : [
+      "transformer",
+      "transformer",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Transformer",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "cell",
+    "glyph" : "",
+    "id" : "Electrical-cell",
+    "keywords" : [
+      "cell",
+      "cell",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Cell",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "battery",
+    "glyph" : "",
+    "id" : "Electrical-battery",
+    "keywords" : [
+      "battery",
+      "battery",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Battery",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "ground",
+    "glyph" : "",
+    "id" : "Electrical-signal-ground",
+    "keywords" : [
+      "signal-ground",
+      "signal",
+      "ground",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Signal ground",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "earth",
+    "glyph" : "",
+    "id" : "Electrical-protective-earth",
+    "keywords" : [
+      "protective-earth",
+      "protective",
+      "earth",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Protective earth",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "acSource",
+    "glyph" : "",
+    "id" : "Electrical-ac-source",
+    "keywords" : [
+      "ac-source",
+      "ac",
+      "voltage",
+      "source",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "AC voltage source",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "dcSource",
+    "glyph" : "",
+    "id" : "Electrical-dc-source",
+    "keywords" : [
+      "dc-source",
+      "dc",
+      "voltage",
+      "source",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "DC voltage source",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "currentSource",
+    "glyph" : "",
+    "id" : "Electrical-current-source",
+    "keywords" : [
+      "current-source",
+      "current",
+      "source",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Current source",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "switchOpen",
+    "glyph" : "",
+    "id" : "Electrical-open-switch",
+    "keywords" : [
+      "open-switch",
+      "open",
+      "switch",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Open switch",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "switchClosed",
+    "glyph" : "",
+    "id" : "Electrical-closed-switch",
+    "keywords" : [
+      "closed-switch",
+      "closed",
+      "switch",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Closed switch",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "switchChangeover",
+    "glyph" : "",
+    "id" : "Electrical-changeover-switch",
+    "keywords" : [
+      "changeover-switch",
+      "changeover",
+      "switch",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Changeover switch",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "pushButton",
+    "glyph" : "",
+    "id" : "Electrical-pushbutton-no",
+    "keywords" : [
+      "pushbutton-no",
+      "pushbutton",
+      "·",
+      "normally",
+      "open",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Pushbutton · normally open",
+    "variant" : "NO"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "pushButton",
+    "glyph" : "",
+    "id" : "Electrical-pushbutton-nc",
+    "keywords" : [
+      "pushbutton-nc",
+      "pushbutton",
+      "·",
+      "normally",
+      "closed",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Pushbutton · normally closed",
+    "variant" : "NC"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "fuse",
+    "glyph" : "",
+    "id" : "Electrical-fuse",
+    "keywords" : [
+      "fuse",
+      "fuse",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Fuse",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "lamp",
+    "glyph" : "",
+    "id" : "Electrical-lamp",
+    "keywords" : [
+      "lamp",
+      "lamp",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Lamp",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "ammeter",
+    "glyph" : "",
+    "id" : "Electrical-ammeter",
+    "keywords" : [
+      "ammeter",
+      "ammeter",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Ammeter",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "voltmeter",
+    "glyph" : "",
+    "id" : "Electrical-voltmeter",
+    "keywords" : [
+      "voltmeter",
+      "voltmeter",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Voltmeter",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "ohmmeter",
+    "glyph" : "",
+    "id" : "Electrical-ohmmeter",
+    "keywords" : [
+      "ohmmeter",
+      "ohmmeter",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Ohmmeter",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-motor",
+    "keywords" : [
+      "motor",
+      "motor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Motor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "generator",
+    "glyph" : "",
+    "id" : "Electrical-generator",
+    "keywords" : [
+      "generator",
+      "generator",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Generator",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "junction",
+    "glyph" : "",
+    "id" : "Electrical-wire-junction",
+    "keywords" : [
+      "wire-junction",
+      "connected",
+      "wire",
+      "junction",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Connected wire junction",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "crossing",
+    "glyph" : "",
+    "id" : "Electrical-wire-crossing",
+    "keywords" : [
+      "wire-crossing",
+      "unconnected",
+      "wire",
+      "crossing",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Unconnected wire crossing",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "diode",
+    "glyph" : "",
+    "id" : "Electronics-diode",
+    "keywords" : [
+      "diode",
+      "diode",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Diode",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "led",
+    "glyph" : "",
+    "id" : "Electronics-led",
+    "keywords" : [
+      "led",
+      "light-emitting",
+      "diode",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Light-emitting diode",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "photodiode",
+    "glyph" : "",
+    "id" : "Electronics-photodiode",
+    "keywords" : [
+      "photodiode",
+      "photodiode",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Photodiode",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "zener",
+    "glyph" : "",
+    "id" : "Electronics-zener",
+    "keywords" : [
+      "zener",
+      "zener",
+      "diode",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Zener diode",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "schottky",
+    "glyph" : "",
+    "id" : "Electronics-schottky",
+    "keywords" : [
+      "schottky",
+      "schottky",
+      "diode",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Schottky diode",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "transistorNPN",
+    "glyph" : "",
+    "id" : "Electronics-npn",
+    "keywords" : [
+      "npn",
+      "npn",
+      "transistor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "NPN transistor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "transistorPNP",
+    "glyph" : "",
+    "id" : "Electronics-pnp",
+    "keywords" : [
+      "pnp",
+      "pnp",
+      "transistor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "PNP transistor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "mosfetN",
+    "glyph" : "",
+    "id" : "Electronics-nmos",
+    "keywords" : [
+      "nmos",
+      "n-channel",
+      "mosfet",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "N-channel MOSFET",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "mosfetP",
+    "glyph" : "",
+    "id" : "Electronics-pmos",
+    "keywords" : [
+      "pmos",
+      "p-channel",
+      "mosfet",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "P-channel MOSFET",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-opamp",
+    "keywords" : [
+      "opamp",
+      "operational",
+      "amplifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Operational amplifier",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-comparator",
+    "keywords" : [
+      "comparator",
+      "comparator",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Comparator",
+    "variant" : "comparator"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "relay",
+    "glyph" : "",
+    "id" : "Electronics-relay",
+    "keywords" : [
+      "relay",
+      "relay",
+      "coil",
+      "and",
+      "contact",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Relay coil and contact",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "rectifier",
+    "glyph" : "",
+    "id" : "Electronics-bridge",
+    "keywords" : [
+      "bridge",
+      "bridge",
+      "rectifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Bridge rectifier",
+    "variant" : "bridge"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "rectifier",
+    "glyph" : "",
+    "id" : "Electronics-half-wave",
+    "keywords" : [
+      "half-wave",
+      "half-wave",
+      "rectifier",
+      "circuit",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Half-wave rectifier circuit",
+    "variant" : "half"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "thyristor",
+    "glyph" : "",
+    "id" : "Electronics-thyristor",
+    "keywords" : [
+      "thyristor",
+      "thyristor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Thyristor",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-inverting",
+    "keywords" : [
+      "inverting",
+      "inverting",
+      "amplifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Inverting amplifier",
+    "variant" : "inverting"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-noninverting",
+    "keywords" : [
+      "noninverting",
+      "non-inverting",
+      "amplifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Non-inverting amplifier",
+    "variant" : "noninverting"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-integrator",
+    "keywords" : [
+      "integrator",
+      "integrator",
+      "amplifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Integrator amplifier",
+    "variant" : "integrator"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "opAmp",
+    "glyph" : "",
+    "id" : "Electronics-differentiator",
+    "keywords" : [
+      "differentiator",
+      "differentiator",
+      "amplifier",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Differentiator amplifier",
+    "variant" : "differentiator"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "processBox",
+    "glyph" : "",
+    "id" : "Electronics-rc-lowpass",
+    "keywords" : [
+      "rc-lowpass",
+      "rc",
+      "low-pass",
+      "filter",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "RC low-pass filter",
+    "variant" : "RC low-pass"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "processBox",
+    "glyph" : "",
+    "id" : "Electronics-rc-highpass",
+    "keywords" : [
+      "rc-highpass",
+      "rc",
+      "high-pass",
+      "filter",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "RC high-pass filter",
+    "variant" : "RC high-pass"
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicAnd",
+    "glyph" : "",
+    "id" : "Digital logic-and",
+    "keywords" : [
+      "and",
+      "and",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "AND gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicOr",
+    "glyph" : "",
+    "id" : "Digital logic-or",
+    "keywords" : [
+      "or",
+      "or",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "OR gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicNot",
+    "glyph" : "",
+    "id" : "Digital logic-not",
+    "keywords" : [
+      "not",
+      "not",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "NOT gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicNand",
+    "glyph" : "",
+    "id" : "Digital logic-nand",
+    "keywords" : [
+      "nand",
+      "nand",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "NAND gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicNor",
+    "glyph" : "",
+    "id" : "Digital logic-nor",
+    "keywords" : [
+      "nor",
+      "nor",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "NOR gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicXor",
+    "glyph" : "",
+    "id" : "Digital logic-xor",
+    "keywords" : [
+      "xor",
+      "xor",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "XOR gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicXnor",
+    "glyph" : "",
+    "id" : "Digital logic-xnor",
+    "keywords" : [
+      "xnor",
+      "xnor",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "XNOR gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBuffer",
+    "glyph" : "",
+    "id" : "Digital logic-buffer",
+    "keywords" : [
+      "buffer",
+      "buffer",
+      "gate",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "Buffer gate",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBlock",
+    "glyph" : "",
+    "id" : "Digital logic-d-flipflop",
+    "keywords" : [
+      "d-flipflop",
+      "d-type",
+      "flip-flop",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "D-type flip-flop",
+    "variant" : "D|CLK|Q|Q̄"
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBlock",
+    "glyph" : "",
+    "id" : "Digital logic-sr-latch",
+    "keywords" : [
+      "sr-latch",
+      "sr",
+      "latch",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "SR latch",
+    "variant" : "S|R|Q|Q̄"
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBlock",
+    "glyph" : "",
+    "id" : "Digital logic-jk-flipflop",
+    "keywords" : [
+      "jk-flipflop",
+      "jk",
+      "flip-flop",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "JK flip-flop",
+    "variant" : "J|K|Q|Q̄"
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBlock",
+    "glyph" : "",
+    "id" : "Digital logic-multiplexer",
+    "keywords" : [
+      "multiplexer",
+      "2-to-1",
+      "multiplexer",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "2-to-1 multiplexer",
+    "variant" : "0|1|Y|S"
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "clock",
+    "glyph" : "",
+    "id" : "Digital logic-clock",
+    "keywords" : [
+      "clock",
+      "clock",
+      "signal",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "Clock signal",
+    "variant" : ""
+  },
+  {
+    "category" : "Digital logic",
+    "diagram" : "logicBlock",
+    "glyph" : "",
+    "id" : "Digital logic-counter",
+    "keywords" : [
+      "counter",
+      "binary",
+      "counter",
+      "digital",
+      "circuits",
+      "and",
+      "control"
+    ],
+    "name" : "Binary counter",
+    "variant" : "CLK|RST|Q₀|Q₁"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "beamSimple",
+    "glyph" : "",
+    "id" : "Mechanics-simple-beam",
+    "keywords" : [
+      "simple-beam",
+      "simply",
+      "supported",
+      "beam",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Simply supported beam",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "beamCantilever",
+    "glyph" : "",
+    "id" : "Mechanics-cantilever",
+    "keywords" : [
+      "cantilever",
+      "cantilever",
+      "beam",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Cantilever beam",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "beamFixed",
+    "glyph" : "",
+    "id" : "Mechanics-fixed-beam",
+    "keywords" : [
+      "fixed-beam",
+      "fixed-ended",
+      "beam",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Fixed-ended beam",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "pointLoad",
+    "glyph" : "",
+    "id" : "Mechanics-point-load",
+    "keywords" : [
+      "point-load",
+      "beam",
+      "with",
+      "point",
+      "load",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Beam with point load",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "distributedLoad",
+    "glyph" : "",
+    "id" : "Mechanics-udl",
+    "keywords" : [
+      "udl",
+      "uniformly",
+      "distributed",
+      "load",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Uniformly distributed load",
+    "variant" : "uniform"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "distributedLoad",
+    "glyph" : "",
+    "id" : "Mechanics-triangular-load",
+    "keywords" : [
+      "triangular-load",
+      "triangular",
+      "distributed",
+      "load",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Triangular distributed load",
+    "variant" : "triangular"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "forceArrow",
+    "glyph" : "",
+    "id" : "Mechanics-force",
+    "keywords" : [
+      "force",
+      "force",
+      "vector",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Force vector",
+    "variant" : "F"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "forceArrow",
+    "glyph" : "",
+    "id" : "Mechanics-weight",
+    "keywords" : [
+      "weight",
+      "weight",
+      "force",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Weight force",
+    "variant" : "W = mg"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "forceArrow",
+    "glyph" : "",
+    "id" : "Mechanics-reaction",
+    "keywords" : [
+      "reaction",
+      "reaction",
+      "force",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Reaction force",
+    "variant" : "R"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "moment",
+    "glyph" : "",
+    "id" : "Mechanics-moment",
+    "keywords" : [
+      "moment",
+      "moment",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Moment",
+    "variant" : "M = Fd"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "moment",
+    "glyph" : "",
+    "id" : "Mechanics-torque",
+    "keywords" : [
+      "torque",
+      "shaft",
+      "torque",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Shaft torque",
+    "variant" : "T"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "tension",
+    "glyph" : "",
+    "id" : "Mechanics-tension",
+    "keywords" : [
+      "tension",
+      "tension",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Tension",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "compression",
+    "glyph" : "",
+    "id" : "Mechanics-compression",
+    "keywords" : [
+      "compression",
+      "compression",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Compression",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "shear",
+    "glyph" : "",
+    "id" : "Mechanics-shear",
+    "keywords" : [
+      "shear",
+      "shear",
+      "loading",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Shear loading",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "spring",
+    "glyph" : "",
+    "id" : "Mechanics-spring",
+    "keywords" : [
+      "spring",
+      "spring",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Spring",
+    "variant" : "k"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "damper",
+    "glyph" : "",
+    "id" : "Mechanics-damper",
+    "keywords" : [
+      "damper",
+      "viscous",
+      "damper",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Viscous damper",
+    "variant" : "c"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "mass",
+    "glyph" : "",
+    "id" : "Mechanics-mass",
+    "keywords" : [
+      "mass",
+      "mass",
+      "block",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Mass block",
+    "variant" : "m"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "pulley",
+    "glyph" : "",
+    "id" : "Mechanics-pulley",
+    "keywords" : [
+      "pulley",
+      "fixed",
+      "pulley",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Fixed pulley",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "gear",
+    "glyph" : "",
+    "id" : "Mechanics-gear",
+    "keywords" : [
+      "gear",
+      "gear",
+      "wheel",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Gear wheel",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "gearPair",
+    "glyph" : "",
+    "id" : "Mechanics-gear-pair",
+    "keywords" : [
+      "gear-pair",
+      "meshing",
+      "gears",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Meshing gears",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "shaft",
+    "glyph" : "",
+    "id" : "Mechanics-shaft",
+    "keywords" : [
+      "shaft",
+      "shaft",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Shaft",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "bearing",
+    "glyph" : "",
+    "id" : "Mechanics-bearing",
+    "keywords" : [
+      "bearing",
+      "rolling",
+      "bearing",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Rolling bearing",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "lever",
+    "glyph" : "",
+    "id" : "Mechanics-lever",
+    "keywords" : [
+      "lever",
+      "lever",
+      "and",
+      "fulcrum",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Lever and fulcrum",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "friction",
+    "glyph" : "",
+    "id" : "Mechanics-friction",
+    "keywords" : [
+      "friction",
+      "friction",
+      "on",
+      "a",
+      "surface",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Friction on a surface",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "freeBody",
+    "glyph" : "",
+    "id" : "Mechanics-free-body",
+    "keywords" : [
+      "free-body",
+      "free-body",
+      "diagram",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Free-body diagram",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "inclinedPlane",
+    "glyph" : "",
+    "id" : "Mechanics-inclined-plane",
+    "keywords" : [
+      "inclined-plane",
+      "inclined",
+      "plane",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Inclined plane",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "pipeFlow",
+    "glyph" : "",
+    "id" : "Fluids-flow",
+    "keywords" : [
+      "flow",
+      "flow",
+      "through",
+      "a",
+      "pipe",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Flow through a pipe",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "pump",
+    "glyph" : "",
+    "id" : "Fluids-pump",
+    "keywords" : [
+      "pump",
+      "pump",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Pump",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "turbine",
+    "glyph" : "",
+    "id" : "Fluids-turbine",
+    "keywords" : [
+      "turbine",
+      "turbine",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Turbine",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-shutoff",
+    "keywords" : [
+      "shutoff",
+      "shut-off",
+      "valve",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Shut-off valve",
+    "variant" : "shut-off"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-control-valve",
+    "keywords" : [
+      "control-valve",
+      "control",
+      "valve",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Control valve",
+    "variant" : "control"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "checkValve",
+    "glyph" : "",
+    "id" : "Fluids-check-valve",
+    "keywords" : [
+      "check-valve",
+      "non-return",
+      "valve",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Non-return valve",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-relief-valve",
+    "keywords" : [
+      "relief-valve",
+      "pressure-relief",
+      "valve",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Pressure-relief valve",
+    "variant" : "relief"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "tank",
+    "glyph" : "",
+    "id" : "Fluids-tank-open",
+    "keywords" : [
+      "tank-open",
+      "open",
+      "tank",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Open tank",
+    "variant" : "open"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "tank",
+    "glyph" : "",
+    "id" : "Fluids-tank-closed",
+    "keywords" : [
+      "tank-closed",
+      "closed",
+      "tank",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Closed tank",
+    "variant" : "closed"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "piston",
+    "glyph" : "",
+    "id" : "Fluids-single-cylinder",
+    "keywords" : [
+      "single-cylinder",
+      "single-acting",
+      "cylinder",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Single-acting cylinder",
+    "variant" : "single"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "piston",
+    "glyph" : "",
+    "id" : "Fluids-double-cylinder",
+    "keywords" : [
+      "double-cylinder",
+      "double-acting",
+      "cylinder",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Double-acting cylinder",
+    "variant" : "double"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "filter",
+    "glyph" : "",
+    "id" : "Fluids-filter",
+    "keywords" : [
+      "filter",
+      "fluid",
+      "filter",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Fluid filter",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "heatExchanger",
+    "glyph" : "",
+    "id" : "Fluids-heat-exchanger",
+    "keywords" : [
+      "heat-exchanger",
+      "heat",
+      "exchanger",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Heat exchanger",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "nozzle",
+    "glyph" : "",
+    "id" : "Fluids-nozzle",
+    "keywords" : [
+      "nozzle",
+      "converging",
+      "nozzle",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Converging nozzle",
+    "variant" : "converging"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "nozzle",
+    "glyph" : "",
+    "id" : "Fluids-diffuser",
+    "keywords" : [
+      "diffuser",
+      "diverging",
+      "diffuser",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Diverging diffuser",
+    "variant" : "diverging"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "venturi",
+    "glyph" : "",
+    "id" : "Fluids-venturi",
+    "keywords" : [
+      "venturi",
+      "venturi",
+      "tube",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Venturi tube",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "pressureGauge",
+    "glyph" : "",
+    "id" : "Fluids-pressure-gauge",
+    "keywords" : [
+      "pressure-gauge",
+      "pressure",
+      "gauge",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Pressure gauge",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "compressor",
+    "glyph" : "",
+    "id" : "Fluids-compressor",
+    "keywords" : [
+      "compressor",
+      "compressor",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Compressor",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "tank",
+    "glyph" : "",
+    "id" : "Fluids-reservoir",
+    "keywords" : [
+      "reservoir",
+      "hydraulic",
+      "reservoir",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Hydraulic reservoir",
+    "variant" : "reservoir"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "nozzle",
+    "glyph" : "",
+    "id" : "Fluids-orifice",
+    "keywords" : [
+      "orifice",
+      "orifice",
+      "restriction",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Orifice restriction",
+    "variant" : "orifice"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "centreLine",
+    "glyph" : "",
+    "id" : "Technical drawing-centre-line",
+    "keywords" : [
+      "centre-line",
+      "centre",
+      "line",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Centre line",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "hiddenLine",
+    "glyph" : "",
+    "id" : "Technical drawing-hidden-line",
+    "keywords" : [
+      "hidden-line",
+      "hidden",
+      "line",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Hidden line",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "dimension",
+    "glyph" : "",
+    "id" : "Technical drawing-linear-dimension",
+    "keywords" : [
+      "linear-dimension",
+      "linear",
+      "dimension",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Linear dimension",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "angularDimension",
+    "glyph" : "",
+    "id" : "Technical drawing-angular-dimension",
+    "keywords" : [
+      "angular-dimension",
+      "angular",
+      "dimension",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Angular dimension",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "diameter",
+    "glyph" : "",
+    "id" : "Technical drawing-diameter",
+    "keywords" : [
+      "diameter",
+      "diameter",
+      "callout",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Diameter callout",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "radius",
+    "glyph" : "",
+    "id" : "Technical drawing-radius",
+    "keywords" : [
+      "radius",
+      "radius",
+      "callout",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Radius callout",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "sectionHatch",
+    "glyph" : "",
+    "id" : "Technical drawing-section",
+    "keywords" : [
+      "section",
+      "section",
+      "hatching",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Section hatching",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "cuttingPlane",
+    "glyph" : "",
+    "id" : "Technical drawing-cutting-plane",
+    "keywords" : [
+      "cutting-plane",
+      "cutting",
+      "plane",
+      "a–a",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Cutting plane A–A",
+    "variant" : ""
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "datum",
+    "glyph" : "",
+    "id" : "Technical drawing-datum",
+    "keywords" : [
+      "datum",
+      "datum",
+      "marker",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Datum marker",
+    "variant" : "A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "surfaceFinish",
+    "glyph" : "",
+    "id" : "Technical drawing-surface-finish",
+    "keywords" : [
+      "surface-finish",
+      "surface",
+      "texture",
+      "mark",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Surface texture mark",
+    "variant" : "Ra"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "weld",
+    "glyph" : "",
+    "id" : "Technical drawing-fillet-weld",
+    "keywords" : [
+      "fillet-weld",
+      "fillet",
+      "weld",
+      "callout",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Fillet weld callout",
+    "variant" : "fillet"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "weld",
+    "glyph" : "",
+    "id" : "Technical drawing-butt-weld",
+    "keywords" : [
+      "butt-weld",
+      "butt",
+      "weld",
+      "callout",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Butt weld callout",
+    "variant" : "butt"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-position-tolerance",
+    "keywords" : [
+      "position-tolerance",
+      "position",
+      "tolerance",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Position tolerance frame",
+    "variant" : "⌖|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-flatness-tolerance",
+    "keywords" : [
+      "flatness-tolerance",
+      "flatness",
+      "tolerance",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Flatness tolerance frame",
+    "variant" : "▱|0.05"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-parallel-tolerance",
+    "keywords" : [
+      "parallel-tolerance",
+      "parallelism",
+      "tolerance",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Parallelism tolerance frame",
+    "variant" : "∥|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-perpendicular-tolerance",
+    "keywords" : [
+      "perpendicular-tolerance",
+      "perpendicularity",
+      "tolerance",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Perpendicularity tolerance frame",
+    "variant" : "⊥|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-concentric-tolerance",
+    "keywords" : [
+      "concentric-tolerance",
+      "concentricity",
+      "tolerance",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Concentricity tolerance frame",
+    "variant" : "◎|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "projection",
+    "glyph" : "",
+    "id" : "Technical drawing-first-angle",
+    "keywords" : [
+      "first-angle",
+      "first-angle",
+      "projection",
+      "teaching",
+      "diagram",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "First-angle projection teaching diagram",
+    "variant" : "first"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "projection",
+    "glyph" : "",
+    "id" : "Technical drawing-third-angle",
+    "keywords" : [
+      "third-angle",
+      "third-angle",
+      "projection",
+      "teaching",
+      "diagram",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Third-angle projection teaching diagram",
+    "variant" : "third"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "lathe",
+    "glyph" : "",
+    "id" : "Manufacturing-turning",
+    "keywords" : [
+      "turning",
+      "turning",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Turning process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "milling",
+    "glyph" : "",
+    "id" : "Manufacturing-milling",
+    "keywords" : [
+      "milling",
+      "milling",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Milling process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "drill",
+    "glyph" : "",
+    "id" : "Manufacturing-drilling",
+    "keywords" : [
+      "drilling",
+      "drilling",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Drilling process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "saw",
+    "glyph" : "",
+    "id" : "Manufacturing-sawing",
+    "keywords" : [
+      "sawing",
+      "sawing",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Sawing process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "grinding",
+    "glyph" : "",
+    "id" : "Manufacturing-grinding",
+    "keywords" : [
+      "grinding",
+      "grinding",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Grinding process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "press",
+    "glyph" : "",
+    "id" : "Manufacturing-pressing",
+    "keywords" : [
+      "pressing",
+      "sheet",
+      "pressing",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Sheet pressing sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "mould",
+    "glyph" : "",
+    "id" : "Manufacturing-injection-moulding",
+    "keywords" : [
+      "injection-moulding",
+      "injection",
+      "moulding",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Injection moulding sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "casting",
+    "glyph" : "",
+    "id" : "Manufacturing-casting",
+    "keywords" : [
+      "casting",
+      "casting",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Casting process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "extrusion",
+    "glyph" : "",
+    "id" : "Manufacturing-extrusion",
+    "keywords" : [
+      "extrusion",
+      "extrusion",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Extrusion process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "forging",
+    "glyph" : "",
+    "id" : "Manufacturing-forging",
+    "keywords" : [
+      "forging",
+      "forging",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Forging process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "additive",
+    "glyph" : "",
+    "id" : "Manufacturing-additive",
+    "keywords" : [
+      "additive",
+      "additive",
+      "layer",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Additive layer process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "processBox",
+    "glyph" : "",
+    "id" : "Manufacturing-heat-treatment",
+    "keywords" : [
+      "heat-treatment",
+      "heat",
+      "treatment",
+      "process",
+      "block",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Heat treatment process block",
+    "variant" : "Heat → hold → cool"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-motor-ac",
+    "keywords" : [
+      "motor-ac",
+      "ac",
+      "motor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "AC motor",
+    "variant" : "AC"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-motor-dc",
+    "keywords" : [
+      "motor-dc",
+      "dc",
+      "motor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "DC motor",
+    "variant" : "DC"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-motor-three-phase",
+    "keywords" : [
+      "motor-three-phase",
+      "three-phase",
+      "motor",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Three-phase motor",
+    "variant" : "3~"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-stepper",
+    "keywords" : [
+      "stepper",
+      "stepper",
+      "motor",
+      "teaching",
+      "sketch",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Stepper motor teaching sketch",
+    "variant" : "stepper"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "motor",
+    "glyph" : "",
+    "id" : "Electrical-servo",
+    "keywords" : [
+      "servo",
+      "servo",
+      "motor",
+      "with",
+      "feedback",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Servo motor with feedback",
+    "variant" : "servo"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "acSource",
+    "glyph" : "",
+    "id" : "Electrical-three-phase-source",
+    "keywords" : [
+      "three-phase-source",
+      "three-phase",
+      "supply",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Three-phase supply",
+    "variant" : "3~"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "breaker",
+    "glyph" : "",
+    "id" : "Electrical-circuit-breaker",
+    "keywords" : [
+      "circuit-breaker",
+      "circuit",
+      "breaker",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Circuit breaker",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "switchOpen",
+    "glyph" : "",
+    "id" : "Electrical-relay-no",
+    "keywords" : [
+      "relay-no",
+      "relay",
+      "contact",
+      "·",
+      "normally",
+      "open",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Relay contact · normally open",
+    "variant" : "relay"
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "voltageDivider",
+    "glyph" : "",
+    "id" : "Electrical-voltage-divider",
+    "keywords" : [
+      "voltage-divider",
+      "voltage",
+      "divider",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Voltage divider",
+    "variant" : ""
+  },
+  {
+    "category" : "Electrical",
+    "diagram" : "bridge",
+    "glyph" : "",
+    "id" : "Electrical-wheatstone",
+    "keywords" : [
+      "wheatstone",
+      "wheatstone",
+      "bridge",
+      "electrical",
+      "principles",
+      "and",
+      "circuit",
+      "diagrams"
+    ],
+    "name" : "Wheatstone bridge",
+    "variant" : "resistors"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "jfet",
+    "glyph" : "",
+    "id" : "Electronics-jfet-n",
+    "keywords" : [
+      "jfet-n",
+      "n-channel",
+      "jfet",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "N-channel JFET",
+    "variant" : "N"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "jfet",
+    "glyph" : "",
+    "id" : "Electronics-jfet-p",
+    "keywords" : [
+      "jfet-p",
+      "p-channel",
+      "jfet",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "P-channel JFET",
+    "variant" : "P"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "transistorNPN",
+    "glyph" : "",
+    "id" : "Electronics-phototransistor",
+    "keywords" : [
+      "phototransistor",
+      "phototransistor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Phototransistor",
+    "variant" : "photo"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "optocoupler",
+    "glyph" : "",
+    "id" : "Electronics-optocoupler",
+    "keywords" : [
+      "optocoupler",
+      "optocoupler",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Optocoupler",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "triac",
+    "glyph" : "",
+    "id" : "Electronics-triac",
+    "keywords" : [
+      "triac",
+      "triac",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "TRIAC",
+    "variant" : "TRIAC"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "triac",
+    "glyph" : "",
+    "id" : "Electronics-diac",
+    "keywords" : [
+      "diac",
+      "diac",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "DIAC",
+    "variant" : "DIAC"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "crystal",
+    "glyph" : "",
+    "id" : "Electronics-crystal",
+    "keywords" : [
+      "crystal",
+      "quartz",
+      "crystal",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Quartz crystal",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "speaker",
+    "glyph" : "",
+    "id" : "Electronics-speaker",
+    "keywords" : [
+      "speaker",
+      "loudspeaker",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Loudspeaker",
+    "variant" : ""
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "sensor",
+    "glyph" : "",
+    "id" : "Electronics-hall-sensor",
+    "keywords" : [
+      "hall-sensor",
+      "hall-effect",
+      "sensor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Hall-effect sensor",
+    "variant" : "Hall"
+  },
+  {
+    "category" : "Electronics",
+    "diagram" : "sensor",
+    "glyph" : "",
+    "id" : "Electronics-temperature-sensor",
+    "keywords" : [
+      "temperature-sensor",
+      "temperature",
+      "sensor",
+      "electronic",
+      "devices",
+      "and",
+      "circuits"
+    ],
+    "name" : "Temperature sensor",
+    "variant" : "T°"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "support",
+    "glyph" : "",
+    "id" : "Mechanics-pin-support",
+    "keywords" : [
+      "pin-support",
+      "pinned",
+      "support",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Pinned support",
+    "variant" : "pin"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "support",
+    "glyph" : "",
+    "id" : "Mechanics-roller-support",
+    "keywords" : [
+      "roller-support",
+      "roller",
+      "support",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Roller support",
+    "variant" : "roller"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "support",
+    "glyph" : "",
+    "id" : "Mechanics-fixed-support",
+    "keywords" : [
+      "fixed-support",
+      "fixed",
+      "support",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Fixed support",
+    "variant" : "fixed"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "support",
+    "glyph" : "",
+    "id" : "Mechanics-pivot",
+    "keywords" : [
+      "pivot",
+      "pivot",
+      "and",
+      "fulcrum",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Pivot and fulcrum",
+    "variant" : "pivot"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "rackPinion",
+    "glyph" : "",
+    "id" : "Mechanics-rack-pinion",
+    "keywords" : [
+      "rack-pinion",
+      "rack",
+      "and",
+      "pinion",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Rack and pinion",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "wormGear",
+    "glyph" : "",
+    "id" : "Mechanics-worm-gear",
+    "keywords" : [
+      "worm-gear",
+      "worm",
+      "gear",
+      "teaching",
+      "sketch",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Worm gear teaching sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "bevelGear",
+    "glyph" : "",
+    "id" : "Mechanics-bevel-gear",
+    "keywords" : [
+      "bevel-gear",
+      "bevel",
+      "gear",
+      "teaching",
+      "sketch",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Bevel gear teaching sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "planetaryGear",
+    "glyph" : "",
+    "id" : "Mechanics-planetary-gear",
+    "keywords" : [
+      "planetary-gear",
+      "planetary",
+      "gear",
+      "train",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Planetary gear train",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "belt",
+    "glyph" : "",
+    "id" : "Mechanics-belt-drive",
+    "keywords" : [
+      "belt-drive",
+      "belt",
+      "drive",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Belt drive",
+    "variant" : "open"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "belt",
+    "glyph" : "",
+    "id" : "Mechanics-crossed-belt",
+    "keywords" : [
+      "crossed-belt",
+      "crossed",
+      "belt",
+      "drive",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Crossed belt drive",
+    "variant" : "crossed"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "chain",
+    "glyph" : "",
+    "id" : "Mechanics-chain-drive",
+    "keywords" : [
+      "chain-drive",
+      "chain",
+      "and",
+      "sprockets",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Chain and sprockets",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "cam",
+    "glyph" : "",
+    "id" : "Mechanics-cam-follower",
+    "keywords" : [
+      "cam-follower",
+      "cam",
+      "and",
+      "follower",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Cam and follower",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "crank",
+    "glyph" : "",
+    "id" : "Mechanics-slider-crank",
+    "keywords" : [
+      "slider-crank",
+      "slider-crank",
+      "mechanism",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Slider-crank mechanism",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "scissor",
+    "glyph" : "",
+    "id" : "Mechanics-scissor",
+    "keywords" : [
+      "scissor",
+      "scissor",
+      "linkage",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Scissor linkage",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "leafSpring",
+    "glyph" : "",
+    "id" : "Mechanics-leaf-spring",
+    "keywords" : [
+      "leaf-spring",
+      "leaf",
+      "spring",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Leaf spring",
+    "variant" : ""
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "joint",
+    "glyph" : "",
+    "id" : "Mechanics-universal-joint",
+    "keywords" : [
+      "universal-joint",
+      "universal",
+      "joint",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Universal joint",
+    "variant" : "universal"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "joint",
+    "glyph" : "",
+    "id" : "Mechanics-ball-joint",
+    "keywords" : [
+      "ball-joint",
+      "ball",
+      "joint",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Ball joint",
+    "variant" : "ball"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "coupling",
+    "glyph" : "",
+    "id" : "Mechanics-rigid-coupling",
+    "keywords" : [
+      "rigid-coupling",
+      "rigid",
+      "shaft",
+      "coupling",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Rigid shaft coupling",
+    "variant" : "rigid"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "coupling",
+    "glyph" : "",
+    "id" : "Mechanics-flexible-coupling",
+    "keywords" : [
+      "flexible-coupling",
+      "flexible",
+      "shaft",
+      "coupling",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Flexible shaft coupling",
+    "variant" : "flexible"
+  },
+  {
+    "category" : "Mechanics",
+    "diagram" : "chuck",
+    "glyph" : "",
+    "id" : "Mechanics-three-jaw-chuck",
+    "keywords" : [
+      "three-jaw-chuck",
+      "three-jaw",
+      "chuck",
+      "mechanical",
+      "principles",
+      "and",
+      "forces"
+    ],
+    "name" : "Three-jaw chuck",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "manometer",
+    "glyph" : "",
+    "id" : "Fluids-u-manometer",
+    "keywords" : [
+      "u-manometer",
+      "u-tube",
+      "manometer",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "U-tube manometer",
+    "variant" : "open"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "manometer",
+    "glyph" : "",
+    "id" : "Fluids-differential-manometer",
+    "keywords" : [
+      "differential-manometer",
+      "differential",
+      "manometer",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Differential manometer",
+    "variant" : "differential"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "hydraulicPress",
+    "glyph" : "",
+    "id" : "Fluids-hydraulic-press",
+    "keywords" : [
+      "hydraulic-press",
+      "hydraulic",
+      "press",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Hydraulic press",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "accumulator",
+    "glyph" : "",
+    "id" : "Fluids-accumulator",
+    "keywords" : [
+      "accumulator",
+      "hydraulic",
+      "accumulator",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Hydraulic accumulator",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "directionalValve",
+    "glyph" : "",
+    "id" : "Fluids-valve22",
+    "keywords" : [
+      "valve22",
+      "2\/2",
+      "directional",
+      "valve",
+      "teaching",
+      "diagram",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "2\/2 directional valve teaching diagram",
+    "variant" : "2\/2"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "directionalValve",
+    "glyph" : "",
+    "id" : "Fluids-valve32",
+    "keywords" : [
+      "valve32",
+      "3\/2",
+      "directional",
+      "valve",
+      "teaching",
+      "diagram",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "3\/2 directional valve teaching diagram",
+    "variant" : "3\/2"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "directionalValve",
+    "glyph" : "",
+    "id" : "Fluids-valve42",
+    "keywords" : [
+      "valve42",
+      "4\/2",
+      "directional",
+      "valve",
+      "teaching",
+      "diagram",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "4\/2 directional valve teaching diagram",
+    "variant" : "4\/2"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "directionalValve",
+    "glyph" : "",
+    "id" : "Fluids-valve43",
+    "keywords" : [
+      "valve43",
+      "4\/3",
+      "directional",
+      "valve",
+      "teaching",
+      "diagram",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "4\/3 directional valve teaching diagram",
+    "variant" : "4\/3"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-ball-valve",
+    "keywords" : [
+      "ball-valve",
+      "ball",
+      "valve",
+      "teaching",
+      "sketch",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Ball valve teaching sketch",
+    "variant" : "ball"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-butterfly-valve",
+    "keywords" : [
+      "butterfly-valve",
+      "butterfly",
+      "valve",
+      "teaching",
+      "sketch",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Butterfly valve teaching sketch",
+    "variant" : "butterfly"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-needle-valve",
+    "keywords" : [
+      "needle-valve",
+      "needle",
+      "valve",
+      "teaching",
+      "sketch",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Needle valve teaching sketch",
+    "variant" : "needle"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "valve",
+    "glyph" : "",
+    "id" : "Fluids-gate-valve",
+    "keywords" : [
+      "gate-valve",
+      "gate",
+      "valve",
+      "teaching",
+      "sketch",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Gate valve teaching sketch",
+    "variant" : "gate"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "flowMeter",
+    "glyph" : "",
+    "id" : "Fluids-flow-meter",
+    "keywords" : [
+      "flow-meter",
+      "flow",
+      "meter",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Flow meter",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "frl",
+    "glyph" : "",
+    "id" : "Fluids-frl-unit",
+    "keywords" : [
+      "frl-unit",
+      "filter",
+      "regulator",
+      "lubricator",
+      "unit",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Filter regulator lubricator unit",
+    "variant" : ""
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "fluidBranch",
+    "glyph" : "",
+    "id" : "Fluids-tee-branch",
+    "keywords" : [
+      "tee-branch",
+      "tee",
+      "pipe",
+      "branch",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Tee pipe branch",
+    "variant" : "tee"
+  },
+  {
+    "category" : "Fluids",
+    "diagram" : "fluidBranch",
+    "glyph" : "",
+    "id" : "Fluids-pipe-elbow",
+    "keywords" : [
+      "pipe-elbow",
+      "pipe",
+      "elbow",
+      "fluid",
+      "systems",
+      "and",
+      "thermodynamics"
+    ],
+    "name" : "Pipe elbow",
+    "variant" : "elbow"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "holeDetail",
+    "glyph" : "",
+    "id" : "Technical drawing-counterbore",
+    "keywords" : [
+      "counterbore",
+      "counterbore",
+      "detail",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Counterbore detail",
+    "variant" : "counterbore"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "holeDetail",
+    "glyph" : "",
+    "id" : "Technical drawing-countersink",
+    "keywords" : [
+      "countersink",
+      "countersink",
+      "detail",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Countersink detail",
+    "variant" : "countersink"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "holeDetail",
+    "glyph" : "",
+    "id" : "Technical drawing-blind-depth",
+    "keywords" : [
+      "blind-depth",
+      "blind-hole",
+      "depth",
+      "detail",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Blind-hole depth detail",
+    "variant" : "depth"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "holeDetail",
+    "glyph" : "",
+    "id" : "Technical drawing-chamfer",
+    "keywords" : [
+      "chamfer",
+      "chamfer",
+      "detail",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Chamfer detail",
+    "variant" : "chamfer"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-roundness",
+    "keywords" : [
+      "roundness",
+      "roundness",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Roundness tolerance teaching frame",
+    "variant" : "○|0.05"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-cylindricity",
+    "keywords" : [
+      "cylindricity",
+      "cylindricity",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Cylindricity tolerance teaching frame",
+    "variant" : "⌭|0.05"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-straightness",
+    "keywords" : [
+      "straightness",
+      "straightness",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Straightness tolerance teaching frame",
+    "variant" : "—|0.05"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-line-profile",
+    "keywords" : [
+      "line-profile",
+      "line-profile",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Line-profile tolerance teaching frame",
+    "variant" : "⌒|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-surface-profile",
+    "keywords" : [
+      "surface-profile",
+      "surface-profile",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Surface-profile tolerance teaching frame",
+    "variant" : "⌓|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-angularity",
+    "keywords" : [
+      "angularity",
+      "angularity",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Angularity tolerance teaching frame",
+    "variant" : "∠|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-circular-runout",
+    "keywords" : [
+      "circular-runout",
+      "circular-runout",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Circular-runout tolerance teaching frame",
+    "variant" : "↗|0.1|A"
+  },
+  {
+    "category" : "Technical drawing",
+    "diagram" : "toleranceFrame",
+    "glyph" : "",
+    "id" : "Technical drawing-total-runout",
+    "keywords" : [
+      "total-runout",
+      "total-runout",
+      "tolerance",
+      "teaching",
+      "frame",
+      "technical",
+      "product",
+      "drawings"
+    ],
+    "name" : "Total-runout tolerance teaching frame",
+    "variant" : "⇗|0.1|A"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "welding",
+    "glyph" : "",
+    "id" : "Manufacturing-mig",
+    "keywords" : [
+      "mig",
+      "mig",
+      "welding",
+      "teaching",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "MIG welding teaching sketch",
+    "variant" : "MIG"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "welding",
+    "glyph" : "",
+    "id" : "Manufacturing-tig",
+    "keywords" : [
+      "tig",
+      "tig",
+      "welding",
+      "teaching",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "TIG welding teaching sketch",
+    "variant" : "TIG"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "welding",
+    "glyph" : "",
+    "id" : "Manufacturing-resistance-weld",
+    "keywords" : [
+      "resistance-weld",
+      "resistance",
+      "spot",
+      "welding",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Resistance spot welding sketch",
+    "variant" : "spot"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "welding",
+    "glyph" : "",
+    "id" : "Manufacturing-brazing",
+    "keywords" : [
+      "brazing",
+      "brazing",
+      "teaching",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Brazing teaching sketch",
+    "variant" : "brazing"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "cuttingBeam",
+    "glyph" : "",
+    "id" : "Manufacturing-laser-cut",
+    "keywords" : [
+      "laser-cut",
+      "laser",
+      "cutting",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Laser cutting sketch",
+    "variant" : "laser"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "cuttingBeam",
+    "glyph" : "",
+    "id" : "Manufacturing-plasma-cut",
+    "keywords" : [
+      "plasma-cut",
+      "plasma",
+      "cutting",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Plasma cutting sketch",
+    "variant" : "plasma"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "cuttingBeam",
+    "glyph" : "",
+    "id" : "Manufacturing-waterjet",
+    "keywords" : [
+      "waterjet",
+      "waterjet",
+      "cutting",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Waterjet cutting sketch",
+    "variant" : "waterjet"
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "rolling",
+    "glyph" : "",
+    "id" : "Manufacturing-rolling",
+    "keywords" : [
+      "rolling",
+      "rolling",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Rolling process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "bending",
+    "glyph" : "",
+    "id" : "Manufacturing-bending",
+    "keywords" : [
+      "bending",
+      "sheet",
+      "bending",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Sheet bending sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "stamping",
+    "glyph" : "",
+    "id" : "Manufacturing-stamping",
+    "keywords" : [
+      "stamping",
+      "stamping",
+      "process",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Stamping process sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "inspection",
+    "glyph" : "",
+    "id" : "Manufacturing-inspection",
+    "keywords" : [
+      "inspection",
+      "dimensional",
+      "inspection",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Dimensional inspection sketch",
+    "variant" : ""
+  },
+  {
+    "category" : "Manufacturing",
+    "diagram" : "tensileTest",
+    "glyph" : "",
+    "id" : "Manufacturing-tensile-test",
+    "keywords" : [
+      "tensile-test",
+      "tensile",
+      "testing",
+      "sketch",
+      "materials",
+      "and",
+      "manufacturing",
+      "processes"
+    ],
+    "name" : "Tensile testing sketch",
+    "variant" : ""
+  }
+]

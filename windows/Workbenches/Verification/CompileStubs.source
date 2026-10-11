@@ -1,0 +1,2 @@
+namespace KarimEldamatyWindows;
+public static class App { public static string? TestDataDirectory { get; set; } }

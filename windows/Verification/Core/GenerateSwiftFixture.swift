@@ -1,0 +1,11 @@
+import Foundation
+// Independent interoperability fixture using Swift's actual JSONEncoder date/Data/UUID conventions.
+struct Sample: Codable { var x:Double;var y:Double;var pressure:Double;var tiltX:Double;var tiltY:Double;var velocity:Double?;var rawPressure:Double?;var inputDeviceKey:String? }
+struct Color:Codable {var r:Double;var g:Double;var b:Double;var a:Double}
+struct Brush:Codable {var minWidth:Double=0.8;var maxWidth:Double=6;var opacity:Double=0.97;var minOpacity:Double=0.35;var maxOpacity:Double=1;var pressureGamma:Double=0.7;var pressureEnabled:Bool=true;var textureScale:Double=0.4;var pencilGrade:String="HB"}
+struct Object:Codable {var id:UUID;var kind:String="stroke";var points:[Sample];var color:Color;var width:Double=6;var pen:String="Fountain";var brushSettings:Brush=Brush();var text:String="";var fontSize:Double=24;var imageData:Data?;var dash:String="Solid";var fill:Bool=false;var rotation:Double=0;var locked:Bool=false}
+struct Fixture:Codable {var version:Int=1;var id:UUID;var title:String="Swift interoperability العربية";var created:Date;var modified:Date;var background:String="Square grid";var width:Double=1800;var height:Double=1200;var gridSpacing:Double=30;var pointsPerMM:Double=4;var scaleDenominator:Double=5;var elements:[Object];var notes:String="Pressure is delivered by the OS.";var notionURL:String="https://example.test/notion";var whiteboardURL:String="https://example.test/board";var folder:String="Fixture"}
+let point=Sample(x:12.5,y:88,pressure:0.625,tiltX:0.25,tiltY:-0.1,velocity:150,rawPressure:0.7,inputDeviceKey:"swift:fixture")
+let item=Object(id:UUID(uuidString:"A2F3D062-3BFE-41B8-A51A-5D6249244E07")!,points:[point,Sample(x:512.5,y:88,pressure:0.75,tiltX:0,tiltY:0,velocity:200,rawPressure:0.8,inputDeviceKey:"swift:fixture")],color:Color(r:0.16,g:0.39,b:0.85,a:1),imageData:Data([0,1,2,255]))
+let board=Fixture(id:UUID(uuidString:"EE2C8255-95C7-419E-8DBF-EE64487C63D3")!,created:Date(timeIntervalSinceReferenceDate:0),modified:Date(timeIntervalSinceReferenceDate:23456.125),elements:[item])
+let encoder=JSONEncoder();encoder.outputFormatting=[.sortedKeys];let data=try encoder.encode(board);try data.write(to:URL(fileURLWithPath:CommandLine.arguments[1]))

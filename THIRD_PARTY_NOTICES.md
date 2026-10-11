@@ -1,6 +1,6 @@
 # Third-party notices
 
-Karim Ink includes the following public resources and adapted code. Their licences are separate from the licence applied to Karim Ink's own source.
+SketchGlide includes the following public resources and adapted code. Their licences are separate from the licence applied to SketchGlide's own source.
 
 ## DeTeXt symbol recognition
 
@@ -14,11 +14,11 @@ The bundled `deTeX.mlmodel` is the developer's unmodified public model, version 
 
 Retained notices: [DeTeXt MIT licence](third-party-licenses/LICENSE-DeTeXt.txt), copyright © 2025 Venkat, and [Supplementary MIT licence](third-party-licenses/LICENSE-DeTeXt-Supplementary.txt), copyright © 2020 Venkat.
 
-The original DeTeXt app, app icon, branding, generated SVG assets and Unicode translation table are not bundled. Karim Ink's board glyph mapping is independently maintained.
+The original DeTeXt app, app icon, branding, generated SVG assets and Unicode translation table are not bundled. SketchGlide's board glyph mapping is independently maintained.
 
 ### Training-data attribution
 
-The published model was trained by its developer on Detexify sample data. The training database is not bundled or modified by Karim Ink and must not be described as MIT licensed.
+The published model was trained by its developer on Detexify sample data. The training database is not bundled or modified by SketchGlide and must not be described as MIT licensed.
 
 Contains information from Detexify's sample data, available at [kirel/detexify-data](https://github.com/kirel/detexify-data) under the [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 
@@ -30,8 +30,12 @@ Licence: MIT, copyright © 2021 Julian Waller. The complete notice is retained i
 
 This is a community protocol implementation. It is not a manufacturer SDK, driver replacement or vendor endorsement. Direct control is optional, disconnected by default and requires physical hardware testing.
 
-## Names and teaching diagrams
+## Names and diagrams
 
-Apple, OpenAI, Microsoft, Notion, Craft, Xencelabs, Wacom, Pearson and other referenced product names belong to their respective owners. Karim Ink is an independent project and does not claim their endorsement.
+Apple, OpenAI, Microsoft, Notion, Craft, Xencelabs, Wacom and other referenced product names belong to their respective owners. SketchGlide is an independent project and does not claim their endorsement.
 
-The searchable engineering library contains teaching drawings rendered by the app. It is not a certified reproduction of the IEC/ISO symbol databases. Check the diagram convention required by your course or project.
+The searchable engineering library contains explanatory drawings rendered by the app. It is not a certified reproduction of the IEC/ISO symbol databases. Check the diagram convention required by your project.
+
+## Windows dependencies
+
+The Windows Test uses .NET/WPF, ONNX Runtime, local Tesseract OCR, Leptonica and public Tesseract English language data. Their original MIT, Apache 2.0 and BSD-style terms remain in `windows/Resources/Licenses/`, `windows/Resources/OCR/` and [windows/THIRD-PARTY-NOTICES.md](windows/THIRD-PARTY-NOTICES.md). The DeTeXt-derived ONNX model retains the notices and training-data attribution described above. A proprietary Visual C++ redistributable installer is not bundled; an optional link goes to Microsoft's official download. No installed DeTeXt app or its proprietary icon is repackaged.

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SketchGlide</AssemblyName>
+    <RootNamespace>KarimEldamatyWindows</RootNamespace>
+    <Version>0.2.0</Version>
+    <AssemblyVersion>0.2.0.0</AssemblyVersion>
+    <FileVersion>0.2.0.0</FileVersion>
+    <Product>SketchGlide 0.2 Test — Windows</Product>
+    <Authors>Kareem (Karim Eldamaty)</Authors>
+    <Copyright>Copyright 2026 Karim Eldamaty</Copyright>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources/AppIcon.ico</ApplicationIcon>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="Switch.System.Windows.Input.Stylus.EnablePointerSupport" Value="true" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.23.2" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
+    <Content Include="Resources/**/*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Compile Remove="**/Verification/**/*.cs;**/obj/**/*.cs;**/bin/**/*.cs" />
+    <Content Remove="**/Verification/**/*;**/obj/**/*;**/bin/**/*" />
+    <None Remove="**/Verification/**/*;**/obj/**/*;**/bin/**/*" />
+    <None Remove="Resources/**/*" />
+  </ItemGroup>
+</Project>
