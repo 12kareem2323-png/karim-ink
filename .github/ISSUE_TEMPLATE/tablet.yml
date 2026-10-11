@@ -1,0 +1,26 @@
+name: Drawing tablet feedback
+description: Help improve standard macOS pen-driver compatibility.
+title: "[Tablet] "
+body:
+  - type: markdown
+    attributes:
+      value: "Share only non-sensitive test details. Standard driver input is supported; physical compatibility has not been verified for every tablet."
+  - type: input
+    id: hardware
+    attributes:
+      label: Tablet, pen and driver version
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: App and macOS version
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: What worked, what failed, and steps to repeat
+      description: "Include pressure, tilt, eraser, hover and button behaviour if tested. Does mouse drawing work?"
+    validations:
+      required: true

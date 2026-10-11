@@ -1,0 +1,11 @@
+name: Feature idea
+description: Suggest a useful improvement for study or drawing.
+title: "[Idea] "
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to do?
+      description: "Explain the task and how this would help. Keep private coursework and personal information out of public issues."
+    validations:
+      required: true

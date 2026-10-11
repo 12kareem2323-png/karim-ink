@@ -1,0 +1,14 @@
+{
+  "name": "Karim Ink",
+  "version": "0.1.0",
+  "label": "0.1 Preview",
+  "status": "Public preview",
+  "signing": "Unnotarized \u00b7 ad hoc signed",
+  "downloadUrl": "https://github.com/12kareem2323-png/karim-ink/releases/download/v0.1.0/Karim-Ink-0.1.0-macOS-arm64-unnotarized.dmg",
+  "repositoryUrl": "https://github.com/12kareem2323-png/karim-ink",
+  "checksumsUrl": "https://github.com/12kareem2323-png/karim-ink/releases/download/v0.1.0/SHA256SUMS.txt",
+  "websiteUrl": "https://karim-ink.stonyvale1.chatgpt.site",
+  "previewAsset": "assets/preview.png",
+  "previewKind": "screenshot",
+  "donations": []
+}

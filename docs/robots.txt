@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://karim-ink.stonyvale1.chatgpt.site/sitemap.xml

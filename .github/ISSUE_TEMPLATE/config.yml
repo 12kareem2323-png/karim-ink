@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/12kareem2323-png/karim-ink/security/advisories/new
+    about: Do not publish vulnerability details in public issues.
+  - name: Setup and first-launch help
+    url: https://github.com/12kareem2323-png/karim-ink/blob/main/SUPPORT.md
+    about: Installation, tablet and optional AI setup.
