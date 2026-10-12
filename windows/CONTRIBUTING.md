@@ -1,6 +1,6 @@
 # Contribute to SketchGlide
 
-Made by Kareem. The original project source uses the MIT licence; preserve dependency notices and model/data provenance.
+Made by Karim Eldamaty. The original project source uses the MIT licence; preserve dependency notices and model/data provenance.
 
 Open an issue in the [project](https://github.com/12kareem2323-png/karim-ink/issues) with Windows version, CPU architecture, app version and short reproduction steps. Attach a small synthetic drawing instead of private work. Report security issues through the repository's private security reporting, not a public issue containing a key or private link.
 

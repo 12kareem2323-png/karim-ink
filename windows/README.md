@@ -1,6 +1,6 @@
 # SketchGlide · Windows 0.2 Test
 
-Made by **Kareem (Karim Eldamaty)**. A personal whiteboard project for sketching, ideas, maths and diagrams. The Windows version uses native C# / WPF and ships with its .NET 10 runtime.
+Made by **Karim Eldamaty**. A personal whiteboard project for sketching, ideas, maths and diagrams. The Windows version uses native C# / WPF and ships with its .NET 10 runtime.
 
 This is an **unsigned test release for Windows 11 Intel/AMD x64**. It is not a final stable release. Download from the project's GitHub release, compare its SHA-256 checksum, and keep your native drawings backed up. Windows may show an unknown-publisher or SmartScreen warning. Do not disable Windows security to run it.
 
@@ -39,7 +39,7 @@ Drawings remain under `%LOCALAPPDATA%\Karim Eldamaty\Boards`. Preferences, devic
 
 The Notion HTML export is an offline copy: existing artwork is a background image, while new browser ink can be downloaded separately. It does not automatically synchronise native drawing changes or embed a live native app in Notion/Craft. Hosted HTML requires separate hosting.
 
-[Website](https://karim-ink.stonyvale1.chatgpt.site/) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues/new/choose) · [Support Kareem with PayPal](https://paypal.me/KEldamaty)
+[Website](https://karim-ink.stonyvale1.chatgpt.site/) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues/new/choose) · [Support Karim Eldamaty with PayPal](https://paypal.me/KEldamaty)
 
 ## Verification
 

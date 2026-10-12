@@ -75,7 +75,7 @@ public static class BoardRenderer
     }
     public static void DrawText(DrawingContext dc,string text,Point point,double size,InkColor color,bool center=false)
     {
-        var rtl=text.Any(c=>c is >= '\u0590' and <= '\u08FF');var ft=new FormattedText(text,CultureInfo.CurrentCulture,rtl?FlowDirection.RightToLeft:FlowDirection.LeftToRight,new Typeface("Segoe UI"),Math.Clamp(size,.1,1000),color.Brush(),1){MaxTextWidth=30000,MaxTextHeight=30000,TextAlignment=TextAlignment.Left};if(center)point.X-=ft.Width/2;dc.DrawText(ft,point);
+        var rtl=text.Any(c=>c is >= '\u0590' and <= '\u08FF');var ft=new FormattedText(text,CultureInfo.CurrentCulture,rtl?FlowDirection.RightToLeft:FlowDirection.LeftToRight,new Typeface("Segoe UI"),Math.Clamp(size,.1,1000),color.Brush(),1){MaxTextWidth=30000,MaxTextHeight=30000,TextAlignment=TextAlignment.Left};ft.MaxTextWidth=Math.Clamp(ft.WidthIncludingTrailingWhitespace+1,1,30000);if(center)point.X-=ft.Width/2;dc.DrawText(ft,point);
     }
     public static string Formatted(double n) => n.ToString("0.###",CultureInfo.InvariantCulture);
     private static StreamGeometry Polygon(IReadOnlyList<Point> points){var g=new StreamGeometry();using(var c=g.Open()){c.BeginFigure(points[0],true,true);c.PolyLineTo(points.Skip(1).ToArray(),true,true);}g.Freeze();return g;}

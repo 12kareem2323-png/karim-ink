@@ -20,4 +20,4 @@ Back up editable `.engboard` and `.karim3d` files. Review OCR/AI, especially dec
 
 For bugs, provide version, OS/processor, tablet/driver if relevant, steps and a made-up sample. Do not post private notes, credentials or account screenshots. [Privacy](PRIVACY.md) describes local files and optional routes.
 
-[Optional PayPal support](https://paypal.me/KEldamaty) goes directly to Kareem's public PayPal page. Donations do not unlock features or buy guaranteed support. You can also download the Test through [itch.io](https://12kareem2323-png.itch.io/karim-ink).
+[Optional PayPal support](https://paypal.me/KEldamaty) goes directly to Karim Eldamaty's public PayPal page. Donations do not unlock features or buy guaranteed support. You can also download the Test through [itch.io](https://12kareem2323-png.itch.io/karim-ink).

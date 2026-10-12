@@ -1,6 +1,6 @@
 # SketchGlide · 0.2 Test
 
-A personal whiteboard project **made by Kareem**. Draw, write, make diagrams and explore ideas in native Mac and Windows apps.
+A personal whiteboard project **made by Karim Eldamaty**. Draw, write, make diagrams and explore ideas in native Mac and Windows apps.
 
 [Download the Test release](https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test) · [Website](https://karim-ink.stonyvale1.chatgpt.site/) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues) · [Support with PayPal](https://paypal.me/KEldamaty)
 

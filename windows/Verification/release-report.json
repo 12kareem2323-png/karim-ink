@@ -1,0 +1,125 @@
+{
+  "app": "SketchGlide",
+  "version": "0.2.0",
+  "releaseLabel": "0.2 Test",
+  "platform": "Windows 11 Intel/AMD x64",
+  "madeBy": "Karim Eldamaty",
+  "build": {
+    "configuration": "Release",
+    "selfContained": true,
+    "SDK": "10.0.401",
+    "runtime": "10.0.12",
+    "publisherSignature": "unsigned"
+  },
+  "checks": {
+    "portableCore": {
+      "passed": 30,
+      "failed": 0
+    },
+    "portableWorkbench": {
+      "passed": 87,
+      "failed": 0
+    },
+    "portableServices": {
+      "cases": 15,
+      "assertions": 191,
+      "status": "passed"
+    },
+    "nativeWindows": {
+      "passed": 16,
+      "failed": 0,
+      "os": "Microsoft Windows NT 10.0.26300.0",
+      "processArchitecture": "X64",
+      "hostOSArchitecture": "Arm64",
+      "sessionId": 1,
+      "environment": "Parallels Windows 11 ARM64; x64 binary under emulation in interactive desktop session",
+      "visualInspection": {
+        "inspected": [
+          "home-light",
+          "drawing-light",
+          "drawing-dark",
+          "symbols-dark",
+          "3d-window",
+          "maths-window",
+          "assistant-panel",
+          "notes-panel",
+          "engineering-tools"
+        ],
+        "3DPreview": "box, grid and axes rendered; tier 2",
+        "3DNontransparentPixels": 30795
+      },
+      "finalPackagedChecks": true,
+      "bilingualTextVisible": true
+    }
+  },
+  "content": {
+    "pens": 10,
+    "backgrounds": 10,
+    "catalogueSymbols": 380,
+    "animatedFrames": 156,
+    "offlineSingleSymbolModelClasses": 1098,
+    "mathModelSHA256": "c8631ed08c684b1a37b35e764e262f6691356b0892feac04ab532876086ab4c4"
+  },
+  "sourceAudit": {
+    "status": "pass",
+    "findings": [],
+    "sourceFileCount": 633,
+    "excluded": [
+      "bin/obj",
+      "old user examples",
+      "bundled VC installer",
+      "previous receipts",
+      "real drawings and credentials"
+    ]
+  },
+  "dependencyAudit": "NuGet known-vulnerability query returned no vulnerable project dependencies in this build; no complete security guarantee.",
+  "privacy": {
+    "apiKey": "Windows current-user DPAPI; kept outside drawing files",
+    "chatPersistence": "No automatic transcript storage; explicit insertion places answer on canvas",
+    "cloudStorageParameter": "store:false",
+    "drawingsSent": "Only an explicit attachment option sends a PNG with the typed prompt",
+    "localRecognition": "Tesseract English text OCR and ONNX single-symbol model run locally",
+    "telemetry": "No telemetry collector or analytics SDK in this source"
+  },
+  "knownLimitations": [
+    "Unsigned Test release; Windows may show an unknown publisher or SmartScreen warning.",
+    "Not yet tested on a physical Intel/AMD Windows 11 PC or a physical drawing tablet.",
+    "No sustained 120 FPS, CPU/RAM benchmark, or zero-latency claim.",
+    "Text OCR is reviewed before replacement; synthetic HELLO GLIDE fixture returned ELLO GLIDE. Accuracy is not guaranteed.",
+    "Single-symbol recognition does not parse full handwritten equations.",
+    "Live OpenAI, Ollama and Craft service accounts were not used in these checks; service transport logic was exercised with mocks.",
+    "Windows PDF export embeds a raster drawing.",
+    "Tablet support depends on manufacturer drivers; proprietary OLED remote integrations are not guaranteed."
+  ],
+  "links": {
+    "website": "https://karim-ink.stonyvale1.chatgpt.site/",
+    "feedback": "https://github.com/12kareem2323-png/karim-ink/issues/new/choose",
+    "donate": "https://paypal.me/KEldamaty"
+  },
+  "nativeBinaryChecks": {
+    "SketchGlide.exe": {
+      "machine": "AMD64",
+      "sha256": "a1f7c1ecc7707c20bd930002bce560a99bc9564f5d02252f94efcd937e5b2d73"
+    },
+    "coreclr.dll": {
+      "machine": "AMD64",
+      "sha256": "128aee8c62a673d64739e585e3876b61133571cec83a46240a62581d5465639b"
+    },
+    "wpfgfx_cor3.dll": {
+      "machine": "AMD64",
+      "sha256": "501a1cd67d51bb1663870b12af0f8c0ba29b3d37b8b509be896d2aaf32db214a"
+    },
+    "onnxruntime.dll": {
+      "machine": "AMD64",
+      "sha256": "dec964ab1ee36cc9b0ae247d13b376627992fc57dec0454354017ab8fd84f1ea"
+    },
+    "x64/tesseract50.dll": {
+      "machine": "AMD64",
+      "sha256": "de4d04ec75095374d98f5dd7a60d14d7e2e0f76589db693eccf7ae658be8cb2b"
+    },
+    "x64/leptonica-1.82.0.dll": {
+      "machine": "AMD64",
+      "sha256": "dfcb3e6ed0b16bc55bfdbcf53543cfe42a354b87c3e35bd3a95eebf005d73e76"
+    }
+  }
+}

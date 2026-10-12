@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "findings": [],
+  "sourceFileCount": 633,
+  "excluded": [
+    "bin/obj",
+    "old user examples",
+    "bundled VC installer",
+    "previous receipts",
+    "real drawings and credentials"
+  ]
+}

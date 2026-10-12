@@ -1,6 +1,6 @@
 # Bundled components
 
-SketchGlide is made by Kareem (Karim Eldamaty). Original source code, artwork and symbol catalogue are available under this project’s MIT licence. The Windows package also contains these dependencies and retains their licence notices:
+SketchGlide is made by Karim Eldamaty. Original source code, artwork and symbol catalogue are available under this project’s MIT licence. The Windows package also contains these dependencies and retains their licence notices:
 
 - Microsoft .NET / WPF 10.0.12: MIT licence and third-party notices in `Resources/Licenses`. [Microsoft source](https://github.com/dotnet/wpf).
 - ONNX Runtime 1.23.2: MIT licence in `Resources/Licenses/LICENSE-ONNXRuntime.txt`. [Microsoft source](https://github.com/microsoft/onnxruntime).

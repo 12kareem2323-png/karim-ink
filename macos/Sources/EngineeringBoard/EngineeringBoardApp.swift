@@ -138,7 +138,7 @@ struct EngineeringBoardApp: App {
             CommandGroup(replacing: .appInfo) {
                 Button("About SketchGlide") {
                     NSApp.orderFrontStandardAboutPanel(options: [
-                        .applicationName: "SketchGlide", .credits: NSAttributedString(string: "Made by Kareem.\nA personal project for drawing, maths and ideas."), .applicationVersion: "0.2 Test · 0.2.0", .version: "2"
+                        .applicationName: "SketchGlide", .credits: NSAttributedString(string: "Made by Karim Eldamaty.\nA personal project for drawing, maths and ideas."), .applicationVersion: "0.2 Test · 0.2.0", .version: "2"
                     ])
                 }
             }
@@ -460,7 +460,7 @@ struct LibraryHome: View {
                             Text("0.2 TEST").font(.system(size: 9, weight: .bold)).tracking(1)
                                 .foregroundStyle(.teal).padding(.horizontal, 8).padding(.vertical, 4)
                                 .background(Color.teal.opacity(0.12), in: Capsule())
-                            Text("Made by Kareem").font(.system(size: 12, weight: .medium)).foregroundStyle(.secondary)
+                            Text("Made by Karim Eldamaty").font(.system(size: 12, weight: .medium)).foregroundStyle(.secondary)
                         }
                         Text("Draw freely. Make your next idea clearer.").font(.system(size: 14)).foregroundStyle(.secondary).padding(.top, 2)
                     }
@@ -523,7 +523,7 @@ struct LibraryHome: View {
                 }
                 HStack(spacing: 7) {
                     Image(systemName: "internaldrive").foregroundStyle(.teal)
-                    Text("Made by Kareem · Stored on this Mac · Your drawings stay editable").font(.system(size: 11)).foregroundStyle(.secondary)
+                    Text("Made by Karim Eldamaty · Stored on this Mac · Your drawings stay editable").font(.system(size: 11)).foregroundStyle(.secondary)
                 }.padding(.top, 2)
             }.padding(.horizontal, 30).padding(.top, 29).padding(.bottom, 30)
         }.background(LibraryBackdrop())

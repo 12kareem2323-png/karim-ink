@@ -2,7 +2,7 @@
 
 12 October 2026. Formerly Karim Ink; existing public URLs and native file/storage identifiers remain compatible.
 
-- SketchGlide branding, original S icon and “Made by Kareem” personal-project copy.
+- SketchGlide branding, original S icon and “Made by Karim Eldamaty” personal-project copy.
 - Native Mac Test refreshed; Windows 11 Intel/AMD x64 Test added.
 - Editable Mac/Windows source published under MIT for own code, with retained dependency notices and contribution/build guidance.
 - Windows drawing build/cache references, pressure sample rounding and scoped URL validation fixed; inherited window styling corrected to avoid oversized controls.

@@ -85,7 +85,7 @@ enum ReleaseSmoke {
             board.background = .dots
             board.elements = [
                 DrawingElement(kind: .text, points: [.init(x: 72, y: 110)], color: .graphite, text: "hello, ideas.", fontSize: 54),
-                DrawingElement(kind: .text, points: [.init(x: 75, y: 188)], color: .teal, text: "A personal sketch space. Made by Kareem.", fontSize: 21),
+                DrawingElement(kind: .text, points: [.init(x: 75, y: 188)], color: .teal, text: "A personal sketch space. Made by Karim Eldamaty.", fontSize: 21),
                 DrawingElement(kind: .rectangle, points: [.init(x: 74, y: 290), .init(x: 290, y: 390)], color: .teal, width: 2),
                 DrawingElement(kind: .text, points: [.init(x: 108, y: 325)], text: "Sketch an idea", fontSize: 22),
                 DrawingElement(kind: .arrow, points: [.init(x: 308, y: 340), .init(x: 407, y: 340)], color: .teal, width: 2),

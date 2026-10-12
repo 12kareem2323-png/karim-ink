@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "date": "2026-10-12T07:55:37.4448412+01:00",
+  "os": "Microsoft Windows NT 10.0.26300.0",
+  "architecture": "X64",
+  "osArchitecture": "Arm64",
+  "sessionId": 1,
+  "nativeWindowsRuntime": true,
+  "physicalTabletTested": false,
+  "liveOpenAIOrCraftTested": false,
+  "visualInspectionRequired": true,
+  "checks": [
+    {
+      "name": "home-light",
+      "passed": true
+    },
+    {
+      "name": "all-brushes-and-file-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "bilingual-text-export-visible",
+      "passed": true
+    },
+    {
+      "name": "dark-workspace",
+      "passed": true
+    },
+    {
+      "name": "symbol-library-assets",
+      "passed": true
+    },
+    {
+      "name": "png-pdf-and-off-sheet-ink",
+      "passed": true
+    },
+    {
+      "name": "offline-maths-model",
+      "passed": true
+    },
+    {
+      "name": "formula-editor",
+      "passed": true
+    },
+    {
+      "name": "3d-editor",
+      "passed": true
+    },
+    {
+      "name": "engineering-tools",
+      "passed": true
+    },
+    {
+      "name": "pressure-curves-and-frozen-brushes",
+      "passed": true
+    },
+    {
+      "name": "editable-selection-copy-paste-and-undo",
+      "passed": true
+    },
+    {
+      "name": "native-dpapi-isolated-roundtrip",
+      "passed": true
+    },
+    {
+      "name": "offline-text-ocr-fixture",
+      "passed": true
+    },
+    {
+      "name": "scene-index-large-drawing-dirty-update",
+      "passed": true
+    },
+    {
+      "name": "assistant-and-notes-interface",
+      "passed": true
+    }
+  ]
+}

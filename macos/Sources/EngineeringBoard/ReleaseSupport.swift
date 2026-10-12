@@ -52,7 +52,7 @@ struct ReleaseSupportView: View {
         ScrollView {
             VStack(alignment:.leading,spacing:16) {
                 Text("Help shape SketchGlide").font(.title2.weight(.semibold))
-                Text("0.2 Test is a personal project made by Kareem. Help improve it with feedback or a contribution on GitHub.").foregroundStyle(.secondary)
+                Text("0.2 Test is a personal project made by Karim Eldamaty. Help improve it with feedback or a contribution on GitHub.").foregroundStyle(.secondary)
                 Picker("Feedback type",selection:$kind) { ForEach(["Bug report","Feature idea","Tablet feedback"],id:\.self) { Text($0) } }
                 TextField("Short summary",text:$summary)
                 Text("Describe what happened, what you expected, and how to repeat it.").font(.caption).foregroundStyle(.secondary)

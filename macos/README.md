@@ -1,6 +1,6 @@
 # SketchGlide for macOS — 0.2 Test
 
-A personal project made by Kareem. A native SwiftUI/AppKit whiteboard for drawing, maths, diagrams and ideas. This is editable source for the Mac app, not a browser wrapper.
+A personal project made by Karim Eldamaty. A native SwiftUI/AppKit whiteboard for drawing, maths, diagrams and ideas. This is editable source for the Mac app, not a browser wrapper.
 
 ## Build
 

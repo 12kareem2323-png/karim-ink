@@ -14,7 +14,7 @@ karim_stage="$(mktemp -d "$karim_output/preview.XXXXXX")"
 trap 'rm -rf "$karim_stage"' EXIT
 ditto "$karim_app" "$karim_stage/SketchGlide.app"
 cat > "$karim_stage/READ ME FIRST.txt" <<'README'
-SketchGlide 0.2 Test — made by Kareem
+SketchGlide 0.2 Test — made by Karim Eldamaty
 Apple Silicon Macs; macOS 14 or later target. Windows Test builds are separate; check the release for current availability.
 
 This free preview has an ad hoc signature, not an Apple Developer ID signature.
