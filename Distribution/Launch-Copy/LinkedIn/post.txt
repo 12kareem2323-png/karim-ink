@@ -1,0 +1,15 @@
+I've released SketchGlide 0.2 Test, my personal whiteboard project for Mac and Windows.
+
+It is made for drawing, notes and diagrams, with ten brushes, ten backgrounds, 380 searchable symbols, local editable boards, image/PDF export and a simple 3D workspace. There are also text recognition tools and optional AI assistance, with the results kept available for review.
+
+The source is public, so people can test it, report problems or help improve the code. Ordinary drawing and saving do not need an account.
+
+This is an early Test. Mac needs Apple Silicon and is unnotarized; Windows needs Windows 11 Intel/AMD x64 and is unsigned. First-launch help is on the website. Windows was checked under x64 emulation on Windows ARM; physical PC and tablet feedback would be useful.
+
+Website: https://karim-ink.stonyvale1.chatgpt.site/
+Downloads and source: https://github.com/12kareem2323-png/karim-ink
+Feedback: https://github.com/12kareem2323-png/karim-ink/issues
+
+Made by Karim Eldamaty.
+
+#SketchGlide #OpenSource #Whiteboard #macOS #Windows

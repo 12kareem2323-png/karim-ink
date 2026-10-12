@@ -2,6 +2,8 @@
 
 Made by Karim Eldamaty. Checked 12 October 2026. This is a practical selection of useful routes, not every website on the internet. Free standard routes do not include paid advertising, priority reviews or optional services.
 
+The standard routes below have **no mandatory publishing/listing fee**. Account checks, quotas and review still apply. Download payments, signing certificates and optional cloud AI can have separate costs. [Copy-ready announcement drafts](Launch-Copy/README.md) are prepared for DEV, Product Hunt, AlternativeTo, Show HN, LinkedIn and finished video uploads.
+
 Download hosts, app directories, community announcements and search tools serve different purposes. A prepared submission is not an approved public listing.
 
 ## 1. GitHub Releases — download host
@@ -18,9 +20,9 @@ Mac and Windows software page; optional payments follow itch.io terms.
 
 ## 3. SourceForge — download host + directory
 
-Current status: **Import preparation**.
-Free open-source hosting and directory. Separate account; import releases and public source.
-[Open the platform](https://sourceforge.net/create/) · [Official guidance](https://sourceforge.net/create/)
+Current status: **Published**.
+Mac and Windows 0.2 Test downloads and source are public. Both anonymous downloads match GitHub hashes and pass ZIP integrity.
+[Open the platform](https://sourceforge.net/projects/karim-ink/) · [Official guidance](https://sourceforge.net/create/)
 
 ## 4. GitLab — source host
 
@@ -50,30 +52,34 @@ New-flow developer registration is free; identity check, MSIX and certification 
 
 Current status: **Not submitted**.
 Free personal account. Posting eligibility/onboarding applies; no paid promotion needed.
+The normal wait is one week after creating a personal account. Optional newsletter signup has not been performed. [Draft fields and maker comment](Launch-Copy/Product-Hunt/submission.txt).
 [Open the platform](https://www.producthunt.com/launch) · [Official guidance](https://help.producthunt.com/en/articles/481909-how-can-i-get-access-to-post)
 
 ## 9. AlternativeTo — app directory
 
 Current status: **Not submitted**.
 Email-verified account and review. Free queue can be long; optional paid priority is excluded.
+[Draft fields](Launch-Copy/AlternativeTo/submission.json) keep URLs in separate link fields. Pending submissions are only visible to the submitter until approval.
 [Open the platform](https://alternativeto.net/faq/#add-a-new-application) · [Official guidance](https://alternativeto.net/faq/#how-long-does-it-take-to-get-my-app-reviewed)
 
 ## 10. Show HN — community discovery
 
 Current status: **Not submitted**.
 Share the runnable project with a personal account; be ready to discuss it.
+[Draft title and first comment](Launch-Copy/Show-HN/submission.txt).
 [Open the platform](https://news.ycombinator.com/showhn.html) · [Official guidance](https://news.ycombinator.com/showhn.html)
 
 ## 11. DEV Community — development article
 
 Current status: **Draft copy ready**.
 Explain the build and link the source/downloads; it is an article rather than an app store.
+[Read the actual draft](Launch-Copy/DEV/article.md). Its publication setting is false; no article has been posted.
 [Open the platform](https://dev.to/new) · [Official guidance](https://dev.to/about)
 
 ## 12. LinkedIn — project announcement
 
 Current status: **No new 0.2 post this pass**.
-Basic organic posts can link the project; confirm the publishing account.
+Basic organic articles or posts can link the project; confirm the publishing account. [Fresh 0.2 post draft](Launch-Copy/LinkedIn/post.txt).
 [Open the platform](https://www.linkedin.com/) · [Official guidance](https://www.linkedin.com/help/linkedin/answer/a522427)
 
 ## 13. YouTube — video promotion
@@ -91,8 +97,8 @@ Upload a finished vertical clip from your account; link availability depends on 
 ## 15. Instagram — video promotion
 
 Current status: **Creator kit ready**.
-Share a finished Reel and the project link through your profile/story options.
-[Open the platform](https://www.instagram.com/) · [Official guidance](https://help.instagram.com/270447560766967)
+Share a finished Reel through your account and use available profile links. Public content can be discovered/reposted; reach depends on privacy and account features.
+[Open the platform](https://www.instagram.com/) · [Official explanation of public Reel discovery](https://about.fb.com/news/2025/08/new-instagram-features-help-you-connect/)
 
 ## 16. Google Search Console — search visibility
 
@@ -104,7 +110,7 @@ Free crawl/indexing tools; verify ownership and submit the sitemap. Inclusion/ra
 
 Current status: **Verification needed**.
 Free search tools; verify the site and submit the sitemap.
-[Open the platform](https://www.bing.com/webmasters/) · [Official guidance](https://www.bing.com/webmasters/help?url=http)
+[Open the platform](https://www.bing.com/webmasters/) · [Official service](https://www.bing.com/webmasters/about?from=cmpdashboard)
 
 ## Additional candidate: MacUpdate
 

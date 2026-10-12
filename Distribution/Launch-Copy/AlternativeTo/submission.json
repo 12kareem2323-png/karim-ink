@@ -1,0 +1,24 @@
+{
+  "status": "Draft only; not submitted or approved",
+  "name": "SketchGlide",
+  "version": "0.2 Test",
+  "creator": "Karim Eldamaty",
+  "officialWebsite": "https://karim-ink.stonyvale1.chatgpt.site/",
+  "sourceCode": "https://github.com/12kareem2323-png/karim-ink",
+  "downloadPage": "https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test",
+  "platforms": ["Mac", "Windows"],
+  "priceType": "Free",
+  "openSource": true,
+  "licenceNote": "MIT for original code and assets; third-party dependencies and models retain their own notices.",
+  "shortDescription": "A native whiteboard for local drawing, notes, diagrams and simple 3D concept sketches.",
+  "description": "SketchGlide is a personal whiteboard project made by Karim Eldamaty. It has native Mac and Windows apps with ten adjustable brushes, ten backgrounds, shapes, rulers, millimetre dimensions and 380 searchable maths and engineering symbols. Drawings can be saved locally in an editable format, with image and PDF export. The app also includes a simple 3D workspace, reviewed text recognition and optional AI assistance. Ordinary drawing and saving need no account. This is a public 0.2 Test: the Mac build is for Apple Silicon and is unnotarized; the Windows build is for Windows 11 Intel/AMD x64 and is unsigned. Tablet features depend on the device and driver, and a physical Windows PC test is still needed. The native board is not embedded live inside Notion.",
+  "tags": ["whiteboard", "drawing", "note-taking", "diagramming", "offline", "open-source"],
+  "submissionNotes": [
+    "Map these proposed fields to the current form; field names may differ.",
+    "Verify email before submitting through Suggest new application.",
+    "Keep URLs in the separate link fields, not in the description.",
+    "Choose the standard free review queue; optional paid priority is excluded.",
+    "Pending submissions are visible only to their submitter and are not a published listing.",
+    "Public Test access does not guarantee acceptance."
+  ]
+}

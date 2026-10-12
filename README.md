@@ -42,3 +42,5 @@ Also available on [itch.io](https://12kareem2323-png.itch.io/karim-ink). [GitHub
 Donations are optional and do not unlock features or buy a guaranteed support response. Payments go directly through [PayPal](https://paypal.me/KEldamaty); the app does not collect payment details.
 
 [Store preparation kit](StoreSubmission/README.md) · [Free publishing options](Distribution/FREE-PUBLISHING-OPTIONS.md). Drafts require real account identities and package verification before submission.
+
+The public [SourceForge mirror](https://sourceforge.net/projects/karim-ink/) also offers Mac and Windows 0.2 Test downloads. Both anonymous downloads match GitHub checksums. [17 free publishing routes and copy-ready launch drafts](Distribution/FREE-PUBLISHING-OPTIONS.md) are included with the source.

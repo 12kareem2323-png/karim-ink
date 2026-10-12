@@ -2,7 +2,9 @@
   "checked": "2026-10-12",
   "creator": "Karim Eldamaty",
   "project": "SketchGlide",
-  "scope": "Selected useful free routes, not an exhaustive list of every website. Paid extras are excluded.",
+  "scope": "Selected useful free routes, not an exhaustive list of every website. Paid extras are excluded. Free means the standard publishing route has no mandatory listing fee; optional services, payments, signing and AI usage can have separate costs.",
+  "cost": "£0 for the standard routes listed; quotas, account checks, review and approval conditions apply.",
+  "drafts": "Launch-Copy/README.md",
   "sites": [
     {
       "name": "GitHub Releases",
@@ -23,9 +25,9 @@
     {
       "name": "SourceForge",
       "purpose": "download host + directory",
-      "status": "Import preparation",
-      "url": "https://sourceforge.net/create/",
-      "nextStep": "Free open-source hosting and directory. Separate account; import releases and public source.",
+      "status": "Published",
+      "url": "https://sourceforge.net/projects/karim-ink/",
+      "nextStep": "Mac and Windows 0.2 Test anonymous downloads match GitHub hashes and pass ZIP integrity; public source imported.",
       "source": "https://sourceforge.net/create/"
     },
     {
@@ -66,6 +68,7 @@
       "status": "Not submitted",
       "url": "https://www.producthunt.com/launch",
       "nextStep": "Free personal account. Posting eligibility/onboarding applies; no paid promotion needed.",
+      "copyFile": "Launch-Copy/Product-Hunt/submission.txt",
       "source": "https://help.producthunt.com/en/articles/481909-how-can-i-get-access-to-post"
     },
     {
@@ -74,6 +77,7 @@
       "status": "Not submitted",
       "url": "https://alternativeto.net/faq/#add-a-new-application",
       "nextStep": "Email-verified account and review. Free queue can be long; optional paid priority is excluded.",
+      "copyFile": "Launch-Copy/AlternativeTo/submission.json",
       "source": "https://alternativeto.net/faq/#how-long-does-it-take-to-get-my-app-reviewed"
     },
     {
@@ -82,6 +86,7 @@
       "status": "Not submitted",
       "url": "https://news.ycombinator.com/showhn.html",
       "nextStep": "Share the runnable project with a personal account; be ready to discuss it.",
+      "copyFile": "Launch-Copy/Show-HN/submission.txt",
       "source": "https://news.ycombinator.com/showhn.html"
     },
     {
@@ -90,6 +95,7 @@
       "status": "Draft copy ready",
       "url": "https://dev.to/new",
       "nextStep": "Explain the build and link the source/downloads; it is an article rather than an app store.",
+      "copyFile": "Launch-Copy/DEV/article.md",
       "source": "https://dev.to/about"
     },
     {
@@ -97,7 +103,8 @@
       "purpose": "project announcement",
       "status": "No new 0.2 post this pass",
       "url": "https://www.linkedin.com/",
-      "nextStep": "Basic organic posts can link the project; confirm the publishing account.",
+      "nextStep": "Share a basic organic article or post through the confirmed personal account; no paid promotion is required.",
+      "copyFile": "Launch-Copy/LinkedIn/post.txt",
       "source": "https://www.linkedin.com/help/linkedin/answer/a522427"
     },
     {
@@ -106,6 +113,7 @@
       "status": "Creator kit ready",
       "url": "https://studio.youtube.com/",
       "nextStep": "Upload a finished demonstration, add the website and download link in its description.",
+      "copyFile": "Launch-Copy/Video-Posts/captions.txt",
       "source": "https://support.google.com/youtube/answer/57407?hl=en"
     },
     {
@@ -114,6 +122,7 @@
       "status": "Creator kit ready",
       "url": "https://www.tiktok.com/tiktokstudio",
       "nextStep": "Upload a finished vertical clip from your account; link availability depends on account features.",
+      "copyFile": "Launch-Copy/Video-Posts/captions.txt",
       "source": "https://support.tiktok.com/en/using-tiktok/creating-videos"
     },
     {
@@ -121,8 +130,10 @@
       "purpose": "video promotion",
       "status": "Creator kit ready",
       "url": "https://www.instagram.com/",
-      "nextStep": "Share a finished Reel and the project link through your profile/story options.",
-      "source": "https://help.instagram.com/270447560766967"
+      "nextStep": "Share a finished Reel through your account and use available profile links. Public content can be discovered/reposted; reach depends on privacy and account features.",
+      "copyFile": "Launch-Copy/Video-Posts/captions.txt",
+      "source": "https://about.fb.com/news/2025/08/new-instagram-features-help-you-connect/",
+      "sourceNote": "Reachable official Meta explanation of public Reel discovery and reposts, not a step-by-step uploader guide. The previously supplied Instagram help ID could not be verified."
     },
     {
       "name": "Google Search Console",
@@ -138,7 +149,7 @@
       "status": "Verification needed",
       "url": "https://www.bing.com/webmasters/",
       "nextStep": "Free search tools; verify the site and submit the sitemap.",
-      "source": "https://www.bing.com/webmasters/help?url=http"
+      "source": "https://www.bing.com/webmasters/about?from=cmpdashboard"
     }
   ],
   "candidates": [

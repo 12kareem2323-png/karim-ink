@@ -33,3 +33,5 @@ The supplied promo clips are edited programmatic animations with a real syntheti
 - The [custom Scoop manifest](https://github.com/12kareem2323-png/sketchglide-scoop) passes the official schema and selects the complete verified 980-file ZIP. Its public manifest was fetched independently. Actual Scoop installation/uninstallation remains untested.
 - The public PayPal page shows Karim Eldamaty and the supplied handle KEldamaty. This verifies the destination, not a payment transaction.
 - Microsoft Store and Mac App Store submission/approval remain pending. Registration and store-specific packaging, certification and hardware tests are separate from this public Test release.
+
+SourceForge follow-up: public source import HEAD `3c05bc761a1094b4bc60e151101df7fb7adb7e71`, Mac and Windows 0.2 Test anonymous downloads with matching GitHub SHA-256 and passing ZIP integrity. Website checks now pass 57 cases, including 17 responsive route cards. Store preparation kit anonymous download matches SHA-256 `1ca23445f2150165962179304993db45ab835db3b740740d51d34ac4d64ce397`; actual Store package generation/submission remains pending.

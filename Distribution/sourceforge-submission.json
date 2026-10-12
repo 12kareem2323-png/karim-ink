@@ -19,5 +19,24 @@
     "issues": false,
     "wiki": false
   },
-  "status": "Prepared only; separate SourceForge sign-in required. Slug availability unverified."
+  "status": "Published. Mac and Windows Test downloads verified without sign-in; hashes and ZIP integrity match GitHub.",
+  "actualProjectSlug": "karim-ink",
+  "publicURL": "https://sourceforge.net/projects/karim-ink/",
+  "sourceImportedCommit": "3c05bc761a1094b4bc60e151101df7fb7adb7e71",
+  "downloadVerification": [
+    {
+      "file": "sourceforge-mac-public.zip",
+      "size": 16787040,
+      "sha256": "71fe3250e64473ed599a5bb9857f1305772ab55f1ce1f50b3c76766498f29a73",
+      "matches": true,
+      "zipIntegrity": true
+    },
+    {
+      "file": "sourceforge-windows-public.zip",
+      "size": 104036065,
+      "sha256": "ed275d81fd370d5d3dcd873350e736f0438880d04bddf9c1fdf4fb50e9eda018",
+      "matches": true,
+      "zipIntegrity": true
+    }
+  ]
 }

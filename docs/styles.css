@@ -777,3 +777,14 @@ html:not([data-motion]) .hello-paths path, html:not([data-motion]) .hero-orbit .
 .publishing-links { display: flex; flex-wrap: wrap; gap: 14px 25px; margin-top: 18px; font-size: 14px; }
 @media (max-width: 760px) { .windows-workspace { padding-bottom: 70px; } .windows-preview-grid, .store-grid { grid-template-columns: 1fr; gap: 20px; } .workspace-preview figcaption { padding: 18px 12px; } .store-card { padding: 25px; } }
 @media (max-width: 520px) { .launch-guides { display: block; } .launch-guides p + p { margin-top: 5px; } .windows-preview-grid { margin-top: 28px; } .publishing-actions .button { width: 100%; } }
+
+.channel-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:28px 0; }
+.channel-card { padding:23px; border:1px solid var(--line); border-radius:22px; background:var(--surface); min-width:0; }
+.channel-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.channel-number { font-size:12px; opacity:.55; font-variant-numeric:tabular-nums; }
+.channel-status { font-size:11px; line-height:1.5; text-align:right; }
+.channel-card h3 { font-size:21px; letter-spacing:-.02em; margin:17px 0 5px; }
+.channel-card p { font-size:13px; margin:12px 0; }
+.channel-card .channel-purpose { font-size:11px; text-transform:uppercase; letter-spacing:.1em; opacity:.6; margin:0; }
+.channel-card .source-link { font-size:12px; display:inline-block; padding:12px 0; }
+@media(max-width:760px) { .channel-grid { grid-template-columns:1fr; } }

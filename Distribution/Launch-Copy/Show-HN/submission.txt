@@ -1,0 +1,18 @@
+TITLE
+Show HN: SketchGlide, my native Mac and Windows whiteboard
+
+URL
+https://karim-ink.stonyvale1.chatgpt.site/
+
+FIRST COMMENT
+I'm Karim Eldamaty. SketchGlide is my personal whiteboard project, and the Mac and Windows 0.2 Test builds are available to download. It uses Swift/SwiftUI/AppKit/Metal on Mac and C#/WPF on Windows. Ordinary drawing and local saving need no account.
+
+It includes adjustable brushes, a symbol library, simple 3D concept sketches and image/PDF export. The source is public. I would appreciate feedback on drawing, performance and first launch, or a focused pull request.
+
+This is an early Test. Mac needs Apple Silicon and is unnotarized. Windows needs Windows 11 Intel/AMD x64 and is unsigned. Windows verification used x64 emulation on Windows ARM, so a physical Intel/AMD PC and real tablet checks are still needed. The site includes first-launch help and verification notes.
+
+Source: https://github.com/12kareem2323-png/karim-ink
+Downloads: https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test
+
+STATUS
+Draft only. Not posted. Keep the linked project runnable, answer genuine questions, and follow https://news.ycombinator.com/showhn.html. Do not ask for votes or use this as a fundraiser.

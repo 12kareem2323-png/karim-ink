@@ -1,0 +1,33 @@
+YOUTUBE TITLE
+SketchGlide 0.2 Test — my native Mac and Windows whiteboard
+
+YOUTUBE DESCRIPTION
+I'm Karim Eldamaty, and this is SketchGlide, my personal whiteboard project. Draw, write notes and make diagrams with local editable boards, adjustable brushes, searchable symbols and a simple 3D workspace.
+
+Mac and Windows Test builds are available. Mac needs Apple Silicon and is unnotarized; Windows needs Windows 11 Intel/AMD x64 and is unsigned. Read first-launch help and keep your drawings backed up. Optional cloud AI uses your own API key and separate API billing. Text/AI recognition needs review.
+
+Website and first-launch help: https://karim-ink.stonyvale1.chatgpt.site/
+Test downloads: https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test
+Source: https://github.com/12kareem2323-png/karim-ink
+Feedback: https://github.com/12kareem2323-png/karim-ink/issues
+
+INSTAGRAM / TIKTOK CAPTION
+I've released SketchGlide 0.2 Test, my personal whiteboard app for Mac and Windows. Drawing, notes, symbols and simple 3D concept sketches, with editable source for people who want to help improve it.
+
+Made by Karim Eldamaty. Early Test: Mac is unnotarized and Windows is unsigned. Read first-launch help before trying it. Website: https://karim-ink.stonyvale1.chatgpt.site/
+
+#SketchGlide #Whiteboard #OpenSource #Drawing #macOS #Windows
+
+ON-SCREEN END CARD
+SketchGlide · 0.2 Test
+Made by Karim Eldamaty
+Mac + Windows downloads
+Read first-launch help
+karim-ink.stonyvale1.chatgpt.site
+
+PUBLISHING LINKS
+YouTube: https://studio.youtube.com/
+TikTok: https://www.tiktok.com/tiktokstudio
+Instagram: https://www.instagram.com/
+
+Before posting, attach the finished video and check its title, captions, music rights and privacy. Add the website to your profile if that option is available. These text drafts do not mean a video was uploaded. If your video includes AI-generated concept footage, add: “Includes AI-generated concept footage; real app features are shown separately.” Do not claim generated screens are a recording of the app.

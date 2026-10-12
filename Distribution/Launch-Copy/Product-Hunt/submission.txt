@@ -1,0 +1,24 @@
+NAME
+SketchGlide
+
+TAGLINE
+A native whiteboard for drawing, notes and diagrams
+
+WEBSITE
+https://karim-ink.stonyvale1.chatgpt.site/
+
+DESCRIPTION
+SketchGlide is a personal open-source whiteboard project made by Karim Eldamaty. Mac and Windows 0.2 Test downloads include ten brushes, ten backgrounds, searchable symbols, simple 3D concept sketches and local editable boards. Text recognition and optional AI assistance need review. Mac is unnotarized; Windows is unsigned. Read first-launch help.
+
+MAKER COMMENT
+Hi, I'm Karim Eldamaty. I've released SketchGlide 0.2 Test because I wanted a local place to draw, write and make diagrams. Ordinary drawing and saving do not need an account. The Mac version uses Swift/SwiftUI/AppKit/Metal, and the Windows version uses C#/WPF.
+
+This is an early Test, and I would like feedback on the drawing experience, layout and first launch. Mac needs Apple Silicon; Windows needs Windows 11 Intel/AMD x64. The Windows checks used x64 emulation on Windows ARM, so physical PC and tablet feedback would be especially helpful. I can't promise every tablet feature or a fixed 120 FPS.
+
+The source is editable and open to contributions. The download page explains signing limits and includes first-launch help. Please report reproducible bugs through the GitHub issue link.
+
+SCREENSHOTS
+Use the public Mac drawing preview, Windows drawing preview and simple 3D workspace screenshot from the website. They show made-up demonstration boards. Do not use private notes or financial screenshots.
+
+STATUS
+Draft only. Not submitted. Use a personal Product Hunt account and complete its posting eligibility. Do not add fabricated testimonials, votes, endorsements or awards.
