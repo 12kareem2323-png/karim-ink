@@ -14,6 +14,10 @@ Download the x64 Test ZIP and choose **Extract All** before opening SketchGlide.
 
 The release targets Windows 11 Intel/AMD x64. QA used x64 emulation in a Windows ARM virtual machine; real Intel/AMD and physical-tablet checks are still needed. Optional Install.cmd installs for your Windows user; no automatic driver/runtime installation occurs.
 
+Before using Install.cmd, download the [updated setup helpers](https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SketchGlide-0.2.0-Windows-Setup-Helpers.zip) and [helper checksum](https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SHA256SUMS-Setup-Helpers.txt). Extract both ZIPs separately. Read SETUP-HELPERS-README.txt, then copy its three BuildSupport scripts into the complete app's BuildSupport folder. The update checks dependencies, preserves licences/receipts and fixes a partial-directory-move rollback bug. Seventeen isolated native Windows setup-function checks pass; the interactive installer and real registry/shortcut changes remain untested. Opening SketchGlide.exe portably does not require setup.
+
+For an existing Scoop installation with Git, follow the [custom bucket README](https://github.com/12kareem2323-png/sketchglide-scoop). This is a pinned custom manifest rather than an official default-bucket listing. Its complete ZIP, executable, runtime/resources and hash are verified; actual Scoop install/uninstall remains untested.
+
 ## Drawings, AI and feedback
 
 Back up editable `.engboard` and `.karim3d` files. Review OCR/AI, especially decimal points, units and symbols. Ordinary drawing/saving is offline. Optional cloud AI needs your own API key and separate API billing. Full handwriting-to-LaTeX, full CAD simulation, live native Notion embedding and universal tablet support are not promised.

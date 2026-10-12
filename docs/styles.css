@@ -709,7 +709,7 @@ figcaption { font-size: 10px; color: var(--muted); line-height: 1.6; margin-top:
 }
 html:not([data-motion]) .hello-paths path, html:not([data-motion]) .hero-orbit .orbit-stroke path { animation: none; stroke-dashoffset: 0; opacity: 1; }
 [data-motion="off"] .nib-stroke { stroke-dashoffset: 0 !important; }
-@media (max-width: 760px) { .glass-panel { backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); } }
+@media (max-width: 760px) and (prefers-reduced-transparency: no-preference) { .glass-panel { backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); } }
 .film-section { padding-bottom: 95px; }
 .film-frame { margin: 37px auto 0; padding: 14px 14px 0; max-width: 1000px; overflow: hidden; }
 .film-frame video { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; border-radius: 13px; background: var(--art); object-fit: contain; }
@@ -739,3 +739,41 @@ html:not([data-motion]) .hello-paths path, html:not([data-motion]) .hero-orbit .
  .all-brushes { font-size: 12px; }
  .study-card > .card-limit, .catalog-note { font-size: 11px; }
 }
+
+/* Setup information stays readable alongside the workspace previews. */
+.launch-guides { display: flex; flex-wrap: wrap; gap: 8px 25px; margin-top: 16px; }
+.launch-guides p, .release-fallback { font-size: 12px; line-height: 1.7; }
+.launch-guides strong { color: var(--ink); font-weight: 600; }
+.launch-guides a { display: inline-block; margin-left: 7px; }
+.release-fallback { margin-top: 11px; }
+.windows-workspace { padding-block: 40px 110px; }
+.windows-preview-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 38px; }
+.workspace-preview { overflow: hidden; padding: 10px; border-radius: 22px; }
+.workspace-preview > a { display: block; border-radius: 14px; overflow: hidden; }
+.workspace-preview img { display: block; width: 100%; height: auto; }
+.workspace-preview figcaption { padding: 22px 15px 17px; }
+.workspace-preview figcaption strong { display: block; font-size: 19px; letter-spacing: -.03em; line-height: 1.3; }
+.workspace-preview figcaption span { display: block; font-size: 13px; color: var(--muted); margin-top: 8px; }
+.doc-section pre { white-space: pre-wrap; overflow-wrap: anywhere; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); font-size: 13px; line-height: 1.6; }
+.workspace-next { display: flex; flex-wrap: wrap; gap: 15px 32px; margin-top: 24px; font-size: 14px; }
+.publishing-intro { max-width: 780px; }
+.publishing-status { display: inline-flex; border: 1px solid var(--line); border-radius: 100px; padding: 7px 13px; font-size: 12px; color: var(--accent-text); margin-block: 20px; }
+.store-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 35px; }
+.store-card { padding: 29px; border-radius: 24px; }
+.store-card h2 { font-size: 32px; letter-spacing: -.035em; margin-top: 12px; }
+.store-cost { font-size: 36px; letter-spacing: -.05em; color: var(--ink); font-weight: 650; margin-top: 19px; line-height: 1.1; }
+.store-cost small { display: block; font-size: 13px; color: var(--muted); letter-spacing: 0; font-weight: 400; margin-top: 10px; }
+.store-card p { margin-top: 17px; font-size: 14px; }
+.store-card p.store-cost { font-size: 52px; margin-top: 24px; }
+.store-card .text-link { display: inline-block; margin-top: 17px; font-size: 13px; }
+.publish-checklist { display: grid; gap: 10px; margin-top: 23px; }
+.publish-checklist label { display: flex; gap: 13px; align-items: flex-start; border: 1px solid var(--line); padding: 17px; border-radius: 14px; font-size: 14px; cursor: pointer; min-height: 52px; }
+.publish-checklist input { flex: none; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--teal); }
+.publish-checklist strong { display: block; font-weight: 600; }
+.publish-checklist span span { display: block; color: var(--muted); font-size: 13px; margin-top: 4px; }
+.checklist-progress { font-size: 13px; margin-top: 14px; }
+.publishing-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 23px; }
+.publishing-actions button { border: 1px solid var(--line); }
+.publishing-links { display: flex; flex-wrap: wrap; gap: 14px 25px; margin-top: 18px; font-size: 14px; }
+@media (max-width: 760px) { .windows-workspace { padding-bottom: 70px; } .windows-preview-grid, .store-grid { grid-template-columns: 1fr; gap: 20px; } .workspace-preview figcaption { padding: 18px 12px; } .store-card { padding: 25px; } }
+@media (max-width: 520px) { .launch-guides { display: block; } .launch-guides p + p { margin-top: 5px; } .windows-preview-grid { margin-top: 28px; } .publishing-actions .button { width: 100%; } }

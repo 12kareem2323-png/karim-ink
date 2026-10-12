@@ -1,0 +1,152 @@
+{
+  "checked": "2026-10-12",
+  "creator": "Karim Eldamaty",
+  "project": "SketchGlide",
+  "scope": "Selected useful free routes, not an exhaustive list of every website. Paid extras are excluded.",
+  "sites": [
+    {
+      "name": "GitHub Releases",
+      "purpose": "download host",
+      "status": "Published",
+      "url": "https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test",
+      "nextStep": "Public Mac/Windows Test downloads and editable source.",
+      "source": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+    },
+    {
+      "name": "itch.io",
+      "purpose": "download host",
+      "status": "Published",
+      "url": "https://12kareem2323-png.itch.io/karim-ink",
+      "nextStep": "Mac and Windows software page; optional payments follow itch.io terms.",
+      "source": "https://itch.io/docs/creators/faq"
+    },
+    {
+      "name": "SourceForge",
+      "purpose": "download host + directory",
+      "status": "Import preparation",
+      "url": "https://sourceforge.net/create/",
+      "nextStep": "Free open-source hosting and directory. Separate account; import releases and public source.",
+      "source": "https://sourceforge.net/create/"
+    },
+    {
+      "name": "GitLab",
+      "purpose": "source host",
+      "status": "Account needed",
+      "url": "https://gitlab.com/users/sign_up",
+      "nextStep": "Free source-project hosting within its quotas; a mirror adds maintenance work.",
+      "source": "https://docs.gitlab.com/user/storage_usage_quotas/"
+    },
+    {
+      "name": "Scoop custom bucket",
+      "purpose": "Windows install manifest",
+      "status": "Published manifest",
+      "url": "https://github.com/12kareem2323-png/sketchglide-scoop",
+      "nextStep": "Pinned complete Windows ZIP; schema/payload checked, actual install/uninstall untested.",
+      "source": "https://github.com/ScoopInstaller/Scoop/wiki/Buckets"
+    },
+    {
+      "name": "WinGet",
+      "purpose": "Windows package directory",
+      "status": "Not submitted",
+      "url": "https://learn.microsoft.com/en-us/windows/package-manager/package/repository",
+      "nextStep": "Community manifest, unattended install checks, contributor agreement and review required.",
+      "source": "https://github.com/microsoft/winget-pkgs/blob/master/doc/Policies.md"
+    },
+    {
+      "name": "Microsoft Store",
+      "purpose": "app store",
+      "status": "Account and package pending",
+      "url": "https://storedeveloper.microsoft.com/",
+      "nextStep": "New-flow developer registration is free; identity check, MSIX and certification required.",
+      "source": "https://learn.microsoft.com/en-us/windows/apps/publish/partner-center/open-a-developer-account?tabs=individual"
+    },
+    {
+      "name": "Product Hunt",
+      "purpose": "app discovery",
+      "status": "Not submitted",
+      "url": "https://www.producthunt.com/launch",
+      "nextStep": "Free personal account. Posting eligibility/onboarding applies; no paid promotion needed.",
+      "source": "https://help.producthunt.com/en/articles/481909-how-can-i-get-access-to-post"
+    },
+    {
+      "name": "AlternativeTo",
+      "purpose": "app directory",
+      "status": "Not submitted",
+      "url": "https://alternativeto.net/faq/#add-a-new-application",
+      "nextStep": "Email-verified account and review. Free queue can be long; optional paid priority is excluded.",
+      "source": "https://alternativeto.net/faq/#how-long-does-it-take-to-get-my-app-reviewed"
+    },
+    {
+      "name": "Show HN",
+      "purpose": "community discovery",
+      "status": "Not submitted",
+      "url": "https://news.ycombinator.com/showhn.html",
+      "nextStep": "Share the runnable project with a personal account; be ready to discuss it.",
+      "source": "https://news.ycombinator.com/showhn.html"
+    },
+    {
+      "name": "DEV Community",
+      "purpose": "development article",
+      "status": "Draft copy ready",
+      "url": "https://dev.to/new",
+      "nextStep": "Explain the build and link the source/downloads; it is an article rather than an app store.",
+      "source": "https://dev.to/about"
+    },
+    {
+      "name": "LinkedIn",
+      "purpose": "project announcement",
+      "status": "No new 0.2 post this pass",
+      "url": "https://www.linkedin.com/",
+      "nextStep": "Basic organic posts can link the project; confirm the publishing account.",
+      "source": "https://www.linkedin.com/help/linkedin/answer/a522427"
+    },
+    {
+      "name": "YouTube",
+      "purpose": "video promotion",
+      "status": "Creator kit ready",
+      "url": "https://studio.youtube.com/",
+      "nextStep": "Upload a finished demonstration, add the website and download link in its description.",
+      "source": "https://support.google.com/youtube/answer/57407?hl=en"
+    },
+    {
+      "name": "TikTok",
+      "purpose": "video promotion",
+      "status": "Creator kit ready",
+      "url": "https://www.tiktok.com/tiktokstudio",
+      "nextStep": "Upload a finished vertical clip from your account; link availability depends on account features.",
+      "source": "https://support.tiktok.com/en/using-tiktok/creating-videos"
+    },
+    {
+      "name": "Instagram",
+      "purpose": "video promotion",
+      "status": "Creator kit ready",
+      "url": "https://www.instagram.com/",
+      "nextStep": "Share a finished Reel and the project link through your profile/story options.",
+      "source": "https://help.instagram.com/270447560766967"
+    },
+    {
+      "name": "Google Search Console",
+      "purpose": "search visibility",
+      "status": "Verification needed",
+      "url": "https://search.google.com/search-console/",
+      "nextStep": "Free crawl/indexing tools; verify ownership and submit the sitemap. Inclusion/ranking is not guaranteed.",
+      "source": "https://support.google.com/webmasters/answer/9128668?hl=en"
+    },
+    {
+      "name": "Bing Webmaster Tools",
+      "purpose": "search visibility",
+      "status": "Verification needed",
+      "url": "https://www.bing.com/webmasters/",
+      "nextStep": "Free search tools; verify the site and submit the sitemap.",
+      "source": "https://www.bing.com/webmasters/help?url=http"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "MacUpdate",
+      "url": "https://www.macupdate.com/help/submit-app",
+      "status": "Account/review needed; public submission guide does not confirm the listing fee",
+      "note": "Mac-only. Confirm a no-fee route after sign-in before using it."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "passed": 17,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "three setup scripts parse in native Windows PowerShell",
+      "passed": true
+    },
+    {
+      "name": "complete v0.2.0 self-contained x64 payload passes preflight",
+      "passed": true
+    },
+    {
+      "name": "missing core runtime is rejected",
+      "passed": true
+    },
+    {
+      "name": "missing OCR native DLL is rejected",
+      "passed": true
+    },
+    {
+      "name": "missing offline maths model is rejected",
+      "passed": true
+    },
+    {
+      "name": "missing runtime dependency listed in deps is rejected",
+      "passed": true
+    },
+    {
+      "name": "empty main assembly is rejected",
+      "passed": true
+    },
+    {
+      "name": "missing catalogue stencil is rejected",
+      "passed": true
+    },
+    {
+      "name": "malformed dependency JSON is rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong runtime architecture is rejected",
+      "passed": true
+    },
+    {
+      "name": "catalogue path traversal identifier is rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid payload creates no install parent",
+      "passed": true
+    },
+    {
+      "name": "staging preserves MIT licence and verification receipts",
+      "passed": true
+    },
+    {
+      "name": "nested runtime layout keeps outer licence setup and receipts",
+      "passed": true
+    },
+    {
+      "name": "replacement retains previous synthetic install backup",
+      "passed": true
+    },
+    {
+      "name": "locked replacement rolls back previous synthetic install",
+      "passed": true
+    },
+    {
+      "name": "copy failure removes only its own temporary stage",
+      "passed": true
+    }
+  ],
+  "utc": "2026-10-12T08:01:24.3800111+00:00",
+  "os": "Microsoft Windows NT 10.0.26300.0",
+  "scope": "Production setup validation/copy/stage-commit functions on Windows, using only an isolated synthetic temporary installation. No existing installed app, real drawings, settings, credentials, shortcuts or registry handlers were read or changed.",
+  "interactiveInstallDialogueTested": false,
+  "physicalIntelAMDTested": false,
+  "nativeAppBinaryChanged": false,
+  "shippingZIPChanged": false
+}

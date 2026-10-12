@@ -70,3 +70,11 @@ dotnet run --project Workbenches/Verification/Logic/WorkbenchLogic.csproj -c Rel
 ```
 
 Portable tests do not execute WPF rendering or physical pen input. Use the native self-test and a real tablet for those checks.
+
+Setup scripts validate the complete runtime/resource payload before replacement and retain the MIT licence and release receipts. To check setup staging and rollback without touching an existing installation, pass an extracted Windows app folder to:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File Verification/Installer/InstallerSmokeChecks.ps1 -PayloadDirectory "C:/path/to/extracted/SketchGlide"
+```
+
+This check creates and deletes its own temporary synthetic installation. It does not register handlers, create real shortcuts or run the app. Exact setup results are in `Verification/Installer/installer-smoke-results.json`.

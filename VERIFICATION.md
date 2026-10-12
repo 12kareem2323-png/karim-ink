@@ -24,3 +24,12 @@ Windows runtime verification uses x64 emulation on Windows ARM in Parallels. It 
 42 fresh local browser checks passed across 360, 390, 768 and 1440 pixel widths, including light/dark, looping/offscreen motion, Reduced Motion, scroll camera, no idle camera render loop, safe local feedback export, PayPal and H.264 video decoding. Public deployment/download checks are separate and performed after upload.
 
 The supplied promo clips are edited programmatic animations with a real synthetic app screenshot. They are not generative-AI footage or an exhaustive feature demonstration. The Creator Kit provides five timed one-minute scripts, editable prompts/captions/subtitles and public posting links.
+
+## Follow-up: setup and public publishing — 12 October 2026
+
+- Updated Windows setup functions pass **17 native Windows smoke checks** against isolated synthetic install directories. Incomplete runtime/OCR/model/stencil payloads are rejected before replacing an installation; licence/verification files are retained. The reproduced partial `Move-Item` rollback defect is fixed using whole-directory renames. The interactive installer dialogue, real shortcuts/handlers and physical Intel/AMD hardware remain untested. See `windows/Verification/Installer/`.
+- The separate `SketchGlide-0.2.0-Windows-Setup-Helpers.zip` is public. An anonymous HTTPS download matches SHA-256 `0cf377dc3e0f2d3d6714bdc759eb4018eadcf8109a34a8c0a184e316f5c07ffd` and passes ZIP CRC checks. The native application and original Windows app ZIP are unchanged.
+- A fresh **55-check** local browser run passed after adding the publishing checklist, smaller Windows preview images, accessible mobile transparency behaviour and working static download links. No browser runtime/CSP/missing-requested-asset errors were recorded. The publishing cost page and phone Windows previews were visually reviewed.
+- The [custom Scoop manifest](https://github.com/12kareem2323-png/sketchglide-scoop) passes the official schema and selects the complete verified 980-file ZIP. Its public manifest was fetched independently. Actual Scoop installation/uninstallation remains untested.
+- The public PayPal page shows Karim Eldamaty and the supplied handle KEldamaty. This verifies the destination, not a payment transaction.
+- Microsoft Store and Mac App Store submission/approval remain pending. Registration and store-specific packaging, certification and hardware tests are separate from this public Test release.

@@ -13,3 +13,7 @@
 This is an early Test. Mac is ad hoc signed/unnotarized; Windows is unsigned. Windows QA was under x64 emulation on Windows ARM, not a physical Intel/AMD PC. Physical tablets, live paid cloud services, sustained 120 FPS and older macOS runtime support remain unverified. See VERIFICATION.md for evidence.
 
 Previous Mac 0.1 remains in its original GitHub release. Do not mix old assets with 0.2 checksums.
+
+## Windows setup and website follow-up
+
+The native app version and shipping app archives stay at 0.2 Test. A separate setup-helper download checks complete dependencies and preserves notices/receipts; it fixes rollback after a locked directory move. Seventeen isolated native Windows setup checks pass. The website adds real Windows previews with smaller images, mobile accessibility fixes, resilient static downloads and a store-cost checklist. A custom Scoop manifest is now public; its install/uninstall lifecycle still needs testing.

@@ -1,0 +1,23 @@
+{
+  "displayName": "SketchGlide",
+  "requestedProjectSlug": "sketchglide",
+  "creator": "Karim Eldamaty",
+  "version": "0.2 Test",
+  "homepage": "https://karim-ink.stonyvale1.chatgpt.site/",
+  "githubRepository": "https://github.com/12kareem2323-png/karim-ink",
+  "githubRelease": "https://github.com/12kareem2323-png/karim-ink/releases/tag/v0.2.0-test",
+  "license": "MIT for original code; retain third-party notices",
+  "platforms": [
+    "macOS Apple Silicon",
+    "Windows 11 Intel/AMD x64"
+  ],
+  "summary": "A native personal whiteboard for drawing, maths and engineering diagrams.",
+  "description": "SketchGlide is a personal project made by Karim Eldamaty. Draw with ten brushes and ten backgrounds, place maths/engineering symbols, review local recognition, explore basic 3D concepts and save editable drawings. Optional cloud AI uses your own API key and separate billing. The Mac Test is Apple Silicon only and unnotarized. Windows is unsigned; physical Intel/AMD and tablet testing remains incomplete. Editable source and licence notices are public.",
+  "importSelection": {
+    "downloads": true,
+    "source": true,
+    "issues": false,
+    "wiki": false
+  },
+  "status": "Prepared only; separate SourceForge sign-in required. Slug availability unverified."
+}

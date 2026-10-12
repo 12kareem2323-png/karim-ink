@@ -2,10 +2,26 @@
 
 (() => {
   const fallback = {
-    name: "SketchGlide", version: "0.2.0", label: "0.2 Test",
-    status: "Release checks underway", signing: "Unnotarized · ad hoc signed",
-    downloadUrl: null, windowsDownloadUrl: null, windowsLabel: "0.2 Test", windowsStatus: "Windows package preparation", repositoryUrl: null, checksumsUrl: null,
-    websiteUrl: null, previewAsset: null, previewKind: "screenshot", donations: [{ name: "Support SketchGlide with PayPal", url: "https://paypal.me/KEldamaty" }]
+    "name": "SketchGlide",
+    "version": "0.2.0",
+    "label": "0.2 Test",
+    "status": "Test release",
+    "signing": "Unnotarized · ad hoc signed",
+    "downloadUrl": "https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SketchGlide-0.2.0-macOS-arm64-Test-unnotarized.dmg",
+    "windowsDownloadUrl": "https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SketchGlide-0.2.0-Windows-x64-Test.zip",
+    "windowsLabel": "0.2 Test · Windows 11 x64",
+    "windowsStatus": "Unsigned Test release",
+    "repositoryUrl": "https://github.com/12kareem2323-png/karim-ink",
+    "checksumsUrl": "https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SHA256SUMS.txt",
+    "websiteUrl": "https://karim-ink.stonyvale1.chatgpt.site",
+    "previewAsset": "assets/preview.png",
+    "previewKind": "screenshot",
+    "donations": [
+      {
+        "name": "Support SketchGlide with PayPal",
+        "url": "https://paypal.me/KEldamaty"
+      }
+    ]
   };
   let release = { ...fallback };
   const themeKey = "sketchglide-site-appearance";
@@ -161,6 +177,9 @@
       link.hidden = !release.checksumsUrl;
       if (release.checksumsUrl) { link.href = release.checksumsUrl; link.rel = "noopener noreferrer"; }
     });
+    document.querySelectorAll("[data-release-page]").forEach(link => {
+      if (release.repositoryUrl) { link.href = `${release.repositoryUrl}/releases/tag/v0.2.0-test`; link.hidden = false; }
+    });
     document.querySelectorAll("[data-repository]").forEach(link => {
       link.hidden = !release.repositoryUrl;
       if (release.repositoryUrl) { link.href = release.repositoryUrl; link.rel = "noopener noreferrer"; }
@@ -188,7 +207,8 @@
     if (release.websiteUrl) {
       let canonical = document.querySelector('link[rel="canonical"]');
       if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.append(canonical); }
-      const current = location.pathname.endsWith("privacy.html") ? "privacy.html" : location.pathname.endsWith("support.html") ? "support.html" : "";
+      const page = location.pathname.split("/").pop();
+      const current = ["privacy.html", "support.html", "publishing.html"].includes(page) ? page : "";
       canonical.href = new URL(current, release.websiteUrl.endsWith("/") ? release.websiteUrl : `${release.websiteUrl}/`).href;
     }
     configurePreview(config);
@@ -271,6 +291,6 @@
   fetch("release.json", { cache: "no-store", credentials: "same-origin", signal: controller.signal })
     .then(response => { if (!response.ok) throw new Error("Release information unavailable"); return response.json(); })
     .then(config => { if (config && typeof config === "object" && !Array.isArray(config)) applyRelease(config); })
-    .catch(() => { /* Keep honest, non-downloadable defaults on network/configuration failure. */ })
+    .catch(() => { /* Keep the verified release links already included in this site version. */ })
     .finally(() => clearTimeout(timeout));
 })();

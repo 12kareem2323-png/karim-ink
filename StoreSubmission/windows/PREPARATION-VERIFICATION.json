@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "manifestXmlParses": true,
+  "identityUnset": true,
+  "originalLogoPngCrcAndDimensionsValid": true,
+  "logos": {
+    "Square150x150Logo.png": {
+      "width": 150,
+      "height": 150,
+      "bytes": 19425
+    },
+    "ListingIcon.png": {
+      "width": 300,
+      "height": 300,
+      "bytes": 52581
+    },
+    "StoreLogo.png": {
+      "width": 50,
+      "height": 50,
+      "bytes": 5106
+    },
+    "Square310x310Logo.png": {
+      "width": 310,
+      "height": 310,
+      "bytes": 56545
+    },
+    "Square44x44Logo.png": {
+      "width": 44,
+      "height": 44,
+      "bytes": 4354
+    }
+  },
+  "scriptReviewed": true,
+  "powershellScriptExecuted": false,
+  "makeAppxAvailableInInspectedVm": false,
+  "msixProduced": false,
+  "packagedRuntimeTested": false,
+  "storeSubmitted": false
+}

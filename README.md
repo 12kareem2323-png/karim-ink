@@ -11,6 +11,8 @@ A personal whiteboard project **made by Karim Eldamaty**. Draw, write, make diag
 - **Mac:** Apple Silicon, macOS 14 or later. Download the DMG or app ZIP. Ad hoc signed and **unnotarized**; macOS may block first launch.
 - **Windows Test:** Windows 11 **Intel/AMD x64**. Extract the entire ZIP, then open `SketchGlide.exe`. The .NET runtime is included. **Unsigned**; Windows may show an unknown-publisher warning.
 
+Optional Windows setup scripts were corrected on 12 October; get the separate [setup helpers](https://github.com/12kareem2323-png/karim-ink/releases/download/v0.2.0-test/SketchGlide-0.2.0-Windows-Setup-Helpers.zip) before using Install.cmd. [Help](SUPPORT.md) explains replacement and checksums. People who already use Scoop can use the new [custom bucket](https://github.com/12kareem2323-png/sketchglide-scoop); manifest/payload validation passed, while an actual Scoop install/uninstall remains untested.
+
 These are early Test builds. Keep your editable drawings backed up and read [first-launch help](SUPPORT.md). The Windows app was checked in a Windows ARM virtual machine under x64 emulation; a physical Intel/AMD PC and your own drawing tablet still need testing. The Mac app was checked on Apple Silicon with macOS 27.2. No universal tablet support or locked 120 FPS is promised.
 
 ## What you can do
@@ -33,6 +35,10 @@ The native apps use driver-provided tablet input and are not tied to one brand. 
 
 [Privacy](PRIVACY.md) · [Verification](VERIFICATION.md) · [Release notes](RELEASE_NOTES.md) · [Security](SECURITY.md)
 
+[Publishing steps and current store costs](PUBLISHING.md) · [Interactive checklist](https://karim-ink.stonyvale1.chatgpt.site/publishing.html). The Microsoft and Mac App Store listings have not been submitted or approved.
+
 Also available on [itch.io](https://12kareem2323-png.itch.io/karim-ink). [GitHub Pages mirror](https://12kareem2323-png.github.io/karim-ink/). The existing `karim-ink` URLs and internal file/storage names are retained for compatibility; the project is now called **SketchGlide**.
 
 Donations are optional and do not unlock features or buy a guaranteed support response. Payments go directly through [PayPal](https://paypal.me/KEldamaty); the app does not collect payment details.
+
+[Store preparation kit](StoreSubmission/README.md) · [Free publishing options](Distribution/FREE-PUBLISHING-OPTIONS.md). Drafts require real account identities and package verification before submission.

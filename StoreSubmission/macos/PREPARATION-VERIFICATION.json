@@ -1,0 +1,45 @@
+{
+  "prepared": "2026-10-12",
+  "scope": "Mac App Store documentation only; no external mutations or enrolment",
+  "native_source": "work/october12-release/mac/source",
+  "shipped_bundle_identifier": "com.karimeldamaty.karimink",
+  "shipped_version": "0.2.0",
+  "shipped_build": "2",
+  "shipped_minimum_macos": "14.0",
+  "shipped_architecture": "arm64",
+  "inspected_anonymous_mac_zip_sha256": "71fe3250e64473ed599a5bb9857f1305772ab55f1ce1f50b3c76766498f29a73",
+  "current_signing": "ad hoc; no TeamIdentifier",
+  "app_sandbox_enabled": false,
+  "store_entitlements_file_present": false,
+  "privacy_manifest_file_present": false,
+  "store_package_prepared": false,
+  "paid_team_identity_available": false,
+  "notarization_performed": false,
+  "store_submission_performed": false,
+  "sandbox_runtime_test_performed": false,
+  "listing_field_lengths": {
+    "name": 11,
+    "subtitle": 27,
+    "promotional_text": 140,
+    "keywords_utf8_bytes": 84,
+    "description": 1631
+  },
+  "source_qa_basis": "Existing RELEASE_VERIFICATION.json and source README; no new app runtime or physical tests performed by this kit.",
+  "public_urls_read_only_checked": [
+    "https://karim-ink.stonyvale1.chatgpt.site/privacy.html",
+    "https://karim-ink.stonyvale1.chatgpt.site/support.html"
+  ],
+  "forms_left_unanswered": [
+    "seller identity",
+    "Team ID",
+    "age rating",
+    "privacy nutrition label",
+    "encryption compliance",
+    "trader status",
+    "accessibility nutrition labels"
+  ],
+  "membership_sources": [
+    "https://developer.apple.com/programs/enroll/",
+    "https://apps.apple.com/gb/app/apple-developer/id640199958"
+  ]
+}

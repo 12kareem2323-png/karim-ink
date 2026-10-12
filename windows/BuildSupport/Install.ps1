@@ -2,6 +2,7 @@
 try {
     Assert-WindowsX64; Assert-KarimClosed
     $source = Get-KarimPayload; $destination = Get-KarimInstallDirectory
+    Assert-KarimPayload $source
     if ([IO.Path]::GetFullPath($source).TrimEnd('\') -eq [IO.Path]::GetFullPath($destination).TrimEnd('\')) { throw 'Run Install.cmd from the newly extracted ZIP, not from the installed folder.' }
     Add-Type -AssemblyName System.Windows.Forms
     $form = New-Object Windows.Forms.Form
@@ -17,23 +18,8 @@ try {
     $ok = New-Object Windows.Forms.Button; $ok.Text = 'Install'; $ok.SetBounds(428,258,92,30); $ok.DialogResult = [Windows.Forms.DialogResult]::OK; $form.AcceptButton = $ok; $form.Controls.Add($ok)
     $cancel = New-Object Windows.Forms.Button; $cancel.Text = 'Cancel'; $cancel.SetBounds(532,258,92,30); $cancel.DialogResult = [Windows.Forms.DialogResult]::Cancel; $form.CancelButton = $cancel; $form.Controls.Add($cancel)
     if ($form.ShowDialog() -ne [Windows.Forms.DialogResult]::OK) { Write-Host 'Install cancelled. Nothing changed.'; exit 0 }
-    $parent = Split-Path -Parent $destination; New-Item -ItemType Directory -Path $parent -Force | Out-Null
-    $stage = Join-Path $parent ('KarimEldamaty.stage-' + [Guid]::NewGuid().ToString('N'))
-    New-Item -ItemType Directory -Path $stage | Out-Null
-    foreach ($file in Get-ChildItem -LiteralPath $source -File) {
-        if ($file.Name -ne 'install-state.json' -and $file.Extension -in @('.exe','.dll','.json','.pdb','.md','.txt','.config','.cmd')) { Copy-Item -LiteralPath $file.FullName -Destination $stage -Force }
-    }
-    foreach ($directory in @('Resources','Examples','BuildSupport','Prerequisites','x64','runtimes')) {
-        $path = Join-Path $source $directory
-        if (Test-Path -LiteralPath $path) { Copy-Item -LiteralPath $path -Destination $stage -Recurse -Force }
-    }
-    # A package with its runtime in App/ or Runtime/ may keep docs/scripts at the outer root.
     $packageRoot = Split-Path -Parent $PSScriptRoot
-    foreach ($directory in @('BuildSupport','Prerequisites')) {
-        $path = Join-Path $packageRoot $directory
-        if ((Test-Path -LiteralPath $path) -and !(Test-Path -LiteralPath (Join-Path $stage $directory))) { Copy-Item -LiteralPath $path -Destination $stage -Recurse -Force }
-    }
-    if (!(Test-Path -LiteralPath (Join-Path $stage 'SketchGlide.exe'))) { throw 'The staged app is incomplete. The previous installation is untouched.' }
+    $stage = New-KarimInstallStage $source $destination $packageRoot
     $oldState = $null; $oldStatePath = Join-Path $destination 'install-state.json'
     if (Test-Path -LiteralPath $oldStatePath) { $oldState = Get-Content -LiteralPath $oldStatePath -Raw | ConvertFrom-Json }
     $registry = @(); $command = '"' + (Join-Path $destination 'SketchGlide.exe') + '" "%1"'
@@ -76,9 +62,8 @@ try {
     }
     $state = [ordered]@{ Format=1; InstallDirectory=$destination; InstalledAt=[DateTimeOffset]::Now.ToString('o'); Registry=$registry; Shortcuts=@($shortcuts | Select-Object -Unique); Files=@(); PreviousInstall=$null }
     $state.Files = @(Get-ChildItem -LiteralPath $stage -Recurse -File | ForEach-Object { [PSCustomObject]@{ Path=$_.FullName.Substring($stage.Length+1); SHA256=(Get-FileDigest $_.FullName) } })
-    $previous = $null
-    if (Test-Path -LiteralPath $destination) { $previous = $destination + '.previous-' + [DateTime]::Now.ToString('yyyyMMdd-HHmmss') + '-' + [Guid]::NewGuid().ToString('N').Substring(0,6); Move-Item -LiteralPath $destination -Destination $previous; $state.PreviousInstall = $previous }
-    try { Move-Item -LiteralPath $stage -Destination $destination } catch { if ($previous) { Move-Item -LiteralPath $previous -Destination $destination }; throw }
+    $previous = Move-KarimInstallStage $stage $destination
+    $state.PreviousInstall = $previous
     $state | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $destination 'install-state.json') -Encoding UTF8
     if ($links.Checked) {
         Set-RegistryDefault 'HKCU:\Software\Classes\karimboard' 'URL:SketchGlide drawing'
