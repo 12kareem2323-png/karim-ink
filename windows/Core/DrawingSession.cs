@@ -12,7 +12,8 @@ public class DrawingSession
     public HashSet<Guid> SelectedIds { get; set; } = [];
     public string? PendingSymbolId { get; set; }
     public bool Snap { get; set; }
-    public bool AutoCorrect { get; set; } = true;
+    public InkShapeMode ShapeMode { get; set; } = InkShapeMode.Hold;
+    public bool LearnedInkSmoothing { get; set; } = true;
     public int Revision { get; private set; }
     public string Dash { get; set; } = "Solid";
     public bool FillShapes { get; set; }
@@ -76,7 +77,19 @@ public class DrawingSession
     public void NotifyChanged() { BoardCodec.PruneDerivedMetadata(Board); Board.Modified = SwiftDate.Now; Revision++; SelectedIds.IntersectWith(Board.Elements.Select(e=>e.Id)); Changed?.Invoke(); }
     public void NotifyViewChanged() => Changed?.Invoke();
     public void Status(string text) => StatusChanged?.Invoke(text);
-    public void Commit(DrawingElement e) { Checkpoint(); Board.Elements.Add(e); NotifyChanged(); }
+    public void Commit(DrawingElement element, DrawingElement? beforeSnap = null)
+    {
+        Checkpoint();
+        if (beforeSnap is not null)
+        {
+            Board.Elements.Add(beforeSnap);
+            undo.Add(new(historySnapshots.Capture(Board), ++historySequence));
+            Board.Elements[^1] = element;
+            TrimHistory();
+        }
+        else Board.Elements.Add(element);
+        NotifyChanged();
+    }
     public void Undo() { if (undo.Count == 0) return; var target=undo[^1].Board; undo.RemoveAt(undo.Count-1); redo.Add(new(historySnapshots.Capture(Board),++historySequence)); Board = BoardCodec.Clone(target); TrimHistory(); SelectedIds.Clear(); NotifyChanged(); }
     public void Redo() { if (redo.Count == 0) return; var target=redo[^1].Board; redo.RemoveAt(redo.Count-1); undo.Add(new(historySnapshots.Capture(Board),++historySequence)); Board = BoardCodec.Clone(target); TrimHistory(); SelectedIds.Clear(); NotifyChanged(); }
     public void DeleteSelection() { if (!Board.Elements.Any(e => SelectedIds.Contains(e.Id) && !e.Locked)) return; Checkpoint(); Board.Elements.RemoveAll(e => SelectedIds.Contains(e.Id) && !e.Locked); SelectedIds.Clear(); NotifyChanged(); }

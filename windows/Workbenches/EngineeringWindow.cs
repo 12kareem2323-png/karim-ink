@@ -33,7 +33,7 @@ public sealed class EngineeringWindow : Window
     public EngineeringWindow(DrawingSession session)
     {
         _session = session; _boardId = session.Board.Id;
-        WorkbenchUI.Window(this, "Engineering tools · SketchGlide", 940, 750);
+        WorkbenchUI.Window(this, "Engineering tools · Velin", 940, 750);
         var root = new DockPanel { Margin = new Thickness(18) };
         var heading = WorkbenchUI.Label("Engineering tools", 26); DockPanel.SetDock(heading, Dock.Top); root.Children.Add(heading);
         DockPanel.SetDock(_status, Dock.Bottom); root.Children.Add(_status);

@@ -8,13 +8,13 @@ function Assert-WindowsX64 {
 function Get-KarimPayload {
     $package = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
     foreach ($candidate in @($package, (Join-Path $package 'App'), (Join-Path $package 'Runtime'))) {
-        if (Test-Path -LiteralPath (Join-Path $candidate 'SketchGlide.exe')) { return $candidate }
+        if (Test-Path -LiteralPath (Join-Path $candidate 'Velin.exe')) { return $candidate }
     }
-    throw 'SketchGlide.exe is missing. Use Extract All on the complete ZIP before running this script.'
+    throw 'Velin.exe is missing. Use Extract All on the complete ZIP before running this script.'
 }
 # Setup-only preflight: reads the extracted payload, never drawing libraries or credentials.
 function Assert-KarimPayload([string]$source) {
-    $required = @('SketchGlide.exe','SketchGlide.dll','SketchGlide.deps.json','SketchGlide.runtimeconfig.json',
+    $required = @('Velin.exe','Velin.dll','Velin.deps.json','Velin.runtimeconfig.json',
         'coreclr.dll','hostfxr.dll','hostpolicy.dll','PresentationCore.dll','wpfgfx_cor3.dll',
         'onnxruntime.dll','x64\tesseract50.dll','x64\leptonica-1.82.0.dll',
         'Resources\SymbolCatalog.json','Resources\MathSymbols\deTeX.onnx','Resources\MathSymbols\classes.json',
@@ -26,7 +26,7 @@ function Assert-KarimPayload([string]$source) {
         }
     }
     try {
-        $deps = Get-Content -LiteralPath (Join-Path $source 'SketchGlide.deps.json') -Raw | ConvertFrom-Json
+        $deps = Get-Content -LiteralPath (Join-Path $source 'Velin.deps.json') -Raw | ConvertFrom-Json
         $targetName = [string]$deps.runtimeTarget.name
         if (!$targetName.EndsWith('/win-x64')) { throw 'This is not a Windows x64 runtime payload.' }
         $target = $deps.targets.PSObject.Properties[$targetName]
@@ -99,7 +99,7 @@ function Move-KarimInstallStage([string]$stage,[string]$destination) {
 }
 function Get-KarimInstallDirectory { return (Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'Programs\KarimEldamaty') }
 function Assert-KarimClosed {
-    if (Get-Process -Name SketchGlide -ErrorAction SilentlyContinue) { throw 'Close SketchGlide yourself, then run this script again. Your running app has not been closed.' }
+    if (Get-Process -Name Velin,SketchGlide -ErrorAction SilentlyContinue) { throw 'Close Velin yourself, then run this script again. Your running app has not been closed.' }
 }
 function Get-FileDigest([string]$path) { return (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant() }
 function Get-RegistryCommand([string]$path) {
@@ -141,9 +141,9 @@ function Restore-KarimRegistry($record,[string]$installDirectory) {
         & "$env:SystemRoot\System32\reg.exe" import $backup | Out-Null
         if ($LASTEXITCODE -ne 0) {
             if ($record.Kind -eq 'uri') {
-                Set-RegistryDefault $psPath 'URL:SketchGlide drawing'
+                Set-RegistryDefault $psPath 'URL:Velin drawing'
                 New-ItemProperty -Path $psPath -Name 'URL Protocol' -Value '' -PropertyType String -Force | Out-Null
-            } else { Set-RegistryDefault $psPath 'Open with SketchGlide' }
+            } else { Set-RegistryDefault $psPath 'Open with Velin' }
             Set-RegistryDefault $commandPath $record.ExpectedCommand
             throw ('Previous handler could not be restored. The installed app handler was reinstated and removal stopped. Backup: ' + $backup)
         }
@@ -152,7 +152,7 @@ function Restore-KarimRegistry($record,[string]$installDirectory) {
 function New-KarimShortcut([string]$path,[string]$executable) {
     $shell = New-Object -ComObject WScript.Shell
     $shortcut = $shell.CreateShortcut($path); $shortcut.TargetPath = $executable
-    $shortcut.WorkingDirectory = Split-Path -Parent $executable; $shortcut.Description = 'SketchGlide Windows drawing workspace'
+    $shortcut.WorkingDirectory = Split-Path -Parent $executable; $shortcut.Description = 'Velin Windows drawing workspace'
     $shortcut.IconLocation = $executable + ',0'; $shortcut.Save()
     [Runtime.InteropServices.Marshal]::FinalReleaseComObject($shell) | Out-Null
 }

@@ -30,15 +30,27 @@ public static class DrawingMath
     public static bool InPolygon(Point p,IReadOnlyList<Point> poly){var inside=false;for(int i=0,j=poly.Count-1;i<poly.Count;j=i++){var a=poly[i];var b=poly[j];if((a.Y>p.Y)!=(b.Y>p.Y)&&p.X<(b.X-a.X)*(p.Y-a.Y)/(b.Y-a.Y)+a.X)inside=!inside;}return inside;}
     public static IEnumerable<(Point,Point)> Edges(Rect r){yield return(r.TopLeft,r.TopRight);yield return(r.TopRight,r.BottomRight);yield return(r.BottomRight,r.BottomLeft);yield return(r.BottomLeft,r.TopLeft);}
     public static Point[] Corners(Rect r)=>[r.TopLeft,r.TopRight,r.BottomRight,r.BottomLeft];
-    public static DrawingElement CorrectShape(DrawingElement original,double zoom)
+    public static DrawingElement CorrectShape(DrawingElement original, double zoom,
+        InkShapeMode mode = InkShapeMode.Hold, IReadOnlyList<Point>? input = null)
     {
-        if(original.Points.Count<3||original.Pen is "Highlighter" or "Airbrush")return original;
-        var points=original.Points.Select(p=>p.Point).ToList();var first=points[0];var last=points[^1];var r=new Rect(first,first);foreach(var p in points)r.Union(p);var diagonal=Math.Sqrt(r.Width*r.Width+r.Height*r.Height);if(diagonal*zoom<20)return original;var length=Enumerable.Range(1,points.Count-1).Sum(i=>(points[i]-points[i-1]).Length);var end=(last-first).Length;var result=BoardCodec.Clone(original);
-        if(end>diagonal*.75&&length<end*1.14&&points.All(p=>Distance(p,first,last)<Math.Max(5/zoom,diagonal*.05))){result.Kind="line";result.Points=[original.Points[0].Copy(),original.Points[^1].Copy()];return result;}
-        if(points.Count<8||end>=diagonal*.22||length<=diagonal*1.65||r.Width/2*zoom<=8||r.Height/2*zoom<=8)return original;
-        var ellipseError=points.Average(p=>Math.Abs(Math.Sqrt(Math.Pow((p.X-r.X-r.Width/2)/(r.Width/2),2)+Math.Pow((p.Y-r.Y-r.Height/2)/(r.Height/2),2))-1));var edgeError=points.Average(p=>Math.Min(Math.Min(Math.Abs(p.X-r.Left),Math.Abs(p.X-r.Right)),Math.Min(Math.Abs(p.Y-r.Top),Math.Abs(p.Y-r.Bottom))));var corners=DrawingMath.Corners(r).All(c=>points.Any(p=>(p-c).Length<diagonal*.12));
-        if(corners&&edgeError<Math.Min(r.Width,r.Height)*.08)result.Kind="rectangle";else if(ellipseError<.11)result.Kind="ellipse";else {points.Add(first);var simplified=Simplify(points,diagonal*.06);if((simplified[^1]-first).Length<diagonal*.1)simplified.RemoveAt(simplified.Count-1);if(simplified.Count!=3)return original;var area=Math.Abs(Vector.CrossProduct(simplified[1]-simplified[0],simplified[2]-simplified[0]));if(area<=diagonal*diagonal*.08)return original;result.Kind="triangle";result.Points=simplified.Select(p=>new InkPoint(p.X,p.Y)).ToList();return result;}
-        result.Points=[new(r.Left,r.Top),new(r.Right,r.Bottom)];return result;
+        if (original.Pen is "Highlighter" or "Airbrush" || mode == InkShapeMode.Off)
+            return original;
+        var fit = InkShapeRecognizer.Detect(input ?? original.Points.Select(p => p.Point).ToArray(), zoom, mode);
+        if (fit is null) return original;
+
+        var result = BoardCodec.Clone(original);
+        result.Kind = fit.Kind;
+        result.Rotation = fit.Rotation;
+        result.Points = fit.Kind == "line"
+            ? [original.Points[0].Copy(), original.Points[^1].Copy()]
+            : fit.Vertices.Select(point => new InkPoint(point.X, point.Y)).ToList();
+        if (fit.Kind == "line")
+        {
+            result.Points[0].X = fit.Vertices[0].X;
+            result.Points[0].Y = fit.Vertices[0].Y;
+            result.Points[1].X = fit.Vertices[1].X;
+            result.Points[1].Y = fit.Vertices[1].Y;
+        }
+        return result;
     }
-    private static List<Point> Simplify(List<Point> points,double tolerance){if(points.Count<=2)return points;double largest=0;var index=0;for(int i=1;i<points.Count-1;i++){var d=Distance(points[i],points[0],points[^1]);if(d>largest){largest=d;index=i;}}if(largest<=tolerance)return[points[0],points[^1]];var left=Simplify(points.Take(index+1).ToList(),tolerance);var right=Simplify(points.Skip(index).ToList(),tolerance);left.RemoveAt(left.Count-1);left.AddRange(right);return left;}
 }

@@ -14,7 +14,7 @@ public static class NotionHTMLExport
     private const string Template="""
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data: blob:; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'">
-<title>SketchGlide Windows 11 · 0.2 Test</title>
+<title>Velin for Windows</title>
 <style>
 :root{color-scheme:light;--bg:#edf4f5;--glass:#ffffffd9;--ink:#17282f;--border:#b7cbd0;--muted:#566e77}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:13px -apple-system,BlinkMacSystemFont,sans-serif}body.dark{color-scheme:dark;--bg:#16232b;--glass:#24373fdd;--ink:#e2f3f5;--border:#49616a;--muted:#b5cbd1}
@@ -24,7 +24,7 @@ button,select,input{font:inherit;border:1px solid var(--border);border-radius:8p
 nav{display:flex;gap:7px;align-items:center;flex-wrap:wrap;padding:10px 18px}input[type=color]{width:36px;height:33px;padding:3px}input[type=range]{max-width:110px}#surface{overflow:auto;height:65vh;min-height:320px;margin:0 16px;border-radius:14px;border:1px solid var(--border);background:#bccbd0}
 canvas{display:block;touch-action:none;max-width:none}footer{display:flex;gap:14px;flex-wrap:wrap;padding:12px 18px;color:var(--muted);font-size:11px}a{color:inherit}#notice{flex:1}
 @media(max-width:600px){header{padding:10px}nav{padding:8px;gap:5px}#surface{margin:0 8px}strong{font-size:14px}}
-</style><header><div class="title"><strong>SketchGlide <span class="muted">Windows 11 · 0.2 Test</span></strong><span id="name" class="muted"></span></div><button id="theme" aria-label="Toggle light or dark appearance">Light / Dark</button></header>
+</style><header><div class="title"><strong>Velin <span class="muted">Windows</span></strong><span id="name" class="muted"></span></div><button id="theme" aria-label="Toggle light or dark appearance">Light / Dark</button></header>
 <nav><button id="pen" class="active">Pen</button><button id="erase">Erase new ink</button><select id="brush" aria-label="Brush"><option value="fineliner">Fineliner</option><option value="pressure">Pressure pen</option><option value="marker">Highlighter</option></select><input id="color" type="color" value="#182b34" aria-label="Ink colour"><input id="width" type="range" min="1" max="30" value="4" aria-label="Pen width"><button id="undo">Undo</button><button id="redo">Redo</button><button id="png">Download PNG</button><button id="save">Save new ink</button><label>Load ink <input id="load" type="file" accept=".json,application/json" style="max-width:180px"></label></nav>
 <div id="surface"><canvas id="board" aria-label="Interactive drawing copy"></canvas></div><footer><span id="notice">Ready</span><a id="native">Open native board on Windows</a><span>Web copy: existing artwork is a background image. New ink is editable. Cloud sync is not enabled.</span></footer>
 <script>

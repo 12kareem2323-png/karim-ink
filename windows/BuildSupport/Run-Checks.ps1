@@ -2,7 +2,7 @@
 $testDirectory = $null
 try {
     Assert-WindowsX64; Assert-KarimClosed
-    $source = Get-KarimPayload; $exe = Join-Path $source 'SketchGlide.exe'
+    $source = Get-KarimPayload; $exe = Join-Path $source 'Velin.exe'
     $testDirectory = Join-Path ([IO.Path]::GetTempPath()) ('Karim-Windows-Check-Receipts-' + [Guid]::NewGuid().ToString('N'))
     New-Item -ItemType Directory -Path $testDirectory | Out-Null
     $receiptParent = Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'Karim Windows checks'

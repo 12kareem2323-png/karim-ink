@@ -12,3 +12,8 @@ SketchGlide is made by Karim Eldamaty. Original source code, artwork and symbol 
 The OpenAI assistant uses the [Responses API](https://developers.openai.com/api/docs/guides/migrate-to-responses) and an editable [GPT-4.1](https://developers.openai.com/api/docs/models/gpt-4.1) default. It is an API client and requires the user's API access; a ChatGPT subscription is separate. No OpenAI key or user drawing is bundled. Optional local Ollama is installed separately by the user.
 
 The package has not been signed with a commercial publisher certificate. Native Windows runtime, interface and physical tablet tests are separate from the Mac-side build and logic checks.
+
+## PDF page tools
+
+- [PDFsharp 6.2.4](https://github.com/empira/PDFsharp/tree/v6.2.4), MIT, copyright empira Software GmbH. The packaged licence is `Resources/Licenses/PDFsharp-6.2.4-MIT.txt`.
+- [PdfPig 0.1.16](https://github.com/UglyToad/PdfPig/tree/a7bb35662bbbf405efddad50aedc9bcdcf515afc), Apache-2.0. The packaged licence and attribution files are `Resources/Licenses/PdfPig-0.1.16-Apache-2.0.txt` and `Resources/Licenses/PdfPig-0.1.16-NOTICES.txt`.

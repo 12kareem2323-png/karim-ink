@@ -6,9 +6,9 @@ try {
     $state = Get-Content -LiteralPath $manifest -Raw | ConvertFrom-Json
     if ($state.Format -ne 1 -or [IO.Path]::GetFullPath($state.InstallDirectory).TrimEnd('\') -ne [IO.Path]::GetFullPath($destination).TrimEnd('\')) { throw 'Installation manifest is invalid. Nothing was removed.' }
     Add-Type -AssemblyName System.Windows.Forms
-    $answer = [Windows.Forms.MessageBox]::Show("Remove this installed app and its shortcuts?`r`n`r`nYour drawing library, profiles, API/Craft credentials, exported files and previous app backups are kept.", 'Uninstall SketchGlide', [Windows.Forms.MessageBoxButtons]::YesNo, [Windows.Forms.MessageBoxIcon]::Question)
+    $answer = [Windows.Forms.MessageBox]::Show("Remove this installed app and its shortcuts?`r`n`r`nYour drawing library, profiles, API/Craft credentials, exported files and previous app backups are kept.", 'Uninstall Velin', [Windows.Forms.MessageBoxButtons]::YesNo, [Windows.Forms.MessageBoxIcon]::Question)
     if ($answer -ne [Windows.Forms.DialogResult]::Yes) { Write-Host 'Uninstall cancelled.'; exit 0 }
-    $expectedCommand = '"' + (Join-Path $destination 'SketchGlide.exe') + '" "%1"'
+    $expectedCommand = '"' + (Join-Path $destination 'Velin.exe') + '" "%1"'
     foreach ($record in @($state.Registry)) {
         $allowed = ($record.Path -eq 'HKEY_CURRENT_USER\Software\Classes\karimboard' -and $record.Kind -eq 'uri' -and $record.BackupFile -eq 'RegistryBackup\karimboard.reg') -or ($record.Path -eq 'HKEY_CURRENT_USER\Software\Classes\.engboard\shell\KarimEldamaty' -and $record.Kind -eq 'context' -and $record.BackupFile -eq 'RegistryBackup\engboard-context.reg')
         if (!$allowed -or $record.ExpectedCommand -ne $expectedCommand) { throw 'Invalid registered-handler record. Removal stopped.' }
@@ -17,7 +17,7 @@ try {
     foreach ($shortcut in @($state.Shortcuts)) {
         if (!(Test-Path -LiteralPath $shortcut)) { continue }
         $shell = New-Object -ComObject WScript.Shell; $item = $shell.CreateShortcut($shortcut)
-        if ($item.TargetPath -eq (Join-Path $destination 'SketchGlide.exe')) { Remove-Item -LiteralPath $shortcut -Force }
+        if ($item.TargetPath -eq (Join-Path $destination 'Velin.exe')) { Remove-Item -LiteralPath $shortcut -Force }
         [Runtime.InteropServices.Marshal]::FinalReleaseComObject($shell) | Out-Null
     }
     Set-Location -LiteralPath ([IO.Path]::GetTempPath())

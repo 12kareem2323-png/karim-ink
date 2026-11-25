@@ -4,6 +4,8 @@ using System.Windows;
 using System.Windows.Media;
 namespace KarimEldamatyWindows;
 
+public enum InkShapeMode { Off, Hold, OnRelease }
+
 public class InkPoint
 {
     private double x,y,pressure=1,tiltX,tiltY;private double? velocity,rawPressure;private string? deviceKey;
@@ -141,7 +143,9 @@ public class Board
     [JsonPropertyName("whiteboardURL")] public string WhiteboardURL { get; set; } = "";
     public string Folder { get; set; } = "General";
     [JsonExtensionData] public Dictionary<string, JsonElement>? Extra { get; set; }
-    public static readonly string[] BackgroundNames = ["Plain", "Lined", "Square grid", "Dot grid", "Graph paper", "Engineering sheet", "Blueprint", "Isometric", "Polar grid", "Dark board"];
+    public static readonly string[] BackgroundNames = ["Plain", "Ivory paper", "Lined", "Ruled with margin",
+        "Two-column notes", "Square grid", "Dot grid", "Graph paper", "Coordinate grid", "Hex graph",
+        "Engineering sheet", "Blueprint", "Isometric", "Polar grid", "Blank music staves", "Dark board"];
     public double Millimetres(double points) => points / PointsPerMM * ScaleDenominator;
     public double DrawingPoints(double millimetres) => millimetres * PointsPerMM / ScaleDenominator;
 }

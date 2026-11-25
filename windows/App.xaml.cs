@@ -21,7 +21,7 @@ public partial class App : Application
         _instance = new Mutex(true,"Local\\" + _pipeName,out bool created);
         if (!created && !e.Args.Contains("--self-test"))
         {
-            try { using var pipe = new NamedPipeClientStream(".",_pipeName,PipeDirection.Out,PipeOptions.CurrentUserOnly); await pipe.ConnectAsync(3000); using var writer = new StreamWriter(pipe); await writer.WriteLineAsync(e.Args.FirstOrDefault() ?? "activate"); await writer.FlushAsync(); } catch (Exception ex) when(ex is IOException or TimeoutException) { MessageBox.Show("Another copy is still starting. Open it from the taskbar.","SketchGlide"); }
+            try { using var pipe = new NamedPipeClientStream(".",_pipeName,PipeDirection.Out,PipeOptions.CurrentUserOnly); await pipe.ConnectAsync(3000); using var writer = new StreamWriter(pipe); await writer.WriteLineAsync(e.Args.FirstOrDefault() ?? "activate"); await writer.FlushAsync(); } catch (Exception ex) when(ex is IOException or TimeoutException) { MessageBox.Show("Another copy is still starting. Open it from the taskbar.","Velin"); }
             Shutdown(); return;
         }
         var isolation = checking ? Path.Combine(TestDataDirectory!,"Boards") : null;

@@ -57,7 +57,7 @@ public sealed class Sketch3DWindow : Window
     public Sketch3DWindow(DrawingSession session)
     {
         _session = session; _boardId = session.Board.Id;
-        WorkbenchUI.Window(this, "3D Sketch · SketchGlide", 1220, 800);
+        WorkbenchUI.Window(this, "3D Sketch · Velin", 1220, 800);
         var selected = session.Board.Elements.FirstOrDefault(e => session.SelectedIds.Count == 1 && session.SelectedIds.Contains(e.Id) && e.Sketch3D != null);
         if (selected?.Sketch3D is JsonElement scene)
         {

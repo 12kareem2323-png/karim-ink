@@ -1,0 +1,98 @@
+name: Velin Windows x64
+
+on:
+  push:
+    branches: [velin/windows-x64]
+    tags: ['velin-windows-v*']
+    paths: ['windows/**', '.github/workflows/velin-windows.yml']
+  pull_request:
+    branches: [velin/windows-x64]
+    paths: ['windows/**', '.github/workflows/velin-windows.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Check and package x64
+    runs-on: windows-2025
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          dotnet-version: '10.0.404'
+      - name: Drawing, services and workbench checks
+        shell: pwsh
+        run: |
+          foreach ($test in @(
+            'windows/Verification/Core/CoreVerification.csproj',
+            'windows/Verification/Services/Services.Tests.csproj',
+            'windows/Workbenches/Verification/Logic/WorkbenchLogic.csproj'
+          )) {
+            dotnet run --project $test --configuration Release
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+      - name: Restore and publish a self-contained app
+        shell: pwsh
+        run: |
+          $project = 'windows/KarimEldamatyWindows.csproj'
+          dotnet restore $project --runtime win-x64 --locked-mode
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          dotnet publish $project --configuration Release --runtime win-x64 --no-restore --self-contained true -p:ContinuousIntegrationBuild=true --output "$env:RUNNER_TEMP/payload"
+      - name: Run the x64 executable with a temporary drawing library
+        shell: pwsh
+        run: |
+          $app = Join-Path $env:RUNNER_TEMP 'payload/Velin.exe'
+          $receipts = Join-Path $env:RUNNER_TEMP 'velin-runtime-checks'
+          $process = Start-Process $app -ArgumentList '--self-test', ('"' + $receipts + '"') -WorkingDirectory (Split-Path $app) -PassThru
+          if (!$process.WaitForExit(170000)) {
+            Stop-Process -Id $process.Id
+            throw 'Velin did not finish its runtime check.'
+          }
+          $result = Get-Content (Join-Path $receipts 'windows-runtime-results.json') -Raw | ConvertFrom-Json
+          $result.checks | Format-Table -AutoSize
+          if ($process.ExitCode -ne 0 -or !$result.passed -or $result.architecture -ne 'X64') {
+            throw 'Velin Windows x64 runtime check failed.'
+          }
+      - name: Create the ZIP and checksum
+        shell: pwsh
+        run: |
+          $packageArgs = @("$env:RUNNER_TEMP/payload", "$env:RUNNER_TEMP/release")
+          if ($env:GITHUB_REF_TYPE -eq 'tag') { $packageArgs += @('--tag', $env:GITHUB_REF_NAME) }
+          python windows/BuildSupport/package_windows.py @packageArgs
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: Velin-Windows-x64
+          path: ${{ runner.temp }}/release/
+          if-no-files-found: error
+          compression-level: 0
+
+  draft-release:
+    name: Stage a tagged Windows release
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/velin-windows-v')
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: Velin-Windows-x64
+          path: release
+      - name: Create the draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "A release already exists for this tag."
+            exit 0
+          fi
+          version="${GITHUB_REF_NAME#velin-windows-v}"
+          release_args=(--draft --verify-tag --title "Velin $version for Windows x64")
+          if [[ "$version" == *-test.* ]]; then release_args+=(--prerelease); fi
+          gh release create "$GITHUB_REF_NAME" "release/Velin-$version-Windows-x64.zip" release/SHA256SUMS.txt "${release_args[@]}" --notes "Portable Windows x64 build. Extract the whole ZIP and open Velin.exe. See the bundled README for requirements and update instructions."

@@ -14,6 +14,33 @@ async Task Throws<T>(Func<Task> action,string message) where T:Exception{asserti
 async Task<T> ExceptionFrom<T>(Func<Task> action) where T:Exception{assertions++;try{await action();}catch(T ex){return ex;}throw new Exception("FAIL no expected "+typeof(T).Name);}
 HttpResponseMessage Response(string text,HttpStatusCode code=HttpStatusCode.OK)=>new(code){Content=new StringContent(text,Encoding.UTF8,"application/json")};
 
+await Test("GitHub update feed selects the newest complete Velin Windows x64 release", () =>
+{
+    object Entry(string tag, string package, bool draft = false, bool preview = true, bool checksum = true) => new
+    {
+        tag_name = tag, draft, prerelease = preview,
+        assets = (checksum ? new[] { package, "SHA256SUMS.txt" } : [package])
+            .Select(name => new { name, state = "uploaded", size = 10 })
+    };
+    var feed = JsonSerializer.SerializeToElement(new[]
+    {
+        Entry("v50.0.0", "SketchGlide-Windows-x64.zip", preview: false),
+        Entry("velin-windows-v9.0.0-test.1", "Velin-9.0.0-test.1-Windows-x64.zip", draft: true),
+        Entry("velin-windows-v8.0.0-test.1", "Velin-8.0.0-test.1-Windows-arm64.zip"),
+        Entry("velin-windows-v7.0.0-test.1", "Velin-7.0.0-test.1-Windows-x64.zip", checksum: false),
+        Entry("velin-windows-v1.0.0-test.10", "Velin-1.0.0-test.10-Windows-x64.zip"),
+        Entry("velin-windows-v1.0.0-test.2", "Velin-1.0.0-test.2-Windows-x64.zip")
+    });
+    var installed = WindowsUpdates.ParseTag("velin-windows-v1.0.0-test.1")!;
+    var chosen = WindowsUpdates.PickNewest(feed, installed);
+    Check(chosen?.TestNumber == 10, "Preview versions compare numerically; skip wrong, draft and incomplete assets");
+    Check(chosen?.Page == ReleaseSupport.Releases + "/tag/velin-windows-v1.0.0-test.10", "Open only the matching GitHub release page");
+    var stable = WindowsUpdates.ParseTag("velin-windows-v1.0.0")!;
+    Check(WindowsUpdates.PickNewest(feed, stable) is null, "Stable version sorts above tests for the same version");
+    Check(WindowsUpdates.ParseTag("velin-windows-v1.0.0-test.01") is null, "Reject malformed release tags");
+    return Task.CompletedTask;
+});
+
 await Test("OpenAI Responses shape, store:false, text-only and deliberate PNG attachment",async()=>
 {
     var count=0;var withImage=false;var handler=new Handler(async(request,ct)=>

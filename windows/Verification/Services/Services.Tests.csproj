@@ -7,5 +7,6 @@
     <Compile Include="../../Services/CraftClient.cs" Link="CraftClient.cs" />
     <Compile Include="../../Services/CraftExchange.cs" Link="CraftExchange.cs" />
     <Compile Include="../../Services/NotionHTMLExport.cs" Link="NotionHTMLExport.cs" />
+    <Compile Include="../../ReleaseSupport.cs;../../Services/WindowsUpdates.cs" Link="%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>

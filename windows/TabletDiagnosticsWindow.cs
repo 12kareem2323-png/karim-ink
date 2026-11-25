@@ -17,7 +17,7 @@ public sealed class TabletDiagnosticsWindow : Window
     public TabletDiagnosticsWindow(DrawingSession source)
     {
         SetResourceReference(StyleProperty, typeof(Window));
-        Title="Tablet test · SketchGlide";Width=920;Height=720;MinWidth=700;MinHeight=560;WindowStartupLocation=WindowStartupLocation.CenterOwner;
+        Title="Tablet test · Velin";Width=920;Height=720;MinWidth=700;MinHeight=560;WindowStartupLocation=WindowStartupLocation.CenterOwner;
         test.Pen=source.Pen;test.Settings=BoardCodec.Clone(source.Settings);test.Color=source.Color;test.ActivationPressure=source.ActivationPressure;test.BarrelButtonAction=source.BarrelButtonAction;
         test.SetBoard(new(){Title="Temporary tablet scratchpad",Width=1200,Height=700,Background="Dot grid"});canvas=new(){Session=test};
         var layout=new Grid{Margin=new Thickness(18)};layout.RowDefinitions.Add(new(){Height=GridLength.Auto});layout.RowDefinitions.Add(new(){Height=new GridLength(1,GridUnitType.Star)});layout.RowDefinitions.Add(new(){Height=GridLength.Auto});

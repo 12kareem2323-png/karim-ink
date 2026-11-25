@@ -8,27 +8,69 @@ namespace KarimEldamatyWindows;
 public static class BoardRenderer
 {
     private static readonly ConditionalWeakTable<byte[],WeakReference<BitmapSource>> images = new();
-    private static readonly Dictionary<string,BitmapSource> formulas = [];
-    private static readonly Dictionary<string,BitmapSource> symbols = [];
-    public static IEnumerable<DrawingElement> DrawingOrder(IEnumerable<DrawingElement> elements) => elements.Where(e=>e.Pen=="Highlighter").Concat(elements.Where(e=>e.Pen!="Highlighter"));
+    [ThreadStatic] private static Dictionary<string, BitmapSource>? formulaCache;
+    [ThreadStatic] private static Dictionary<string, BitmapSource>? symbolCache;
+
+    public static IEnumerable<DrawingElement> DrawingOrder(IEnumerable<DrawingElement> elements, Guid? sourceImage = null)
+    {
+        var items = elements as IReadOnlyList<DrawingElement> ?? elements.ToArray();
+        if (sourceImage is not null)
+            foreach (var element in items)
+                if (element.Id == sourceImage) { yield return element; break; }
+        foreach (var element in items)
+            if (element.Id != sourceImage && element.Pen == "Highlighter") yield return element;
+        foreach (var element in items)
+            if (element.Id != sourceImage && element.Pen != "Highlighter") yield return element;
+    }
     public static Rect ElementBounds(DrawingElement e) => e.Bounds;
     public static InkColor VisibleColor(InkColor c,Board board) => board.Background is "Blueprint" or "Dark board" && Math.Abs(c.R-.14)<.001 && Math.Abs(c.G-.20)<.001 && Math.Abs(c.B-.28)<.001 ? new(.91,.96,1,c.A) : c;
     public static DrawingGroup BuildDrawing(Board board)
     {
-        BoardCodec.Validate(board); var group = new DrawingGroup(); using(var dc=group.Open()) {dc.PushClip(new RectangleGeometry(new Rect(0,0,board.Width,board.Height))); DrawBackground(dc,board,new(0,0,board.Width,board.Height),1);foreach(var e in DrawingOrder(board.Elements))DrawElement(dc,e,board);dc.Pop();} group.Freeze();return group;
+        BoardCodec.Validate(board); var group = new DrawingGroup(); using(var dc=group.Open()) {dc.PushClip(new RectangleGeometry(new Rect(0,0,board.Width,board.Height))); DrawBackground(dc,board,new(0,0,board.Width,board.Height),1);foreach(var e in DrawingOrder(board.Elements, PdfSheet.Read(board)?.ImageId))DrawElement(dc,e,board);dc.Pop();} group.Freeze();return group;
     }
     public static DrawingGroup BuildElement(DrawingElement element,Board board) {var g = new DrawingGroup();using(var dc=g.Open())DrawElement(dc,element,board);g.Freeze();return g;}
     public static void DrawBackground(DrawingContext dc,Board b,Rect visible,double zoom)
     {
-        var paper = b.Background == "Blueprint" ? new InkColor(.075,.20,.36) : b.Background == "Dark board" ? new(.10,.12,.15) : new(.998,.994,.98);
-        dc.DrawRectangle(paper.Brush(),null,visible); if(b.Background is "Plain" or "Dark board")return;
+        var paper = b.Background switch
+        {
+            "Blueprint" => new InkColor(.075,.20,.36),
+            "Dark board" => new(.10,.12,.15),
+            "Ivory paper" or "Ruled with margin" => new(.995,.976,.923),
+            _ => new(.998,.994,.98)
+        };
+        dc.DrawRectangle(paper.Brush(),null,visible); if(b.Background is "Plain" or "Ivory paper" or "Dark board")return;
         var spacing = Math.Clamp(b.GridSpacing,8,200);while(spacing*zoom<8)spacing*=5;
         var dark = b.Background == "Blueprint"; var thin = dark ? new InkColor(1,1,1,.13) : new(.41,.57,.67,.17);var strong = dark ? new InkColor(1,1,1,.27) : new(.30,.46,.58,.26);
         var pen = new Pen(thin.Brush(),.65/zoom);pen.Freeze();var major = new Pen(strong.Brush(),1/zoom);major.Freeze();
         dc.PushClip(new RectangleGeometry(visible));
         void Grid(double step,Pen p,bool vertical=true) {for(var y=Math.Floor(visible.Top/step)*step;y<=visible.Bottom;y+=step)dc.DrawLine(p,new(visible.Left,y),new(visible.Right,y));if(vertical)for(var x=Math.Floor(visible.Left/step)*step;x<=visible.Right;x+=step)dc.DrawLine(p,new(x,visible.Top),new(x,visible.Bottom));}
         switch(b.Background) {
-            case "Lined": Grid(spacing,pen,false);dc.DrawLine(new Pen(new InkColor(.83,.23,.26,.23).Brush(),.8/zoom),new(80,visible.Top),new(80,visible.Bottom));break;
+            case "Lined":
+            case "Ruled with margin":
+                Grid(spacing,pen,false);
+                VerticalRule(Math.Min(80, b.Width * .14), new Pen(new InkColor(.83,.23,.26,.30).Brush(), .8 / zoom));
+                break;
+            case "Two-column notes":
+                Grid(spacing, pen, false);
+                VerticalRule(b.Width / 2, major);
+                break;
+            case "Coordinate grid":
+                Grid(spacing, pen);
+                Grid(spacing * 5, major);
+                var axis = new Pen(new InkColor(.15,.31,.46,.62).Brush(), 1.4 / zoom);
+                VerticalRule(b.Width / 2, axis);
+                dc.DrawLine(axis, new(visible.Left, b.Height / 2), new(visible.Right, b.Height / 2));
+                break;
+            case "Hex graph":
+                dc.DrawRectangle(HexTile(Math.Max(spacing, 15 / zoom), pen), null, visible);
+                break;
+            case "Blank music staves":
+                var step = spacing * .38;
+                var groupHeight = step * 9;
+                for (var y = Math.Floor(visible.Top / groupHeight) * groupHeight; y <= visible.Bottom; y += groupHeight)
+                    for (var line = 0; line < 5; line++)
+                        dc.DrawLine(pen, new(visible.Left, y + line * step), new(visible.Right, y + line * step));
+                break;
             case "Dot grid": {
                 var tile = new DrawingGroup();using(var t=tile.Open())t.DrawEllipse(strong.Brush(),null,new(spacing/2,spacing/2),1/zoom,1/zoom);tile.Freeze();var brush=new DrawingBrush(tile){TileMode=TileMode.Tile,ViewportUnits=BrushMappingMode.Absolute,Viewport=new(0,0,spacing,spacing),ViewboxUnits=BrushMappingMode.Absolute,Viewbox=new(0,0,spacing,spacing)};brush.Freeze();dc.DrawRectangle(brush,null,visible);break;
             }
@@ -41,6 +83,37 @@ public static class BoardRenderer
         }
         if(b.Background == "Engineering sheet" && b.Width>100 && b.Height>170){var border=new Rect(36,36,b.Width-72,b.Height-72);var box=new Rect(Math.Max(border.Left,border.Right-620),border.Bottom-98,Math.Min(620,border.Width),98);dc.DrawRectangle(null,new Pen(new InkColor(.29,.38,.45,.72).Brush(),1.3),border);dc.DrawRectangle(paper.Brush(.90),major,box);dc.DrawLine(major,new(box.Left,box.Top+52),new(box.Right,box.Top+52));DrawText(dc,b.Title,new(box.Left+14,box.Top+10),21,InkColor.Graphite);DrawText(dc,$"DRAWING SCALE  1:{Formatted(b.ScaleDenominator)}",new(box.Left+14,box.Top+63),14,InkColor.Graphite);DrawText(dc,"DIMENSIONS IN mm",new(box.Left+box.Width*.58,box.Top+63),14,InkColor.Graphite);}
         dc.Pop();
+        void VerticalRule(double x, Pen rule) => dc.DrawLine(rule, new(x, visible.Top), new(x, visible.Bottom));
+    }
+
+    private static DrawingBrush HexTile(double radius, Pen pen)
+    {
+        var height = radius * Math.Sqrt(3) / 2;
+        var bounds = new Rect(0, 0, 3 * radius, 2 * height);
+        var tile = new DrawingGroup { ClipGeometry = new RectangleGeometry(bounds) };
+        using (var dc = tile.Open())
+        {
+            // Neighbouring centres share edges. Draw the top and right edges once per hexagon.
+            for (var column = -1; column <= 2; column++)
+            for (var row = 0; row <= 1; row++)
+            {
+                var x = column * 1.5 * radius;
+                var y = row * 2 * height + (column % 2 != 0 ? height : 0);
+                var topRight = new Point(x + radius / 2, y - height);
+                var right = new Point(x + radius, y);
+                dc.DrawLine(pen, new(x - radius / 2, y - height), topRight);
+                dc.DrawLine(pen, topRight, right);
+                dc.DrawLine(pen, right, new(x + radius / 2, y + height));
+            }
+        }
+        tile.Freeze();
+        var brush = new DrawingBrush(tile)
+        {
+            Viewbox = bounds, Viewport = bounds, ViewboxUnits = BrushMappingMode.Absolute,
+            ViewportUnits = BrushMappingMode.Absolute, Stretch = Stretch.Fill, TileMode = TileMode.Tile
+        };
+        brush.Freeze();
+        return brush;
     }
     public static void DrawElement(DrawingContext dc,DrawingElement e,Board board)
     {
@@ -59,8 +132,8 @@ public static class BoardRenderer
             case "image": if(e.ImageData is {Length:>0})try{dc.DrawImage(DecodeImage(e.ImageData),rect);}catch(Exception ex) when(ex is IOException or NotSupportedException or ArgumentException){DrawText(dc,"Image unavailable",rect.TopLeft,16,color);}break;
             case "symbol": {
                 if(e.Text.StartsWith("mathlatex:",StringComparison.Ordinal)){var key=e.Text+"|"+e.FontSize.ToString(CultureInfo.InvariantCulture)+"|"+color.R.ToString(CultureInfo.InvariantCulture)+"|"+color.G.ToString(CultureInfo.InvariantCulture)+"|"+color.B.ToString(CultureInfo.InvariantCulture)+"|"+color.A.ToString(CultureInfo.InvariantCulture);
-                    if(!formulas.TryGetValue(key,out var formula)){formula=DecodeImage(FormulaRenderer.RenderPng(e.Text[10..],color,e.FontSize));if(formulas.Count>=64)formulas.Remove(formulas.Keys.First());formulas[key]=formula;}dc.DrawImage(formula,rect);break;}
-                var id=e.Text.StartsWith("catalog:",StringComparison.Ordinal)?e.Text[8..]:e.Text;var file=Path.Combine(AppContext.BaseDirectory,"Resources","Symbols",id+".png");if(id.IndexOfAny(Path.GetInvalidFileNameChars())<0&&File.Exists(file)){if(!symbols.TryGetValue(id,out var image)){image=DecodeImage(File.ReadAllBytes(file));if(symbols.Count>=128)symbols.Remove(symbols.Keys.First());symbols[id]=image;}var mask=new ImageBrush(image){Stretch=Stretch.Fill,ViewportUnits=BrushMappingMode.Absolute,Viewport=rect};mask.Freeze();dc.PushOpacityMask(mask);dc.DrawRectangle(color.Brush(),null,rect);dc.Pop();}else DrawLegacySymbol(dc,id,rect,pen);break;
+                    var formulas = formulaCache ??= []; if(!formulas.TryGetValue(key,out var formula)){formula=DecodeImage(FormulaRenderer.RenderPng(e.Text[10..],color,e.FontSize));if(formulas.Count>=64)formulas.Remove(formulas.Keys.First());formulas[key]=formula;}dc.DrawImage(formula,rect);break;}
+                var id=e.Text.StartsWith("catalog:",StringComparison.Ordinal)?e.Text[8..]:e.Text;var file=Path.Combine(AppContext.BaseDirectory,"Resources","Symbols",id+".png");if(id.IndexOfAny(Path.GetInvalidFileNameChars())<0&&File.Exists(file)){var symbols = symbolCache ??= []; if(!symbols.TryGetValue(id,out var image)){image=DecodeImage(File.ReadAllBytes(file));if(symbols.Count>=128)symbols.Remove(symbols.Keys.First());symbols[id]=image;}var mask=new ImageBrush(image){Stretch=Stretch.Fill,ViewportUnits=BrushMappingMode.Absolute,Viewport=rect};mask.Freeze();dc.PushOpacityMask(mask);dc.DrawRectangle(color.Brush(),null,rect);dc.Pop();}else DrawLegacySymbol(dc,id,rect,pen);break;
             }
         }
         if(e.Rotation!=0)dc.Pop();
@@ -71,7 +144,7 @@ public static class BoardRenderer
     }
     public static BitmapSource DecodeImage(byte[] data)
     {
-        if(images.TryGetValue(data,out var cached)&&cached.TryGetTarget(out var retained))return retained;using(var stream=new MemoryStream(data,false)){var metadata=BitmapDecoder.Create(stream,BitmapCreateOptions.DelayCreation,BitmapCacheOption.None);var frame=metadata.Frames[0];var longest=Math.Max(frame.PixelWidth,frame.PixelHeight);stream.Position=0;var image=new BitmapImage();image.BeginInit();image.CacheOption=BitmapCacheOption.OnLoad;if(longest>4096){if(frame.PixelWidth>=frame.PixelHeight)image.DecodePixelWidth=4096;else image.DecodePixelHeight=4096;}image.StreamSource=stream;image.EndInit();image.Freeze();images.Remove(data);images.Add(data,new(image));return image;}
+        if(images.TryGetValue(data,out var cached)&&cached.TryGetTarget(out var retained))return retained;using(var stream=new MemoryStream(data,false)){var metadata=BitmapDecoder.Create(stream,BitmapCreateOptions.DelayCreation,BitmapCacheOption.None);var frame=metadata.Frames[0];var longest=Math.Max(frame.PixelWidth,frame.PixelHeight);stream.Position=0;var image=new BitmapImage();image.BeginInit();image.CacheOption=BitmapCacheOption.OnLoad;if(longest>4096){if(frame.PixelWidth>=frame.PixelHeight)image.DecodePixelWidth=4096;else image.DecodePixelHeight=4096;}image.StreamSource=stream;image.EndInit();image.Freeze();images.AddOrUpdate(data,new(image));return image;}
     }
     public static void DrawText(DrawingContext dc,string text,Point point,double size,InkColor color,bool center=false)
     {

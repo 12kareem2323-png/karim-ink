@@ -8,6 +8,33 @@ void Assert(bool condition,string message="Assertion failed"){if(!condition)thro
 void Near(double a,double b,double error=1e-8)=>Assert(Math.Abs(a-b)<error,$"Expected {b}, got {a}");
 void Reject(Action action){try{action();}catch(InvalidDataException){return;}catch(JsonException){return;}throw new Exception("Invalid input was accepted");}
 var fixture=Path.Combine(AppContext.BaseDirectory,"swift-fixture.engboard");if(!File.Exists(fixture))fixture=Path.Combine(Environment.CurrentDirectory,"swift-fixture.engboard");
+Test("Mac ink model reduces a synthetic wobble and keeps end positions", () =>
+{
+    var points = Enumerable.Range(0, 200).Select(i => new Point(i * 3, Math.Sin(i * 1.7) * .8)).ToArray();
+    var refined = InkDenoiseModel.Refine(points, .75, 1);
+    Assert(refined.Sum(p => p.Y * p.Y) < points.Sum(p => p.Y * p.Y));
+    Near(refined[0].X, points[0].X);
+    Near(refined[^1].Y, points[^1].Y);
+    Assert(InkDenoiseModel.Refine(points, 0, 1).SequenceEqual(points), "Zero correction changed ink");
+});
+Test("Snap recognises rotated diagrams and rejects ambiguous pen strokes", () =>
+{
+    var center = new Point(130, 100);
+    var rectangle = new[] { new Point(50, 60), new Point(210, 60), new Point(210, 140), new Point(50, 140) };
+    var loop = rectangle.SelectMany((p, edge) => Enumerable.Range(0, 26)
+        .Select(i => p + (rectangle[(edge + 1) % 4] - p) * (i / 26d))).Append(rectangle[0]).ToArray();
+    var waves = Enumerable.Range(0, 125).Select(i => new Point(i * 1.2, 50 + 25 * Math.Sin(i * .1))).ToArray();
+    var ellipse = Enumerable.Range(0, 129).Select(i =>
+        new Point(130 + 70 * Math.Cos(i * Math.PI / 64), 100 + 35 * Math.Sin(i * Math.PI / 64))).ToArray();
+    for (var angle = 0; angle < 180; angle += 15)
+    {
+        Point[] RotateAll(Point[] points) => points.Select(p => DrawingMath.Rotate(p, center, angle)).ToArray();
+        Assert(InkShapeRecognizer.Detect(RotateAll(loop), 1, InkShapeMode.OnRelease)?.Kind == "rectangle", $"Rectangle at {angle}");
+        Assert(InkShapeRecognizer.Detect(RotateAll(ellipse), 1, InkShapeMode.OnRelease)?.Kind == "ellipse", $"Ellipse at {angle}");
+    }
+    Assert(InkShapeRecognizer.Detect(waves, 1, InkShapeMode.OnRelease) is null);
+    Assert(InkShapeRecognizer.Detect(loop, 1, InkShapeMode.Off) is null);
+});
 Test("Swift JSONEncoder UUID/date/Data/pressure interoperability",()=>{var b=BoardCodec.Read(fixture);Assert(b.Id==Guid.Parse("EE2C8255-95C7-419E-8DBF-EE64487C63D3"));Near(b.Created,0);Near(b.Modified,23456.125);Near(b.Elements[0].Points[0].RawPressure!.Value,.7);Assert(b.Elements[0].ImageData!.SequenceEqual(new byte[]{0,1,2,255}));Assert(b.NotionURL=="https://example.test/notion");var root=JsonNode.Parse(BoardCodec.Serialize(b))!.AsObject();Assert(root.ContainsKey("notionURL")&&root.ContainsKey("whiteboardURL")&&root.ContainsKey("pointsPerMM"));Near(root["created"]!.GetValue<double>(),0);Assert(!root.ContainsKey("bounds"));});
 Test("Unknown fields survive every model level",()=>{var root=JsonNode.Parse(File.ReadAllText(fixture))!;root["futureBoard"] = JsonNode.Parse("{\"revision\":42}");var e=root["elements"]![0]!;e["futureElement"]=true;e["points"]![0]!["futureSample"]="raw";e["color"]!["futureColor"]=.7;e["brushSettings"]!["futureBrush"]=new JsonArray(1,2,3);var b=BoardCodec.Deserialize(root.ToJsonString());var again=JsonNode.Parse(BoardCodec.Serialize(BoardCodec.Clone(b)))!;Assert(again["futureBoard"]!["revision"]!.GetValue<int>()==42);Assert(again["elements"]![0]!["futureElement"]!.GetValue<bool>());Assert(again["elements"]![0]!["points"]![0]!["futureSample"]!.GetValue<string>()=="raw");Assert(again["elements"]![0]!["color"]!["futureColor"]!.GetValue<double>()==.7);Assert(again["elements"]![0]!["brushSettings"]!["futureBrush"]!.AsArray().Count==3);});
 Test("Snapshot clones isolate mutable coordinates/color/settings",()=>{var b=BoardCodec.Read(fixture);var c=BoardCodec.Clone(b);c.Elements[0].Points[0].X=777;c.Elements[0].Color.R=.9;c.Elements[0].BrushSettings!.MaxWidth=10;Near(b.Elements[0].Points[0].X,12.5);Near(b.Elements[0].Color.R,.16);Near(b.Elements[0].BrushSettings!.MaxWidth,6);});

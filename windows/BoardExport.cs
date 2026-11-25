@@ -8,6 +8,30 @@ namespace KarimEldamatyWindows;
 
 public static class BoardExport
 {
+    internal static byte[]? RenderPdfInk(Board board, Guid sourceImageId)
+    {
+        var elements = BoardRenderer.DrawingOrder(board.Elements.Where(e => e.Id != sourceImageId)).ToArray();
+        if (elements.Length == 0) return null;
+        var scale = Math.Min(4, 4096 / Math.Max(board.Width, board.Height));
+        var visual = new DrawingVisual();
+        using (var dc = visual.RenderOpen())
+        {
+            dc.PushTransform(new ScaleTransform(scale, scale));
+            dc.PushClip(new RectangleGeometry(new Rect(0, 0, board.Width, board.Height)));
+            foreach (var element in elements) BoardRenderer.DrawElement(dc, element, board);
+            dc.Pop();
+            dc.Pop();
+        }
+        var bitmap = new RenderTargetBitmap(Math.Max(1, (int)Math.Ceiling(board.Width * scale)),
+            Math.Max(1, (int)Math.Ceiling(board.Height * scale)), 96, 96, PixelFormats.Pbgra32);
+        bitmap.Render(visual);
+        var encoder = new PngBitmapEncoder();
+        encoder.Frames.Add(BitmapFrame.Create(bitmap));
+        using var output = new MemoryStream();
+        encoder.Save(output);
+        return output.ToArray();
+    }
+
     public static byte[] RenderSelectionPNG(Board board,IReadOnlySet<Guid> ids)
     {
         var items=board.Elements.Where(e=>ids.Contains(e.Id)).ToArray();var bounds=Rect.Empty;foreach(var e in items)bounds.Union(e.Bounds);
@@ -40,7 +64,7 @@ public static class BoardExport
                 // Background remains calibrated to the original paper origin. Ink outside the
                 // nominal sheet is included without changing any board coordinates or IDs.
                 BoardRenderer.DrawBackground(dc,board,bounds,1);
-                foreach(var element in BoardRenderer.DrawingOrder(board.Elements)) BoardRenderer.DrawElement(dc,element,board);
+                foreach(var element in BoardRenderer.DrawingOrder(board.Elements, PdfSheet.Read(board)?.ImageId)) BoardRenderer.DrawElement(dc,element,board);
             }
             else dc.DrawDrawing(BoardRenderer.BuildDrawing(board));
             dc.Pop(); dc.Pop();

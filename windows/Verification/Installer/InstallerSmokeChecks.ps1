@@ -6,7 +6,7 @@ param(
 $ErrorActionPreference='Stop'
 $updated=[IO.Path]::GetFullPath($HelpersDirectory)
 . (Join-Path $updated 'Common.ps1')
-$temp=Join-Path ([IO.Path]::GetTempPath()) ('SketchGlide-Setup-Smoke-'+[Guid]::NewGuid().ToString('N'))
+$temp=Join-Path ([IO.Path]::GetTempPath()) ('Velin-Setup-Smoke-'+[Guid]::NewGuid().ToString('N'))
 $source=Join-Path $temp 'payload'
 $destination=Join-Path $temp 'isolated-install'
 $checks=New-Object Collections.Generic.List[object]
@@ -29,11 +29,11 @@ try {
  Check 'missing OCR native DLL is rejected' {WithRemoved 'x64\tesseract50.dll' {Reject {Assert-KarimPayload $source}}}
  Check 'missing offline maths model is rejected' {WithRemoved 'Resources\MathSymbols\deTeX.onnx' {Reject {Assert-KarimPayload $source}}}
  Check 'missing runtime dependency listed in deps is rejected' {WithRemoved 'System.Linq.dll' {Reject {Assert-KarimPayload $source}}}
- Check 'empty main assembly is rejected' {WithRemoved 'SketchGlide.dll' {New-Item -ItemType File -Path (Join-Path $source 'SketchGlide.dll') | Out-Null;try{Reject {Assert-KarimPayload $source}}finally{Remove-Item (Join-Path $source 'SketchGlide.dll')}}}
+ Check 'empty main assembly is rejected' {WithRemoved 'Velin.dll' {New-Item -ItemType File -Path (Join-Path $source 'Velin.dll') | Out-Null;try{Reject {Assert-KarimPayload $source}}finally{Remove-Item (Join-Path $source 'Velin.dll')}}}
  Check 'missing catalogue stencil is rejected' {WithRemoved 'Resources\Symbols\Algebra-plus.png' {Reject {Assert-KarimPayload $source}}}
- Check 'malformed dependency JSON is rejected' {WithRemoved 'SketchGlide.deps.json' {Set-Content (Join-Path $source 'SketchGlide.deps.json') '{not json';try{Reject {Assert-KarimPayload $source}}finally{Remove-Item (Join-Path $source 'SketchGlide.deps.json')}}}
+ Check 'malformed dependency JSON is rejected' {WithRemoved 'Velin.deps.json' {Set-Content (Join-Path $source 'Velin.deps.json') '{not json';try{Reject {Assert-KarimPayload $source}}finally{Remove-Item (Join-Path $source 'Velin.deps.json')}}}
  Check 'wrong runtime architecture is rejected' {
-  $path=Join-Path $source 'SketchGlide.deps.json';$content=Get-Content $path -Raw
+  $path=Join-Path $source 'Velin.deps.json';$content=Get-Content $path -Raw
   try{Set-Content $path ($content.Replace('win-x64','win-arm64'));Reject {Assert-KarimPayload $source}}finally{[IO.File]::WriteAllText($path,$content)}
  }
  Check 'catalogue path traversal identifier is rejected' {
@@ -75,12 +75,12 @@ try {
  }
  Check 'locked replacement rolls back previous synthetic install' {
   $stage=New-KarimInstallStage $source $destination $source
-  $lock=[IO.File]::Open((Join-Path $stage 'SketchGlide.exe'),[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read)
+  $lock=[IO.File]::Open((Join-Path $stage 'Velin.exe'),[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read)
   try{Reject {Move-KarimInstallStage $stage $destination};Assert (Test-Path (Join-Path $destination 'previous-sentinel.txt')) 'Rollback lost previous app.'}
   finally{$lock.Dispose();if(Test-Path $stage){Remove-Item $stage -Recurse -Force}}
  }
  Check 'copy failure removes only its own temporary stage' {
-  $lock=[IO.File]::Open((Join-Path $source 'SketchGlide.dll'),[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::None)
+  $lock=[IO.File]::Open((Join-Path $source 'Velin.dll'),[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::None)
   try{Reject {New-KarimInstallStage $source $destination $source};Assert (Test-Path (Join-Path $destination 'previous-sentinel.txt')) 'Copy failure changed previous app.';Assert (@(Get-ChildItem $temp -Directory -Filter 'KarimEldamaty.stage-*').Count -eq 0) 'Failed copy left a stage directory.'}
   finally{$lock.Dispose()}
  }

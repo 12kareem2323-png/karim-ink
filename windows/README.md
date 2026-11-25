@@ -1,80 +1,40 @@
-# SketchGlide · Windows 0.2 Test
+# Velin for Windows
 
-Made by **Karim Eldamaty**. A personal whiteboard project for sketching, ideas, maths and diagrams. The Windows version uses native C# / WPF and ships with its .NET 10 runtime.
+A native Windows whiteboard by **Karim Eldamaty**. This is the portable **Windows 11 x64 test build** for Intel and AMD processors. The ZIP includes the .NET Desktop Runtime. WPF uses Windows graphics acceleration where the driver supports it, with software rendering available on lower-tier graphics.
 
-This is an **unsigned test release for Windows 11 Intel/AMD x64**. It is not a final stable release. Download from the project's GitHub release, compare its SHA-256 checksum, and keep your native drawings backed up. Windows may show an unknown-publisher or SmartScreen warning. Do not disable Windows security to run it.
+## Open Velin
 
-## Start
+1. Download the Windows x64 ZIP and SHA-256 checksum from the release page.
+2. Choose **Extract All**, then open **Velin.exe** from the extracted folder. Keep the whole folder together.
+3. Keep your editable drawings backed up. This Test build is unsigned, so Windows can show an unknown-publisher or SmartScreen prompt. Download from the official GitHub release.
 
-1. Right-click the ZIP and choose **Extract All**.
-2. Open **SketchGlide.exe** in the extracted folder. Keep the entire folder together: its DLLs and `Resources` are required.
-3. If Windows reports a missing native DLL, use the [official Microsoft Visual C++ x64 runtime](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist). Its installer is not bundled and the app does not install it automatically.
-4. Optionally run `Install.cmd` to copy the app into `%LOCALAPPDATA%\Programs\KarimEldamaty` and create a shortcut. The historical install/data paths and `karimboard://` scheme are preserved for file compatibility. Registering native drawing links requires selecting the installer's separate option; existing default file openers are unchanged.
+If an offline recognition tool reports a missing native runtime DLL, use Microsoft's [Visual C++ x64 Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 
-`Uninstall.cmd` removes only unchanged installed files and its unchanged shortcuts/handlers, restores backed-up previous handlers, and keeps drawings, credentials, settings and previous app backups. If you use only the portable folder, keep your drawings and delete that extracted folder when finished.
+## Draw and annotate
 
-## Features in this test
+- Ten pen types with colour and pressure settings, Windows Ink tablet input, undo/redo, editable copy and paste, sixteen paper patterns, and drawing tools for shapes and millimetre dimensions.
+- Light, dark and system appearance, floating glass toolbars, and a solid fallback for Windows high contrast, disabled transparency and software rendering.
+- The Mac build 116 ink model runs locally. Use **Ink assist** to pick **Hold to snap**, **Snap on release**, or **Shape snapping off**. Ctrl+Z after a snap restores the freehand ink. Lines stay unselected after drawing.
+- Open a PDF using **PDF** or Ctrl+O. Use **PDF** for page thumbnails, page navigation, source text search and current/range/all export. Ctrl+F opens PDF text search. Search and copy need selectable source text. PDF export preserves the original page contents and adds a high-resolution raster annotation layer. Keep the editable page in Velin to revise your notes.
+- Browse maths and engineering symbols, open the formula and 3D sketch workbenches, and use the local handwriting and single-symbol recognition tools. The optional local assistant uses Ollama. The optional cloud assistant uses your OpenAI API key.
+- Windows Ink uses the pressure, tilt and buttons exposed by tablet drivers. Wacom, Xencelabs and other brands use that same input route. Pen-specific behaviour depends on the installed driver.
 
-- Ten adjustable pen styles: technical fineliner, fountain, pencil, chalk, marker, calligraphy, airbrush, liquid ink, highlighter and dry erase.
-- Ten canvas backgrounds; pan/zoom, editable text, line/shape tools, hold-to-correct geometry, millimetre dimensions, rulers and a protractor.
-- Select/lasso, stroke/partial erasing, undo/redo, keyboard shortcuts and native Windows copy/paste of editable fragments, text and a rendered image.
-- 380 maths/engineering diagram stencils, with a virtualised searchable library and short symbol animations.
-- System, light and dark themes, translucent panels and native Windows DWM styling where supported; Reduce transparency is available.
-- Local native `.engboard` storage with atomic writes, conflict detection and archive-on-delete. No account is required to draw and save locally.
-- Local Tesseract English OCR, editable transcription review and Windows spelling suggestions. Replacement is explicit and undoable. Recognition may miss handwriting, symbols, numbers, decimals and units: review every result.
-- Offline DeTeXt-derived **single-symbol** recognition with 1,098 model classes; an editable formula workbench. Full handwritten-equation recognition is not included.
-- Simple 3D sketches with primitives, freehand strokes, view controls and `.karim3d` scene files. This is a sketching tool, with no full CAD assemblies or manufacturing validation.
-- Calculator, unit conversion and graph plotting tools. Check units and assumptions before relying on results.
-- An optional OpenAI API assistant using your own API key, plus an optional separately installed local Ollama model. No API key is bundled. A ChatGPT subscription is separate from OpenAI API access/billing. Requests show their route; drawings are attached only when you select that option. A failed local request does not trigger a hidden cloud fallback.
-- Craft connection tools and an Excalidraw export; Notion HTML export. Live service access depends on your account/scoped credentials and is separate from local drawing.
-- PNG/JPEG/PDF export. Windows PDF export embeds a raster drawing; the Mac version's PDF path is vector. Keep `.engboard` for editing.
+## Files and updates
 
-The Windows tablet path uses the pressure/tilt/hover/eraser data exposed by the installed Windows driver. It is not restricted to one tablet brand. Install your manufacturer's official driver, then test your own pen and buttons. Driver shortcut remotes use your driver mappings; this app does not guarantee a proprietary tablet SDK or OLED labels for every device.
+Drawings and imported PDF originals live under **%LOCALAPPDATA%\Karim Eldamaty\Boards**. Preferences and protected credentials live under **%LOCALAPPDATA%\KarimEldamaty**. These folders are shared with the earlier Windows project to preserve drawings and settings. Keep both the drawing files and their **PDF Originals** subfolder when moving annotated PDFs to another PC.
 
-Keyboard shortcuts include Ctrl+N/O/S, Ctrl+Z/Y, B (draw), E (erase), V (select), L (lasso), and 1–9 / 0 for the ten pens when the canvas is active. Text fields keep ordinary typing.
+On the Library screen, select **Check for updates…**. The editor has the same link under **More**. Velin checks GitHub for a newer Windows x64 release and opens its download page. Extract each new version into its own folder. The new executable opens the same drawing library.
 
-## Files and privacy
+[GitHub releases](https://github.com/12kareem2323-png/karim-ink/releases) · [Editable Windows source](https://github.com/12kareem2323-png/karim-ink/tree/velin/windows-x64) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues/new/choose)
 
-Drawings remain under `%LOCALAPPDATA%\Karim Eldamaty\Boards`. Preferences, device pen profiles and Windows-user-encrypted credentials remain under `%LOCALAPPDATA%\KarimEldamaty`. These historical paths preserve existing files; they do not change the display name. Credentials are not saved into `.engboard` files or exports. Back up your editable drawing files and exports.
+## Build from source
 
-The Notion HTML export is an offline copy: existing artwork is a background image, while new browser ink can be downloaded separately. It does not automatically synchronise native drawing changes or embed a live native app in Notion/Craft. Hosted HTML requires separate hosting.
-
-[Website](https://karim-ink.stonyvale1.chatgpt.site/) · [Feedback](https://github.com/12kareem2323-png/karim-ink/issues/new/choose) · [Support Karim Eldamaty with PayPal](https://paypal.me/KEldamaty)
-
-## Verification
-
-The release is built for Windows x64 on macOS. Portable checks exercise production document/storage, arithmetic/formula/3D logic and service HTTP validation with documented WPF/rendering substitutes and mocked remote responses. Native Windows checks use an isolated temporary library and settings folder, synthetic drawings and no cloud request. Exact release results are in `Verification/release-report.json`.
-
-To repeat native checks on your PC, close the normal app yourself and run `RUN-CHECKS.cmd`. Test windows open and close and receipts/screenshots are saved into `Documents\Karim Windows checks`. Review the screenshots. Tests on Windows ARM under x64 emulation are not a physical Intel/AMD PC test.
-
-Physical tablet pressure, tilt, eraser ends and buttons, live paid AI/Craft requests, and sustained high-refresh performance remain separate tests. No locked 120 FPS, zero latency, complete feature parity, or universal handwriting accuracy is claimed.
-
-## Edit and build
-
-Original project source is licensed under **MIT**; dependencies retain their separate licences in `Resources` and `THIRD-PARTY-NOTICES.md`. You may inspect, modify and contribute improvements. See `CONTRIBUTING.md`.
-
-Install the .NET 10 SDK, then run from this source folder:
+Use the .NET 10 SDK and Python 3.11 or later. To build the Windows x64 app, run these commands from the repository root.
 
 ```powershell
-dotnet publish KarimEldamatyWindows.csproj -c Release -r win-x64 --self-contained true -o publish
+dotnet restore windows/KarimEldamatyWindows.csproj --runtime win-x64 --locked-mode
+dotnet publish windows/KarimEldamatyWindows.csproj -c Release -r win-x64 --no-restore --self-contained true -o out/velin-windows
+python windows/BuildSupport/package_windows.py out/velin-windows out/velin-release
 ```
 
-The first build restores NuGet packages over the internet. `BuildSupport/Publish-Windows.ps1` performs the same build. The output is `SketchGlide.exe`; internal namespaces and native file formats retain their existing names for compatibility.
-
-Portable verification commands:
-
-```powershell
-dotnet run --project Verification/Core/CoreVerification.csproj -c Release
-dotnet run --project Verification/Services/Services.Tests.csproj -c Release
-dotnet run --project Workbenches/Verification/Logic/WorkbenchLogic.csproj -c Release
-```
-
-Portable tests do not execute WPF rendering or physical pen input. Use the native self-test and a real tablet for those checks.
-
-Setup scripts validate the complete runtime/resource payload before replacement and retain the MIT licence and release receipts. To check setup staging and rollback without touching an existing installation, pass an extracted Windows app folder to:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File Verification/Installer/InstallerSmokeChecks.ps1 -PayloadDirectory "C:/path/to/extracted/SketchGlide"
-```
-
-This check creates and deletes its own temporary synthetic installation. It does not register handlers, create real shortcuts or run the app. Exact setup results are in `Verification/Installer/installer-smoke-results.json`.
+The original code is MIT-licensed. See [dependency notices](THIRD-PARTY-NOTICES.md). Maintainer release steps are in [Releasing Velin](RELEASING.md) in the source branch.

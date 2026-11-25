@@ -30,6 +30,7 @@ public sealed class BoardCanvas : FrameworkElement
     private const long MaximumCacheSamples=180000;
     private DrawingElement? stroke,preview;
     private readonly List<InkPoint> rawSamples = [];
+    private readonly List<Point> inkPositions = [];
     private readonly AdaptiveInkFilter filter = new();
     private List<DrawingElement>? selectionPreview;
     private List<DrawingElement>? originalSelection;
@@ -66,7 +67,7 @@ public sealed class BoardCanvas : FrameworkElement
     public BoardCanvas()
     {
         visuals=new(this){background,committed,ink,previewVisual,overlay};Focusable=true;ClipToBounds=true;AllowDrop=true;SnapsToDevicePixels=false;
-        holdTimer=new DispatcherTimer(DispatcherPriority.Input){Interval=TimeSpan.FromMilliseconds(500)};holdTimer.Tick+=(_,_)=>CorrectHeldStroke();
+        holdTimer=new DispatcherTimer(DispatcherPriority.Input){Interval=TimeSpan.FromSeconds(InkShapeRecognizer.HoldSeconds)};holdTimer.Tick+=(_,_)=>CorrectHeldStroke();
         animationTimer=new DispatcherTimer(DispatcherPriority.Background){Interval=TimeSpan.FromMilliseconds(90)};animationTimer.Tick+=(_,_)=>AdvanceSymbolAnimation();
         telemetryTimer=new DispatcherTimer(DispatcherPriority.Background){Interval=TimeSpan.FromMilliseconds(33)};telemetryTimer.Tick+=(_,_)=>{telemetryTimer.Stop();if(telemetryPending){telemetryPending=false;session.NotifyInputChanged();}};
         session.Changed+=SessionChanged;SizeChanged+=(_,_)=>Refresh();LostKeyboardFocus+=(_,_)=>FinishStroke();Unloaded+=(_,_)=>{FinishStroke();holdTimer.Stop();animationTimer.Stop();telemetryTimer.Stop();};
@@ -80,11 +81,11 @@ public sealed class BoardCanvas : FrameworkElement
     public Point ScreenPoint(Point world)=>new(world.X*session.Zoom+session.Offset.X,world.Y*session.Zoom+session.Offset.Y);
     public void FitBoard()
     {
-        if(ActualWidth<=0||ActualHeight<=0)return;FinishStroke();session.Zoom=Math.Clamp(Math.Min((ActualWidth-64)/session.Board.Width,(ActualHeight-64)/session.Board.Height),.02,20);session.Offset=new((ActualWidth-session.Board.Width*session.Zoom)/2,(ActualHeight-session.Board.Height*session.Zoom)/2);Refresh();session.NotifyViewChanged();
+        if(ActualWidth<=0||ActualHeight<=0)return;FinishStroke();session.Zoom=Math.Clamp(Math.Min((ActualWidth-64)/session.Board.Width,(ActualHeight-64)/session.Board.Height),.02,20);session.Offset=new((ActualWidth-session.Board.Width*session.Zoom)/2,(ActualHeight-session.Board.Height*session.Zoom)/2);session.NotifyViewChanged();
     }
     public void ZoomAt(Point screen,double factor)
     {
-        var world=WorldPoint(screen);session.Zoom=Math.Clamp(session.Zoom*factor,.02,40);session.Offset=new(screen.X-world.X*session.Zoom,screen.Y-world.Y*session.Zoom);Refresh();session.NotifyViewChanged();
+        var world=WorldPoint(screen);session.Zoom=Math.Clamp(session.Zoom*factor,.02,40);session.Offset=new(screen.X-world.X*session.Zoom,screen.Y-world.Y*session.Zoom);session.NotifyViewChanged();
     }
     private void SessionChanged(){if(!Dispatcher.CheckAccess()){Dispatcher.BeginInvoke(Refresh);return;}Refresh();}
     public void Refresh()
@@ -94,7 +95,7 @@ public sealed class BoardCanvas : FrameworkElement
         var sheet=new Rect(0,0,session.Board.Width,session.Board.Height);var view=new Rect(WorldPoint(new(0,0)),WorldPoint(new(ActualWidth,ActualHeight)));
         using(var dc=background.RenderOpen()){dc.DrawRectangle(new SolidColorBrush(Color.FromRgb(223,230,237)),null,new Rect(WorldPoint(new()),WorldPoint(new(ActualWidth,ActualHeight))));if(!view.IsEmpty)BoardRenderer.DrawBackground(dc,session.Board,view,session.Zoom);dc.DrawRectangle(null,new Pen(new InkColor(.45,.50,.56,.30).Brush(),1/session.Zoom),sheet);}
         Reindex();var visible=scene.Query(view);var seen=visible.Select(e=>e.Id).ToHashSet();var desired=new List<DrawingVisual>(visible.Count);var movingIds=selectionPreview?.Select(e=>e.Id).ToHashSet();
-        foreach(var e in visible){if(movingIds?.Contains(e.Id)==true)continue;var signature=scene.Signature(e.Id);if(!cache.TryGetValue(e.Id,out var entry)||entry.Signature!=signature){if(entry is not null){cachedSamples-=entry.Samples;cache.Remove(e.Id);}var visual=new DrawingVisual();using(var dc=visual.RenderOpen())dc.DrawDrawing(BoardRenderer.BuildElement(e,session.Board));entry=new(visual,signature,e.Points.Count,++cacheClock);cache[e.Id]=entry;cachedSamples+=e.Points.Count;}entry.LastUsed=++cacheClock;entry.Visual.Opacity=e.Id==animatedId?0:1;desired.Add(entry.Visual);}
+        foreach(var e in BoardRenderer.DrawingOrder(visible, PdfSheet.Read(session.Board)?.ImageId)){if(movingIds?.Contains(e.Id)==true)continue;var signature=scene.Signature(e.Id);if(!cache.TryGetValue(e.Id,out var entry)||entry.Signature!=signature){if(entry is not null){cachedSamples-=entry.Samples;cache.Remove(e.Id);}var visual=new DrawingVisual();using(var dc=visual.RenderOpen())dc.DrawDrawing(BoardRenderer.BuildElement(e,session.Board));entry=new(visual,signature,e.Points.Count,++cacheClock);cache[e.Id]=entry;cachedSamples+=e.Points.Count;}entry.LastUsed=++cacheClock;entry.Visual.Opacity=e.Id==animatedId?0:1;desired.Add(entry.Visual);}
         var same=committed.Children.Count==desired.Count;if(same)for(var i=0;i<desired.Count;i++)if(!ReferenceEquals(committed.Children[i],desired[i])){same=false;break;}
         if(!same){committed.Children.Clear();foreach(var visual in desired)committed.Children.Add(visual);}
         EvictCache(seen);DrawPreview();DrawOverlay();
@@ -142,7 +143,7 @@ public sealed class BoardCanvas : FrameworkElement
     protected override void OnMouseUp(MouseButtonEventArgs e){base.OnMouseUp(e);if(e.StylusDevice is not null)return;if(panning){panning=false;ReleaseMouseCapture();return;}if(e.ChangedButton==MouseButton.Left&&down){MoveInput(e.GetPosition(this),null);FinishStroke();ReleaseMouseCapture();e.Handled=true;}}
     protected override void OnLostMouseCapture(MouseEventArgs e){base.OnLostMouseCapture(e);if(down&&!session.PenActive)FinishStroke();panning=false;}
     protected override void OnMouseLeave(MouseEventArgs e){base.OnMouseLeave(e);hover=null;DrawOverlay();}
-    protected override void OnMouseWheel(MouseWheelEventArgs e){base.OnMouseWheel(e);FinishStroke();if(Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)){session.Offset=new(session.Offset.X+e.Delta*.5,session.Offset.Y);Refresh();session.NotifyViewChanged();}else ZoomAt(e.GetPosition(this),Math.Pow(1.15,e.Delta/120d));e.Handled=true;}
+    protected override void OnMouseWheel(MouseWheelEventArgs e){base.OnMouseWheel(e);FinishStroke();if(Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)){session.Offset=new(session.Offset.X+e.Delta*.5,session.Offset.Y);session.NotifyViewChanged();}else ZoomAt(e.GetPosition(this),Math.Pow(1.15,e.Delta/120d));e.Handled=true;}
     private void ActivatePen(StylusDevice device)
     {
         if(device.TabletDevice.Type==TabletDeviceType.Touch)return;
@@ -187,9 +188,9 @@ public sealed class BoardCanvas : FrameworkElement
     {
         if(!down||gestureTool!="Draw"||eraserGesture||stroke is null)return;var now=Stopwatch.GetTimestamp()/(double)Stopwatch.Frequency;var dt=Math.Clamp((now-lastTimestamp)/Math.Max(1,samples.Count),.0001,.05);for(int i=0;i<samples.Count;i++){var p=samples[i];UpdateTelemetry(p);var screen=new Point(p.X,p.Y);hover=screen;var world=WorldPoint(screen);var time=now-(samples.Count-1-i)*dt;var ip=new InkPoint(world.X,world.Y,session.InputCapabilities.PressureSupported?Math.Clamp(p.PressureFactor,0,1):1){RawPressure=session.InputCapabilities.PressureSupported?Math.Clamp(p.PressureFactor,0,1):null,TiltX=session.LiveTilt.X,TiltY=session.LiveTilt.Y,InputDeviceKey=session.InputDeviceKey};AppendInk(ip,time);}DrawOverlay();
     }
-    private void BeginInput(Point screen,bool stylus)
+    internal void BeginInput(Point screen,bool stylus)
     {
-        if(down)FinishStroke();startScreen=screen;startWorld=lastWorld=WorldPoint(screen);lastTimestamp=Stopwatch.GetTimestamp()/(double)Stopwatch.Frequency;gestureTool=eraserGesture?"Eraser":session.Tool;down=true;moved=false;held=false;resizeCorner=-1;hover=screen;rawSamples.Clear();filter.Reset();lasso.Clear();stroke=preview=null;selectionPreview=originalSelection=null;
+        if(down)FinishStroke();startScreen=screen;startWorld=lastWorld=WorldPoint(screen);lastTimestamp=Stopwatch.GetTimestamp()/(double)Stopwatch.Frequency;gestureTool=eraserGesture?"Eraser":session.Tool;down=true;moved=false;held=false;resizeCorner=-1;hover=screen;rawSamples.Clear();inkPositions.Clear();filter.Reset();lasso.Clear();stroke=preview=null;selectionPreview=originalSelection=null;
         if(!stylus){session.LivePressure=session.LiveRawPressure=null;session.LiveTilt=default;session.InputDeviceKey=null;session.InputCapabilities=new();session.NotifyInputChanged();}
         if(gestureTool is not ("Select" or "Lasso")&&session.SelectedIds.Count>0){session.SelectedIds.Clear();session.NotifyViewChanged();}
         if(gestureTool=="Draw"&&!eraserGesture&&session.PendingSymbolId is {} symbol){var p=Snap(startWorld.Value);var e=new DrawingElement{Kind="symbol",Text=symbol.StartsWith("catalog:")?symbol:"catalog:"+symbol,Points=[new(p.X,p.Y),new(p.X+240,p.Y+180)],Color=session.Color,Width=session.Settings.MaxWidth};down=false;session.PendingSymbolId=null;session.Commit(e);session.SelectedIds=[e.Id];session.NotifyViewChanged();StartSymbolAnimation(e);session.Status("Symbol placed. Use Select to move and resize it.");return;}
@@ -204,10 +205,10 @@ public sealed class BoardCanvas : FrameworkElement
         if(gestureTool=="Eraser"){eraserChanged=eraserCheckpointTaken=false;lastEraserPoint=null;Erase(startWorld.Value);return;}
         var first=gestureTool=="Draw"?startWorld.Value:Snap(startWorld.Value);startWorld=lastWorld=first;stroke=new(){Kind=Kind(gestureTool),Color=session.Color,Pen=session.Pen,Width=session.Settings.MaxWidth,BrushSettings=BoardCodec.Clone(session.Settings),Dash=session.Dash,Fill=session.FillShapes};
         if(gestureTool=="Draw"){
-            activeInk=new();if(stroke.Pen=="Highlighter")activeInk.Opacity=stroke.EffectiveBrushSettings.Opacity*stroke.EffectiveBrushSettings.MaxOpacity;using(var dc=ink.RenderOpen())dc.DrawDrawing(activeInk);if(!stylus)AppendInk(new(first.X,first.Y),lastTimestamp);holdAnchor=first;holdTimer.Stop();if(session.AutoCorrect)holdTimer.Start();
+            activeInk=new();if(stroke.Pen=="Highlighter")activeInk.Opacity=stroke.EffectiveBrushSettings.Opacity*stroke.EffectiveBrushSettings.MaxOpacity;using(var dc=ink.RenderOpen())dc.DrawDrawing(activeInk);if(!stylus)AppendInk(new(first.X,first.Y),lastTimestamp);holdAnchor=first;holdTimer.Stop();if(session.ShapeMode==InkShapeMode.Hold)holdTimer.Start();
         }else{stroke.Points=[new(first.X,first.Y),new(first.X,first.Y)];preview=stroke;DrawPreview();}
     }
-    private void MoveInput(Point screen,InkPoint? sample)
+    internal void MoveInput(Point screen,InkPoint? sample)
     {
         if(!down)return;var world=WorldPoint(screen);lastWorld=world;if((screen-startScreen).Length>3)moved=true;
         if(gestureTool=="Eraser"){Erase(world);return;}
@@ -228,10 +229,12 @@ public sealed class BoardCanvas : FrameworkElement
         if(stroke.Points.Count>=100000||rawSamples.Count>=100000){FinishStroke();session.Status("Long stroke saved. Start a new stroke to continue.");return;}
         var dt=Math.Max(.0001,timestamp-lastTimestamp);original.Velocity=rawSamples.Count>0?(original.Point-rawSamples[^1].Point).Length/dt:0;lastTimestamp=timestamp;
         if(held){if((original.Point-holdAnchor).Length<8/session.Zoom)return;held=false;preview=null;using(var dc=ink.RenderOpen())dc.DrawDrawing(activeInk);}
-        if((original.Point-holdAnchor).Length>2/session.Zoom){holdAnchor=original.Point;holdTimer.Stop();if(session.AutoCorrect)holdTimer.Start();}
+        if((original.Point-holdAnchor).Length>2/session.Zoom){holdAnchor=original.Point;holdTimer.Stop();if(session.ShapeMode==InkShapeMode.Hold)holdTimer.Start();}
         rawSamples.Add(original.Copy());
         if(original.RawPressure is {} raw){var activation=Math.Clamp(session.ActivationPressure,0,.95);if(stroke.Points.Count==0&&raw<=activation)return;original.Pressure=DrawingMath.CalibratedPressure(raw,activation);}
-        var smoothed=filter.Sample(original.Point,timestamp,session.Smoothing,session.Zoom);var point=original.Copy();point.X=smoothed.X;point.Y=smoothed.Y;stroke.Points.Add(point);moved|=(original.Point-(startWorld??original.Point)).Length*session.Zoom>3;
+        if (inkPositions.Count < InkDenoiseModel.MaximumSamples) inkPositions.Add(original.Point);
+        var smoothing = session.LearnedInkSmoothing ? session.Smoothing * .70 : session.Smoothing;
+        var smoothed=filter.Sample(original.Point,timestamp,smoothing,session.Zoom);var point=original.Copy();point.X=smoothed.X;point.Y=smoothed.Y;stroke.Points.Add(point);moved|=(original.Point-(startWorld??original.Point)).Length*session.Zoom>3;
         using(var dc=activeInk.Append()) {
             if(stroke.Pen=="Highlighter"){var saved=stroke.BrushSettings;stroke.BrushSettings=BoardCodec.Clone(saved!);stroke.BrushSettings.Opacity=1;stroke.BrushSettings.MinOpacity=stroke.BrushSettings.MaxOpacity=1;BoardRenderer.DrawStrokeSegment(dc,stroke,BoardRenderer.VisibleColor(stroke.Color,session.Board),stroke.Points.Count-1);stroke.BrushSettings=saved;}
             else BoardRenderer.DrawStrokeSegment(dc,stroke,BoardRenderer.VisibleColor(stroke.Color,session.Board),stroke.Points.Count-1);
@@ -239,11 +242,57 @@ public sealed class BoardCanvas : FrameworkElement
     }
     private void CorrectHeldStroke()
     {
-        holdTimer.Stop();if(!down||stroke is null||gestureTool!="Draw"||!session.AutoCorrect||held)return;var candidate=DrawingMath.CorrectShape(stroke,session.Zoom);if(candidate.Kind=="stroke")return;held=true;preview=candidate;holdAnchor=lastWorld??candidate.Points[^1].Point;using(ink.RenderOpen()){}DrawPreview();session.Status($"Hold detected • {candidate.Kind} snapped");
+        holdTimer.Stop();
+        if (!down || stroke is null || gestureTool != "Draw" || session.ShapeMode != InkShapeMode.Hold || held) return;
+        var candidate = DrawingMath.CorrectShape(stroke, session.Zoom, InkShapeMode.Hold, ShapeInput(stroke));
+        if (ReferenceEquals(candidate, stroke)) return;
+        held = true;
+        preview = candidate;
+        holdAnchor = lastWorld ?? candidate.Points[^1].Point;
+        using (ink.RenderOpen()) { }
+        DrawPreview();
+        session.Status($"Shape preview · {candidate.Kind}");
     }
+
+    private IReadOnlyList<Point>? ShapeInput(DrawingElement freehand) =>
+        inkPositions.Count == freehand.Points.Count ? inkPositions : null;
+
+    private DrawingElement RefineCompletedInk(DrawingElement freehand)
+    {
+        if (session.LearnedInkSmoothing && session.Smoothing > 0 &&
+            inkPositions.Count == freehand.Points.Count && inkPositions.Count >= 5)
+        {
+            var positions = InkDenoiseModel.Refine(inkPositions, session.Smoothing, session.Zoom);
+            for (var i = 0; i < positions.Length; i++)
+            {
+                freehand.Points[i].X = positions[i].X;
+                freehand.Points[i].Y = positions[i].Y;
+            }
+        }
+        if (rawSamples.Count > 0)
+        {
+            freehand.Extra ??= [];
+            freehand.Extra["windowsOriginalSamples"] = JsonSerializer.SerializeToElement(rawSamples, BoardCodec.Options);
+            freehand.Extra["windowsSmoothing"] = JsonSerializer.SerializeToElement(session.Smoothing);
+        }
+        return freehand;
+    }
+
     public void FinishStroke()
     {
         if(!down)return;holdTimer.Stop();var e=held?preview:stroke;down=false;
+        DrawingElement? freehand = null;
+        if (gestureTool == "Draw" && stroke is { Points.Count: > 0 } original)
+        {
+            if (!held && session.ShapeMode == InkShapeMode.OnRelease)
+                e = DrawingMath.CorrectShape(original, session.Zoom, InkShapeMode.OnRelease, ShapeInput(original));
+            var refined = RefineCompletedInk(original);
+            if (!ReferenceEquals(e, original) && e is not null)
+            {
+                e.Extra = refined.Extra;
+                freehand = refined;
+            }
+        }
         if(gestureTool=="Select"){
             if(selectionPreview is not null&&moved){session.Checkpoint();foreach(var item in selectionPreview){var at=session.Board.Elements.FindIndex(x=>x.Id==item.Id);if(at>=0)session.Board.Elements[at]=item;}session.NotifyChanged();}
             else if(selectionPreview is null&&moved&&startWorld is {} a&&lastWorld is {} b){var box=new Rect(a,b);foreach(var item in session.Board.Elements)if(box.Contains(item.Bounds))session.SelectedIds.Add(item.Id);session.NotifyViewChanged();}
@@ -254,12 +303,17 @@ public sealed class BoardCanvas : FrameworkElement
             if(e.Kind is "line" or "arrow" or "dimension"){
                 var first=e.Points[0].Point;var end=Constrain(e.Points[^1].Point,first,e.Kind=="dimension"?"Dimension":"Line");if(session.FixedLineLengthMM>0){var exact=DrawingMath.FixedEndpoint(e.Points[0],new(end.X,end.Y),session.FixedLineLengthMM,session.Board.PointsPerMM,session.Board.ScaleDenominator);if(exact is not null)end=exact.Point;else{ClearGesture();session.Status("Fixed line length could not be applied. Check the scale and length.");return;}}var ending=e.Points[^1].Copy();ending.X=end.X;ending.Y=end.Y;e.Points=[e.Points[0],ending];
             }
-            if(gestureTool=="Draw"&&rawSamples.Count>0){e.Extra??=[];e.Extra["windowsOriginalSamples"]=JsonSerializer.SerializeToElement(rawSamples,BoardCodec.Options);e.Extra["windowsSmoothing"]=JsonSerializer.SerializeToElement(session.Smoothing);}
-            var snapped=held&&e.Kind=="line";ClearGesture();session.Commit(e);if(snapped)LineStraightened?.Invoke(e);session.Status(session.PenActive?"Drawing saved • tablet samples received":"Drawing saved locally");return;
+            var dimensionPrompt = held && e.Kind == "line";
+            ClearGesture();
+            session.Commit(e, freehand);
+            if (dimensionPrompt) LineStraightened?.Invoke(e);
+            session.Status(freehand is not null ? $"{e.Kind} snapped · Ctrl+Z restores ink" :
+                session.PenActive ? "Drawing saved · tablet samples received" : "Drawing saved locally");
+            return;
         }
         ClearGesture();Refresh();
     }
-    private void ClearGesture(){down=false;stroke=preview=null;selectionPreview=originalSelection=null;startWorld=lastWorld=null;lasso.Clear();rawSamples.Clear();held=false;eraserGesture=false;holdTimer.Stop();activeInk=new();using(ink.RenderOpen()){}DrawPreview();DrawOverlay();}
+    private void ClearGesture(){down=false;stroke=preview=null;selectionPreview=originalSelection=null;startWorld=lastWorld=null;lasso.Clear();rawSamples.Clear();inkPositions.Clear();held=false;eraserGesture=false;holdTimer.Stop();activeInk=new();using(ink.RenderOpen()){}DrawPreview();DrawOverlay();}
     private void Erase(Point p)
     {
         var radius=StrokeEraser.PressureRadius(session.EraserRadius,session.LivePressure,session.Zoom);
@@ -284,9 +338,9 @@ public sealed class BoardCanvas : FrameworkElement
     private Point Constrain(Point end,Point start,string tool){var v=end-start;var directional=tool is "Line" or "Arrow" or "Dimension";var iso=directional&&session.Snap&&session.Board.Background=="Isometric";if(!Keyboard.Modifiers.HasFlag(ModifierKeys.Shift)&&!iso)return end;if(directional){var step=iso?Math.PI/6:Math.PI/4;var angle=Math.Round(Math.Atan2(v.Y,v.X)/step)*step;return new(start.X+Math.Cos(angle)*v.Length,start.Y+Math.Sin(angle)*v.Length);}var length=Math.Max(Math.Abs(v.X),Math.Abs(v.Y));return new(start.X+(v.X<0?-length:length),start.Y+(v.Y<0?-length:length));}
     private static string Kind(string tool)=>tool switch{"Line"=>"line","Arrow"=>"arrow","Rectangle"=>"rectangle","Circle" or "Ellipse"=>"ellipse","Triangle"=>"triangle","Arc"=>"arc","Dimension"=>"dimension",_=>"stroke"};
     private void StartPan(Point screen){FinishStroke();panning=true;startScreen=screen;panOrigin=session.Offset;Cursor=Cursors.Hand;}
-    private void UpdatePan(Point screen){var delta=screen-startScreen;session.Offset=panOrigin+delta;Refresh();session.NotifyViewChanged();}
+    private void UpdatePan(Point screen){var delta=screen-startScreen;session.Offset=panOrigin+delta;session.NotifyViewChanged();}
     protected override void OnTouchDown(TouchEventArgs e){base.OnTouchDown(e);if(session.PenActive){e.Handled=true;return;}FinishStroke();touches[e.TouchDevice.Id]=e.GetTouchPoint(this).Position;e.TouchDevice.Capture(this);ResetTouchGesture();e.Handled=true;}
-    protected override void OnTouchMove(TouchEventArgs e){base.OnTouchMove(e);if(session.PenActive){e.Handled=true;return;}if(!touches.ContainsKey(e.TouchDevice.Id))return;touches[e.TouchDevice.Id]=e.GetTouchPoint(this).Position;var pts=touches.Values.ToArray();var center=new Point(pts.Average(p=>p.X),pts.Average(p=>p.Y));if(pts.Length>=2){var distance=(pts[0]-pts[1]).Length;var factor=touchDistance>.1?Math.Clamp(distance/touchDistance,.5,2):1;var world=WorldPoint(touchCenter);session.Zoom=Math.Clamp(session.Zoom*factor,.02,40);session.Offset=new(center.X-world.X*session.Zoom,center.Y-world.Y*session.Zoom);touchDistance=distance;}else session.Offset+=center-touchCenter;touchCenter=center;Refresh();session.NotifyViewChanged();e.Handled=true;}
+    protected override void OnTouchMove(TouchEventArgs e){base.OnTouchMove(e);if(session.PenActive){e.Handled=true;return;}if(!touches.ContainsKey(e.TouchDevice.Id))return;touches[e.TouchDevice.Id]=e.GetTouchPoint(this).Position;var pts=touches.Values.ToArray();var center=new Point(pts.Average(p=>p.X),pts.Average(p=>p.Y));if(pts.Length>=2){var distance=(pts[0]-pts[1]).Length;var factor=touchDistance>.1?Math.Clamp(distance/touchDistance,.5,2):1;var world=WorldPoint(touchCenter);session.Zoom=Math.Clamp(session.Zoom*factor,.02,40);session.Offset=new(center.X-world.X*session.Zoom,center.Y-world.Y*session.Zoom);touchDistance=distance;}else session.Offset+=center-touchCenter;touchCenter=center;session.NotifyViewChanged();e.Handled=true;}
     protected override void OnTouchUp(TouchEventArgs e){base.OnTouchUp(e);touches.Remove(e.TouchDevice.Id);e.TouchDevice.Capture(null);ResetTouchGesture();e.Handled=true;}
     private void ResetTouchGesture(){var pts=touches.Values.ToArray();if(pts.Length==0)return;touchCenter=new(pts.Average(p=>p.X),pts.Average(p=>p.Y));touchDistance=pts.Length>=2?(pts[0]-pts[1]).Length:0;}
     protected override void OnKeyDown(KeyEventArgs e)

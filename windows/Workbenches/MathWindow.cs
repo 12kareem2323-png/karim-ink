@@ -33,7 +33,7 @@ public sealed class MathWindow : Window
     public MathWindow(DrawingSession session)
     {
         _session = session; _boardId = session.Board.Id;
-        WorkbenchUI.Window(this, "Maths · DeTeXt · SketchGlide", 1080, 780);
+        WorkbenchUI.Window(this, "Maths · DeTeXt · Velin", 1080, 780);
         _recognise = WorkbenchUI.Button("Recognise offline", () => _ = RecogniseAsync());
         _insertSymbol = WorkbenchUI.Button("Insert symbol", InsertSelectedSymbol);
         _insertFormula = WorkbenchUI.Button("Insert editable formula", () => InsertFormula(false));

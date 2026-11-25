@@ -6,7 +6,7 @@ try {
     if ([IO.Path]::GetFullPath($source).TrimEnd('\') -eq [IO.Path]::GetFullPath($destination).TrimEnd('\')) { throw 'Run Install.cmd from the newly extracted ZIP, not from the installed folder.' }
     Add-Type -AssemblyName System.Windows.Forms
     $form = New-Object Windows.Forms.Form
-    $form.Text = 'Install SketchGlide for this Windows user'; $form.Width = 660; $form.Height = 340
+    $form.Text = 'Install Velin for this Windows user'; $form.Width = 660; $form.Height = 340
     $form.StartPosition = 'CenterScreen'; $form.FormBorderStyle = 'FixedDialog'; $form.MaximizeBox = $false; $form.MinimizeBox = $false
     $description = New-Object Windows.Forms.Label
     $description.Text = "Copy the app into:`r`n$destination`r`n`r`nYour drawing library, pen profiles and AI/Craft settings stay outside this app folder. An older installed app folder is kept as a backup."
@@ -22,7 +22,7 @@ try {
     $stage = New-KarimInstallStage $source $destination $packageRoot
     $oldState = $null; $oldStatePath = Join-Path $destination 'install-state.json'
     if (Test-Path -LiteralPath $oldStatePath) { $oldState = Get-Content -LiteralPath $oldStatePath -Raw | ConvertFrom-Json }
-    $registry = @(); $command = '"' + (Join-Path $destination 'SketchGlide.exe') + '" "%1"'
+    $registry = @(); $command = '"' + (Join-Path $destination 'Velin.exe') + '" "%1"'
     $backupDirectory = Join-Path $stage 'RegistryBackup'; New-Item -ItemType Directory -Path $backupDirectory | Out-Null
     if ($links.Checked) {
         $records = @(
@@ -50,7 +50,7 @@ try {
         $oldBackups = Join-Path $destination 'RegistryBackup'
         if (Test-Path -LiteralPath $oldBackups) { Copy-Item -Path (Join-Path $oldBackups '*') -Destination $backupDirectory -Force }
     }
-    $shortcuts = @(); $exe = Join-Path $destination 'SketchGlide.exe'
+    $shortcuts = @(); $exe = Join-Path $destination 'Velin.exe'
     if ($oldState) {
         foreach ($path in @($oldState.Shortcuts)) {
             if (Test-Path -LiteralPath $path) {
@@ -66,16 +66,16 @@ try {
     $state.PreviousInstall = $previous
     $state | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $destination 'install-state.json') -Encoding UTF8
     if ($links.Checked) {
-        Set-RegistryDefault 'HKCU:\Software\Classes\karimboard' 'URL:SketchGlide drawing'
+        Set-RegistryDefault 'HKCU:\Software\Classes\karimboard' 'URL:Velin drawing'
         New-ItemProperty -Path 'HKCU:\Software\Classes\karimboard' -Name 'URL Protocol' -Value '' -PropertyType String -Force | Out-Null
         Set-RegistryDefault 'HKCU:\Software\Classes\karimboard\shell\open\command' $command
-        Set-RegistryDefault 'HKCU:\Software\Classes\.engboard\shell\KarimEldamaty' 'Open with SketchGlide'
+        Set-RegistryDefault 'HKCU:\Software\Classes\.engboard\shell\KarimEldamaty' 'Open with Velin'
         Set-RegistryDefault 'HKCU:\Software\Classes\.engboard\shell\KarimEldamaty\command' $command
     }
-    if ($startMenu.Checked) { $path = Join-Path ([Environment]::GetFolderPath('Programs')) 'SketchGlide.lnk'; New-KarimShortcut $path $exe; $shortcuts += $path; $state.Shortcuts = @($shortcuts | Select-Object -Unique); $state | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $destination 'install-state.json') -Encoding UTF8 }
-    if ($desktop.Checked) { $path = Join-Path ([Environment]::GetFolderPath('DesktopDirectory')) 'SketchGlide.lnk'; New-KarimShortcut $path $exe; $shortcuts += $path }
+    if ($startMenu.Checked) { $path = Join-Path ([Environment]::GetFolderPath('Programs')) 'Velin.lnk'; New-KarimShortcut $path $exe; $shortcuts += $path; $state.Shortcuts = @($shortcuts | Select-Object -Unique); $state | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $destination 'install-state.json') -Encoding UTF8 }
+    if ($desktop.Checked) { $path = Join-Path ([Environment]::GetFolderPath('DesktopDirectory')) 'Velin.lnk'; New-KarimShortcut $path $exe; $shortcuts += $path }
     $state.Shortcuts = @($shortcuts | Select-Object -Unique); $state | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $destination 'install-state.json') -Encoding UTF8
     Write-Host "Installed for this user: $destination"
-    Write-Host 'Run SketchGlide.exe or use your shortcut. Visual C++ installation is a separate optional step.'
+    Write-Host 'Run Velin.exe or use your shortcut. Visual C++ installation is a separate optional step.'
     if ($previous) { Write-Host "Previous app folder retained: $previous" }
 } catch { Write-Error $_; exit 1 }
